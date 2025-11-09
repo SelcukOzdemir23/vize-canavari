@@ -1,0 +1,213 @@
+import React, { useEffect, useState } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import Confetti from 'react-confetti';
+import { motion } from 'framer-motion';
+import { useQuizStore } from '../store/quizStore';
+import ModeButton from '../components/ModeButton';
+
+const ResultsPage: React.FC = () => {
+  const { mode } = useParams<{ mode: string }>();
+  const navigate = useNavigate();
+  const { currentQuiz } = useQuizStore();
+  const [showConfetti, setShowConfetti] = useState(false);
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  // Handle window resize for confetti
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  // Calculate real quiz results
+  const { score, total, correctAnswers, incorrectAnswers } = React.useMemo(() => {
+    if (!currentQuiz) {
+      return { score: 0, total: 0, correctAnswers: 0, incorrectAnswers: 0 };
+    }
+
+    const totalQuestions = currentQuiz.questions.length;
+    let correct = 0;
+
+    currentQuiz.questions.forEach(question => {
+      const userAnswer = currentQuiz.userAnswers[question.id];
+      if (userAnswer === question.dogruCevapIndex) {
+        correct++;
+      }
+    });
+
+    const scorePercentage = totalQuestions > 0 ? Math.round((correct / totalQuestions) * 100) : 0;
+
+    return {
+      score: scorePercentage,
+      total: totalQuestions,
+      correctAnswers: correct,
+      incorrectAnswers: totalQuestions - correct
+    };
+  }, [currentQuiz]);
+
+  // Show confetti for high scores
+  useEffect(() => {
+    if (score > 70) {
+      setShowConfetti(true);
+      const timer = setTimeout(() => setShowConfetti(false), 5000);
+      return () => clearTimeout(timer);
+    }
+  }, [score]);
+
+  const handleReviewMistakes = () => {
+    navigate('/quiz/mistake-bank');
+  };
+
+  const handleTryAgain = () => {
+    navigate('/quiz/standard');
+  };
+
+  const handleHome = () => {
+    navigate('/');
+  };
+
+  // Calculate percentage for the donut chart
+  const circumference = 2 * Math.PI * 45; // radius = 45
+  const strokeDashoffset = circumference - (score / 100) * circumference;
+
+  // Get message based on score
+  const getResultMessage = () => {
+    if (score >= 90) return "Mükemmel! 🎉";
+    if (score >= 80) return "Harika iş! 👏";
+    if (score >= 70) return "İyi gidiyorsun! 👍";
+    if (score >= 60) return "İdare eder 😊";
+    return "Daha fazla çalışman gerekiyor 💪";
+  };
+
+  // Get color based on score
+  const getScoreColor = () => {
+    if (score >= 80) return "#4CAF50"; // Green
+    if (score >= 60) return "#FFC107"; // Yellow
+    return "#F44336"; // Red
+  };
+
+  return (
+    <motion.div 
+      className="results-page"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
+      {showConfetti && (
+        <Confetti
+          width={windowSize.width}
+          height={windowSize.height}
+          recycle={false}
+          numberOfPieces={500}
+        />
+      )}
+
+      <motion.h1
+        className="results-title"
+        initial={{ y: -20 }}
+        animate={{ y: 0 }}
+        transition={{ delay: 0.2 }}
+      >
+        Test Sonuçları
+      </motion.h1>
+
+      {/* Score Donut */}
+      <motion.div 
+        className="score-container"
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ delay: 0.3, type: "spring", stiffness: 300 }}
+      >
+        <div className="score-donut">
+          <svg width="200" height="200" viewBox="0 0 100 100">
+            {/* Background circle */}
+            <circle
+              cx="50"
+              cy="50"
+              r="45"
+              fill="none"
+              stroke="#e0e0e0"
+              strokeWidth="8"
+            />
+            {/* Progress circle */}
+            <motion.circle
+              cx="50"
+              cy="50"
+              r="45"
+              fill="none"
+              stroke={getScoreColor()}
+              strokeWidth="8"
+              strokeDasharray={circumference}
+              initial={{ strokeDashoffset: circumference }}
+              animate={{ strokeDashoffset }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              transform="rotate(-90 50 50)"
+            />
+          </svg>
+          <div className="score-value">
+            <div>{score}%</div>
+            <div className="score-label">Başarı</div>
+          </div>
+        </div>
+      </motion.div>
+
+      {/* Summary */}
+      <motion.div 
+        className="results-summary"
+        initial={{ y: 20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.5 }}
+      >
+        <h2>Özet</h2>
+        <p className="result-message">{getResultMessage()}</p>
+        <p>
+          {total} sorudan {correctAnswers} tanesini doğru bildin.
+        </p>
+        <div className="stats-container">
+          <div className="stat-item">
+            <div className="stat-value correct">{correctAnswers}</div>
+            <div className="stat-label">Doğru</div>
+          </div>
+          <div className="stat-item">
+            <div className="stat-value incorrect">{incorrectAnswers}</div>
+            <div className="stat-label">Yanlış</div>
+          </div>
+        </div>
+      </motion.div>
+
+      {/* Next Steps */}
+      <motion.div 
+        className="result-buttons"
+        initial={{ y: 20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.7 }}
+      >
+        {incorrectAnswers > 0 && (
+          <ModeButton
+            onClick={handleReviewMistakes}
+            title="Yanlışları Tekrar Et"
+          />
+        )}
+        <ModeButton
+          onClick={handleTryAgain}
+          title="Yeni Rastgele Test"
+        />
+        <ModeButton
+          onClick={handleHome}
+          title="Ana Menü"
+        />
+      </motion.div>
+    </motion.div>
+  );
+};
+
+export default ResultsPage;

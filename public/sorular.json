@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1001,
+    "kategori": "Ölçme ve Değerlendirme",
+    "zorluk": "kolay",
+    "soruMetni": "Bir testin aynı gruba farklı zamanlarda uygulanmasıyla elde edilen sonuçlar arasındaki tutarlılık, testin hangi özelliğini gösterir?",
+    "secenekler": [
+      "Geçerlik",
+      "Güvenirlik",
+      "Kullanışlılık",
+      "Objektiflik"
+    ],
+    "dogruCevapIndex": 1,
+    "aciklama": "Güvenirlik, bir ölçme aracının tutarlı ve kararlı sonuçlar verme derecesidir. Geçerlik ise ölçmek istediği özelliği ne kadar doğru ölçtüğüdür."
+  },
+  {
+    "id": 1002,
+    "kategori": "Öğretim Yöntemleri",
+    "zorluk": "orta",
+    "soruMetni": "Aşağıdakilerden hangisi 'Buluş Yoluyla Öğrenme' modelinin bir özelliği **değildir**?",
+    "secenekler": [
+      "Öğrenci merkezlidir.",
+      "Tümevarım yaklaşımı esastır.",
+      "Öğretmen bilgiyi doğrudan sunar.",
+      "Öğrenciyi keşfetmeye yönlendirir."
+    ],
+    "dogruCevapIndex": 2,
+    "aciklama": "Buluş yoluyla öğrenmede öğretmen rehberdir ve bilgiyi doğrudan sunmaz. Öğrencinin kendi keşifleri ve deneyimleri yoluyla öğrenmesi hedeflenir."
+  },
+  {
+    "id": 1003,
+    "kategori": "Gelişim Psikolojisi",
+    "zorluk": "zor",
+    "soruMetni": "Bir çocuğun, farklı hacimdeki kaplara konulan aynı miktardaki suyun miktarının değişmediğini anlaması, Piaget'nin bilişsel gelişim teorisine göre hangi bilişsel yeteneği kazandığını gösterir?",
+    "secenekler": [
+      "Nesne Sürekliliği",
+      "Korunum İlkesi",
+      "Tersine Çevirebilirlik",
+      "Benmerkezcilik"
+    ],
+    "dogruCevapIndex": 1,
+    "aciklama": "Korunum ilkesi, bir nesnenin veya maddenin görüntüsü veya düzenlenişi değişse bile, temel özelliklerinin (miktar, hacim, sayı gibi) değişmeyeceğini anlama yeteneğidir."
+  },
+  {
+    "id": 1004,
+    "kategori": "Öğrenme Psikolojisi",
+    "zorluk": "orta",
+    "soruMetni": "Pavlov'un klasik koşullanma deneyinde, zil sesi başlangıçta ne tür bir uyarıcıdır?",
+    "secenekler": [
+      "Koşulsuz Uyarıcı",
+      "Koşullu Uyarıcı",
+      "Nötr Uyarıcı",
+      "İkincil Uyarıcı"
+    ],
+    "dogruCevapIndex": 2,
+    "aciklama": "Deneyin başlangıcında zil sesi (nötr uyarıcı), tek başına salya tepkisine (tepki) yol açmaz. Ancak et (koşulsuz uyarıcı) ile eşleştirildikten sonra koşullu uyarıcı haline gelir."
+  },
+  {
+    "id": 1005,
+    "kategori": "Rehberlik",
+    "zorluk": "kolay",
+    "soruMetni": "Bireyin kendini anlaması, problemlerini çözmesi, gerçekçi kararlar alması için yapılan profesyonel ve sistematik yardım sürecine ne ad verilir?",
+    "secenekler": [
+      "Öğretim",
+      "Psikolojik Danışma",
+      "Yönetim",
+      "Değerlendirme"
+    ],
+    "dogruCevapIndex": 1,
+    "aciklama": "Psikolojik danışma, tanımda belirtilen tüm unsurları kapsayan profesyonel bir yardım sürecidir ve rehberlik hizmetlerinin özünü oluşturur."
+  }
+]

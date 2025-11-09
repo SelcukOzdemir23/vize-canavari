@@ -1,0 +1,405 @@
+Eğitim fakültesi öğrenciliernin çoktan seçmeli sorular cevaplayacağı eğlenceli bir web sitesi yapmak istiyorum. Soruları yerelden json fırmatında göstereceğim. Sence bu konuda nelere dikkat etmem gerekir? Hangi teknolojiler ve hangi özellikler ve hangi tasarım ilkeleri en iyi olur?
+
+Harika bir proje fikri! Eğitim fakültesi öğrencileri için hem eğlenceli hem de öğretici bir platform oluşturmak çok değerli. Soruların yerel bir JSON dosyasından çekilecek olması, bu projeyi özellikle sunucu (backend) bağımlılığı olmadan, tamamen "istemci tarafı" (client-side) bir uygulama olarak geliştirmek için mükemmel bir aday yapıyor.
+
+İşte bu projeyi hayata geçirirken dikkat etmeniz gerekenler, teknoloji önerileri, özellikler ve tasarım ilkeleri üzerine detaylı bir rehber:
+
+1. 🎯 Dikkat Etmeniz Gereken En Önemli Konular
+Projenizin temeli "yerel JSON" dosyası üzerine kurulu. Bu durumun getirdiği bazı avantajlar ve kritik bir kısıtlama var:
+
+Güvenlik (Kopyalama Riski):
+
+Bu, en önemli konu. Sorular yerel bir JSON dosyasından (sorular.json gibi) yüklendiğinde, teknik bilgisi olan bir kullanıcı tarayıcının "Ağ (Network)" sekmesinden veya sayfa kaynak kodundan bu dosyayı kolayca bulup tüm soruları ve cevapları anında görebilir.
+
+Çözüm/Kabul: Bu web sitesinin bir sınav veya değerlendirme aracı olmadığını, tamamen eğlence ve pratik (pekiştirme) amaçlı olduğunu net bir şekilde kabul etmelisiniz. Bu bir "açık kitap" alıştırması gibidir.
+
+JSON Dosyasının Yapısı (Mimarisi):
+
+Tüm uygulamanız bu dosyanın yapısına bağlı olacak. Başlangıçta ne kadar iyi tasarlarsanız, kod yazmanız o kadar kolaylaşır.
+
+Net ve Tutarlı Olun: Her soru nesnesi aynı alanlara (key) sahip olmalı.
+
+Öneri: Şöyle bir yapı kullanabilirsiniz:
+
+JSON
+[
+  {
+    "id": 1,
+    "kategori": "Öğretim Yöntemleri",
+    "soruMetni": "Aşağıdakilerden hangisi 'Buluş Yoluyla Öğrenme' modelinin bir özelliği değildir?",
+    "secenekler": [
+      "Öğrenci merkezlidir.",
+      "Tümevarım yaklaşımı esastır.",
+      "Öğretmen bilgiyi doğrudan sunar.",
+      "Öğrenciyi keşfetmeye yönlendirir."
+    ],
+    "dogruCevapIndex": 2 // (C şıkkı, çünkü index'ler 0'dan başlar)
+  },
+  {
+    "id": 2,
+    "kategori": "Ölçme ve Değerlendirme",
+    "soruMetni": "Bir testin aynı gruba farklı zamanlarda uygulanmasıyla elde edilen sonuçlar arasındaki tutarlılık, testin hangi özelliğini gösterir?",
+    "secenekler": [
+      "Geçerlik",
+      "Güvenirlik",
+      "Kullanışlılık",
+      "Objektiflik"
+    ],
+    "dogruCevapIndex": 1 // (B şıkkı)
+  }
+]
+Asenkron Yükleme (Asynchronous Loading):
+
+JavaScript, JSON dosyasını sunucudan (veya yerel diskten) isterken bu bir zaman alacaktır (milisaniyeler sürse bile).
+
+Sayfa açılır açılmaz soruları göstermeye çalışırsanız, dosya henüz yüklenmediği için hata alırsınız.
+
+Mutlaka bir "Yükleniyor..." (Loading) göstergesi kullanmalı ve soruları ancak dosya başarıyla yüklendikten sonra göstermelisiniz.
+
+2. 💻 Hangi Teknolojiler En İyi Olur?
+Projenizin "sunucusuz" (serverless) yapısı göz önüne alındığında, teknoloji seçimi oldukça nettir:
+
+Temel (Vanilla) Yöntem (Başlangıç için Harika):
+
+HTML: Soru ve seçeneklerin iskeleti için.
+
+CSS: Siteyi "eğlenceli" hale getirmek için (animasyonlar, renkler, geçişler).
+
+JavaScript (Salt JS): Projenizin beyni. JSON dosyasını yüklemek (fetch API'si ile), soruları ekrana basmak, cevapları kontrol etmek, skoru tutmak ve sonraki soruya geçmek için saf JavaScript kullanmak hem çok öğreticidir hem de bu ölçekteki bir proje için yeterlidir.
+
+Modern JavaScript Kütüphaneleri (Daha Kolay Yönetim için):
+
+Eğer "Durum Yönetimi" (State Management) ile uğraşmak istemiyorsanız (örn: mevcut soru hangisi? skor kaç? test bitti mi?), bir kütüphane hayat kurtarır.
+
+React veya Vue.js: Bu ikisi en popüler seçeneklerdir. Özellikle React, "bileşen" (component) yapısıyla (örn: <Quiz>, <Soru>, <Secenekler>, <SonucEkrani>) kodunuzu çok düzenli hale getirir. useState gibi hook'lar ile skoru, mevcut sorunun indeksini vb. tutmak çok kolaylaşır.
+
+Benim Önerim: Eğer yeni başlıyorsanız ve temeliniz zayıfsa "Vanilla JS" ile başlayın. Eğer amacınız modern web geliştirmeyi öğrenmekse ve portfolyonuza güçlü bir proje eklemekse React veya Vue kullanın.
+
+3. ✨ Hangi Özellikler ve Tasarım İlkeleri?
+İşte sitenizi "eğlenceli" ve "kullanışlı" yapacak özellikler ve tasarım ilkeleri:
+
+Eğlenceli Özellikler (Oyunlaştırma - Gamification)
+Anında Geri Bildirim: Kullanıcı bir seçeneğe tıkladığında beklemesin.
+
+Doğruysa: Seçenek yeşile dönsün, belki kısa bir "Doğru!" sesi ve bir ✔️ ikonu çıksın.
+
+Yanlışsa: Tıkladığı seçenek kırmızıya, doğru olan ise yeşile dönsün. Bir ❌ ikonu ve "Yanlış" sesi olabilir.
+
+İlerleme Çubuğu (Progress Bar): "20 sorudan 5. sorudasınız" gibi. Kullanıcının ne kadar yolu kaldığını görmesi motivasyonu artırır.
+
+Skor Takibi: Sağ üst köşede "Skor: 5/7" gibi anlık bir skor göstergesi.
+
+Zamanlayıcı (Opsiyonel): İsteğe bağlı olarak soru başına veya test başına zamanlayıcı eklenebilir. Bu, rekabeti artırır ama bazı kullanıcıları gerebilir.
+
+Rastgeleleştirme (Çok Önemli!):
+
+Soruları Karıştırın: JSON'dan gelen soruları her seferinde rastgele bir sırayla sorun (Fisher-Yates shuffle algoritması).
+
+Seçenekleri Karıştırın: Her soru için secenekler dizisini de karıştırın (doğru cevabın indeksini buna göre güncellemeyi unutmayın!). Bu, öğrencinin cevapların yerini ezberlemesini engeller.
+
+Sonuç Ekranı: Test bittiğinde sıkıcı bir "15/20 yaptınız" demek yerine:
+
+"Harika! Pedagojik formasyonun %75'i tamam! 🚀" gibi motive edici bir başlık.
+
+Doğru ve yanlış sayılarını gösteren bir grafik (pasta dilimi gibi).
+
+"Yanlışları Gözden Geçir" butonu (kullanıcının sadece yanlış yaptığı soruları ve doğru cevaplarını görmesini sağlar).
+
+Tasarım İlkeleri (Kullanıcı Deneyimi - UX)
+Mobil Uyumluluk (Mobile-First): Öğrenciler bu siteyi %90 ihtimalle telefonlarından kullanacak. Tasarıma önce telefonu düşünerek başlayın. Her şey büyük, okunaklı ve parmakla kolayca tıklanabilir olmalı.
+
+Sadelik (Odaklanma): Ekranda aynı anda sadece bir soru olsun. Kullanıcının dikkati dağılmamalı. Sadece soru metni, seçenekler ve "İlerle" butonu.
+
+Görsel Hiyerarşi: Soru metni en büyük ve en belirgin olmalı. Seçenekler ondan sonra gelmeli.
+
+Erişilebilirlik:
+
+Kontrast: Renk körleri için sadece kırmızı/yeşil renklerine güvenmeyin. Mutlaka ikon (✔️/❌) veya net metinler ("Doğru"/"Yanlış") kullanın.
+
+Yazı Tipi: Okunaklı, basit (sans-serif) fontlar kullanın.
+
+Tıklama Alanı: Seçeneklerin sadece radyo düğmesine değil, tüm metin kutusuna tıklanabilir olmasını sağlayın (<label> etiketi ile).
+
+Özetle Yol Haritası
+JSON'u Tasarla: Yukarıdaki gibi sağlam bir JSON yapısı oluştur.
+
+Teknoloji Seç: Vanilla JS veya React/Vue.
+
+Çekirdek İşlevi Kodla: a. JSON'u fetch ile yükle. b. Bir "Yükleniyor..." ekranı göster. c. Yüklenince ilk soruyu (soru ve seçenekler) ekrana bas. d. Bir seçeneğe tıklamayı algıla. e. dogruCevapIndex ile karşılaştır. f. Skoru güncelle ve geri bildirim ver (yeşil/kırmızı). g. "İleri" butonuna basınca bir sonraki soruyu göster.
+
+Eğlenceyi Ekle: Test bitince sonuç ekranı, ilerleme çubuğu ve rastgeleleştirme özelliklerini ekle.
+
+Güzelleştir (CSS): Mobil uyumlu hale getir ve eğlenceli animasyonlar/renkler ekle.
+
+Bu proje, bir eğitim fakültesi öğrencisinin portfolyosuna koyması için hem teknik becerilerini (JS, JSON, React) hem de alan bilgisini (eğitim bilimleri) gösterebileceği mükemmel bir fırsat.
+
+İsterseniz, bu JSON yapısını okuyacak ve ilk soruyu ekranda gösterecek temel bir JavaScript fetch kodu örneği paylaşabilirim.
+
+Kral başlangıç seviye değiliz. Lütfen daha detaylı olarak araştır! React ve vite işimi kurtarır gibi ama ne olsaydı bu uygulama bu öğrenciler için vazggeçilmez olurdu sence? Her bakımdan? Amacım vize sürecine hazırlamak öğrencileri! Destek olmak.
+
+Kral, anlaşıldı. Seviyeyi yükseltiyoruz. Başlangıç seviyesini geçip, bu uygulamayı Eğitim Fakültesi öğrencileri için bir "vize canavarı" (midterm killer) haline getirecek, bağımlılık yaratacak özelliklere odaklanıyoruz.
+
+React ve Vite ikilisi mükemmel bir seçim. Hız, modern altyapı ve ekosistem genişliği açısından tam isabet.
+
+Amacınızın "vizeye hazırlık ve destek" olduğunu düşünürsek, bu uygulamayı "tek seferlik eğlenceli bir test" olmaktan çıkarıp, "kişiselleştirilmiş bir öğrenme partnerine" dönüştürmemiz gerekiyor. "Vazgeçilmez" olmanın anahtarı budur.
+
+Yerel JSON'u bir kısıtlama değil, bir başlangıç noktası olarak görelim. Asıl sihir, bu JSON verisini aldıktan sonra tarayıcıda (client-side) yapacağımız işlemlerde.
+
+İşte bu uygulamayı "vazgeçilmez" kılacak detaylı bir yol haritası:
+
+1. 🧠 Pedagojik Derinlik: Sadece Sormak Değil, Öğretmek
+"Vazgeçilmez" bir araç, öğrencinin neden yanlış yaptığını anlamasını ve tekrar yanlış yapmamasını sağlar.
+
+A. Aralıklı Tekrar (Spaced Repetition) Entegrasyonu
+Bu, Quizlet ve Anki gibi uygulamaları vazgeçilmez yapan bilimsel yöntemdir.
+
+Nasıl Çalışır: Öğrencinin doğru bildiği sorular daha uzun aralıklarla, yanlış bildiği sorular ise daha sık aralıklarla karşısına çıkarılır.
+
+Teknik Uygulama:
+
+localStorage Kullanımı: Çözülen her sorunun (id) bilgisini, doğru/yanlış durumunu, son sorulma tarihini ve "zorluk seviyesi" (SM-2 algoritması gibi bir yapıyla hesaplanan bir 'kutu' numarası) bilgisini localStorage'a kaydedin.
+
+JSON'a Ek Alan: JSON dosyanızdaki her soruya bir id vermeniz şart.
+
+Yeni Mod: Ana menüye "Akıllı Tekrar" veya "Hafıza Güçlendir" modu ekleyin. Bu mod, localStorage'daki kayıtlara bakarak sadece zamanı gelen soruları (ve özellikle yanlış bilinenleri) çeker.
+
+B. Özgüven Bazlı Değerlendirme (Confidence-Based Marking)
+Öğrencinin "bilmediğini bilmesi" kritiktir.
+
+Nasıl Çalışır: Öğrenci cevabı seçtikten sonra (veya önce) "Eminim" / "Tahmin Yürütüyorum" / "Emin Değilim" gibi bir seçenek sunun.
+
+Değeri:
+
+Emin olup yanlış yapan: En tehlikeli grup. Bu konuyu kesinlikle tekrar etmesi gerekir.
+
+Emin olmayıp doğru yapan: Şans eseri bilmiştir. Bu konu da risklidir.
+
+Emin olmayıp yanlış yapan: Normal öğrenme süreci.
+
+Raporlama: Test sonunda "Emin olup yanlış yaptığın %X konu var, bunlara mutlaka çalış!" gibi spesifik geri bildirimler verin.
+
+C. Sadece "Doğru Cevap" Değil, "Neden Doğru?"
+JSON yapınızı hemen güncellemelisiniz.
+
+JSON Yapısına Ekleme:
+
+JSON
+{
+  "id": 101,
+  "kategori": "Ölçme ve Değerlendirme",
+  "soruMetni": "...",
+  "secenekler": ["..."],
+  "dogruCevapIndex": 2,
+  "aciklama": "Doğru cevap 'C' şıkkıdır, çünkü güvenirlik, bir testin farklı zamanlardaki uygulamalarında tutarlı sonuçlar vermesidir. Geçerlik ise testin ölçmek istediği özelliği ölçme derecesidir..."
+}
+Uygulama: Öğrenci cevabı verdikten hemen sonra, doğru veya yanlış yapsın fark etmeksizin, bu aciklama alanını gösterin. Bu, anında pekiştirme sağlar ve "öğretici" değeri katlar.
+
+2. ⚡ Teknik Mükemmellik: Hız, Akıcılık ve Güç
+React/Vite ekosistemini sonuna kadar kullanmalıyız.
+
+A. State Management (Durum Yönetimi)
+Proje büyüdükçe useState ve prop drilling kaosa yol açar.
+
+Öneri: Zustand veya Jotai
+
+Neden: Redux Toolkit bu proje için ağır kalır (overkill). Zustand, minimal, hızlı ve hook-temelli bir global state yöneticisidir. Öğrencinin skoru, mevcut soru indeksi, localStorage'dan çekilen "yanlışlar bankası" gibi global verileri yönetmek için mükemmeldir.
+
+B. Data Fetching (Veri Çekme)
+Yerel JSON'u bile akıllıca çekmeliyiz.
+
+Öneri: TanStack Query (React Query)
+
+Neden: fetch ile basitçe çekmek yerine useQuery kullanın:
+
+useQuery('quizData', () => fetch('/sorular.json').then(res => res.json()))
+
+Faydası: React Query, bu JSON'u otomatik olarak cache'ler (önbelleğe alır). Kullanıcı farklı sayfalara gidip gelse bile veriyi tekrar tekrar çekmez. Yüklenme ve hata durumlarını (isLoading, isError) mükemmel yönetir.
+
+C. Çevrimdışı (Offline) Desteği: PWA
+Öğrenciler metroda, otobüste, internetin çekmediği yerlerde de çalışmak ister.
+
+Öneri: vite-plugin-pwa
+
+Değeri: Birkaç satır konfigürasyon ile uygulamanızı Progressive Web App (PWA) haline getirebilirsiniz. Öğrenciler sitenizi telefonlarına "yükleyebilir". JSON dosyası ve uygulama "shell"i cache'lenir. Bu, internetsiz çalışma anlamına gelir ve bu vazgeçilmez bir özelliktir.
+
+D. Animasyon ve "Juiciness"
+Uygulamanın "eğlenceli" olması, verdiği histen gelir.
+
+Öneri: Framer Motion
+
+Uygulama:
+
+Soru geçişlerinde (sonraki soruya geçerken) kayma (slide) animasyonları.
+
+Seçeneklere tıklandığında hafifçe büyüme/küçülme (scale) efekti.
+
+Doğru cevapta: react-confetti kullanarak ekrana konfeti patlatmak.
+
+Yanlış cevapta: Hafif bir ekran titremesi.
+
+Bu "micro-etkileşimler" kullanıcıyı sıkılmaktan kurtarır.
+
+3. 🎯 Kişiselleştirme ve Oyunlaştırma (Gamification)
+Öğrencinin uygulamayı "kendinin" hissetmesi gerekir.
+
+A. Yanlışlar Bankası (Mistake Bank)
+Bu, vizeye hazırlık için kritik bir özelliktir.
+
+Nasıl Çalışır: Öğrencinin yanlış yaptığı her soru (JSON'daki id'si ile) otomatik olarak localStorage'daki bir "yanlışlar" dizisine eklenir.
+
+Yeni Mod: Ana menüye "Sadece Yanlışlarımdan Sor" modu ekleyin. Bu mod, soruları yerel JSON'dan değil, localStorage'daki bu "yanlışlar bankasından" çeker. Öğrenci, yanlışını düzeltene kadar o soru peşini bırakmaz.
+
+B. Modüler ve Akıllı Test Oluşturma
+Tüm soruları tek bir testte sunmayın.
+
+JSON Yapısı: kategori alanı (Ölçme, Gelişim Psikolojisi, ÖYT vb.) ve ek olarak bir zorluk (1-5 arası) alanı ekleyin.
+
+Ana Menü: "Testi Başlat" yerine:
+
+Ders Seç: Hangi kategorilerden soru istiyorsun?
+
+Soru Sayısı Seç: 10, 20, 50?
+
+Zorluk Seç: Kolay, Orta, Zor, Karışık.
+
+Mod Seç: Normal, Zamana Karşı, Akıllı Tekrar, Yanlışlar Bankası.
+
+Bu sayede öğrenci, "Gelişim Psikolojisi'nden 20 zor soru" ile kendini test edebilir.
+
+C. "Streak" (Seri) Takibi
+Motivasyon için Duolingo taktiği.
+
+Nasıl Çalışır: localStorage'a lastLoginDate (son giriş tarihi) kaydedin. Her gün girdiğinde ve en az 10 soru çözdüğünde, streakCount (seri sayısı) artar.
+
+Gösterim: Ana menüde "🔥 5 gündür aralıksız çalışıyorsun!" gibi bir ibare gösterin. Bu, seriyi bozmamak için psikolojik bir baskı (motivasyon) yaratır.
+
+Özet: JSON ve Ötesi
+Yerel JSON'unuz değişmez bir soru havuzudur. localStorage ise kullanıcıya özel, değişken hafızadır. "Vazgeçilmez" uygulama, bu ikisini birleştirendir.
+
+Gelecek Vizyonu (Eğer sunucuya geçerseniz): Bu localStorage'da tuttuklarınızı Supabase veya Firebase (Firestore) gibi bir BaaS (Backend as a Service) çözümüne taşıdığınız an, uygulama seviye atlar:
+
+Cihazlar Arası Senkronizasyon: Telefonda başladığı teste laptop'tan devam edebilir.
+
+Lider Tabloları: Sınıf içi rekabet (haftanın birincisi vb.).
+
+Dinamik Soru Ekleme: Siz veritabanına yeni soru eklediğinizde, öğrencilerin JSON'u güncellemesine gerek kalmaz, anında uygulamaya yansır.
+
+React + Vite + Zustand + TanStack Query + Framer Motion + PWA + (localStorage temelli Pedagoji) = Vazgeçilmez bir vize hazırlık aracı.
+
+Bu konulardan hangisinin (örneğin "Aralıklı Tekrar" algoritmasının localStorage ile entegrasyonu veya Zustand ile state yönetimi) kod yapısını görmek istersiniz?
+
+
+Şimdi benim elimde pdf dosyalar var ve ben öncesinde bunlardan sorular üreteceğim. AI yardımı ile gerekli sayıda artık bilmiyorum 100-200 adet sence burada dikkat etmem gerkeen ne olabilir? Dinamik ai soru üretimi yerine böyle önden kendim oluşturmak istedim. Ne diyorsun?
+
+Kral, bu mükemmel bir strateji.
+
+Dinamik AI soru üretimi (yani kullanıcının her seferinde AI'dan soru istemesi) kulağa havalı gelse de, senin vizeye hazırlık amacın için tamamen yanlış bir yaklaşım olurdu. Neden?
+
+Maliyet: Her kullanıcı sorgusu, OpenAI/Google API'larına para ödemek demektir. Sürdürülebilir değil.
+
+Hız: AI'ın soru üretmesi saniyeler sürer. Senin yerel JSON'un ise milisaniyede yüklenir. Hız, bağımlılık yapar.
+
+Kalite Kontrolü: En önemlisi bu. AI'lar harika "çeldiriciler" (distractors) üretemeyebilir, hatta bazen "halüsinasyon" görüp yanlış bilgiyi doğru diye sunabilir. Bir eğitim aracında bu, kabul edilemez.
+
+Senin seçtiğin "Ön Üretim + İnsan Vetosu" (Pre-generation + Human Vetting) modeli, bu işin en profesyonel ve en doğru yoludur.
+
+PDF'lerden AI yardımıyla soru üretirken dikkat etmen gereken hayati noktalar şunlardır:
+
+1. 🎯 Soru Kalitesi > Soru Sayısı (100-200 Adet)
+Amacın 200 "eh işte" soru değil, 100 adet "tam vize ayarı" soru olmalı. AI'ı bir asistan olarak gör, son sözü söyleyen uzman sensin.
+
+2. 🧹 Adım 1: PDF'i Hazırlamak (Temiz Girdi = Temiz Çıktı)
+AI'a doğrudan PDF yüklemek (eğer bu özelliği kullanıyorsan) veya PDF'ten kopyala-yapıştır yapmak felakettir. AI, sayfa numaraları, üst/alt bilgiler ve kesik cümlelerle kafayı yer.
+
+Yapılması Gereken:
+
+PDF'leri düz metne (.txt) dönüştür.
+
+Metni aç ve temizle. Tüm sayfa numaralarını, "Bölüm 5", "Sayfa 23" gibi alakasız metinleri sil.
+
+Metni anlamsal "Chunk"lara (Parçalara) ayır. AI'a 50 sayfalık bir dokümanı tek seferde veremezsin (context window sınırı).
+
+Parçalama Stratejisi: "Ölçme ve Değerlendirme - Güvenirlik Türleri" bir parça, "Gelişim Psikolojisi - Piaget'nin Bilişsel Gelişim Evreleri" başka bir parça olsun. AI'a konu bazlı parçalar ver.
+
+3. 🤖 Adım 2: Mükemmel Prompt (AI'yı Yönlendirme)
+AI'dan sadece "Bu metinden soru üret" isteme. AI'a ne istediğini net olarak söylemelisin.
+
+Örnek "Süper Prompt":
+
+Rol: Sen Eğitim Bilimleri alanında uzman bir ölçme ve değerlendirme profesörüsün.
+
+Görev: Sana birazdan [KONU ADI] hakkında bir ders notu metni vereceğim. Bu metni kullanarak, Eğitim Fakültesi öğrencileri için vize düzeyinde 10 adet çoktan seçmeli soru hazırla.
+
+Kurallar:
+
+Sorular sadece metindeki bilgilere dayanmalıdır.
+
+Sorular, Bloom Taksonomisi'nin "Kavrama", "Analiz" ve "Uygulama" basamaklarını hedeflemelidir. Ezbere "Nedir?" sorularından kaçın.
+
+Çeldiriciler (Diğer seçenekler): Çeldiriciler çok güçlü olmalı. Konuyla ilgili, mantıklı ama net olarak yanlış olmalılar. Saçma sapan seçenekler koyma.
+
+Açıklama: Her soru için, doğru cevabın neden doğru olduğunu ve diğer çeldiricilerin neden yanlış olduğunu açıklayan bir aciklama metni yaz.
+
+Format (HAYATİ!): Çıktıyı sadece ve sadece aşağıdaki JSON formatında bir dizi (array) olarak ver. Başka hiçbir açıklama metni ekleme.
+
+JSON Formatı:
+
+JSON
+[
+  {
+    "kategori": "[KONU ADI]",
+    "zorluk": "orta", // "kolay", "orta" veya "zor" olarak belirle
+    "soruMetni": "...",
+    "secenekler": [
+      "...",
+      "...",
+      "...",
+      "..."
+    ],
+    "dogruCevapIndex": 0,
+    "aciklama": "Neden bu cevap doğru ve diğerleri yanlış..."
+  }
+]
+İşte Metin: [Temizlediğin PDF metnini buraya yapıştır]
+
+4. 👨‍🏫 Adım 3: Uzman Vetosu (En Kritik Aşama)
+AI'ın ürettiği JSON çıktısını al. Şimdi senin uzmanlığın başlıyor. Her bir soruyu tek tek incele:
+
+Bilgi Doğruluğu: Doğru cevap gerçekten doğru mu? aciklama metni mantıklı mı?
+
+Çeldirici Gücü: Çeldiriciler zayıf mı? "Dört seçenekten ikisi bariz yanlış, ikisi arasında kaldım" hissini yaratıyor mu? Yaratmalı. Gerekirse çeldiricileri kendin yeniden yaz.
+
+Anlam Bulanıklığı: Soru kökü net mi? İki anlama gelebilecek (muğlak) ifadeler var mı? Düzelt.
+
+"Negatif Kök" Kullanımı: "değildir?", "söylenemez?", "yanlıştır?" gibi sorular vize için önemlidir ama çok sık kullanma. Kullanıyorsan, negatif eki bold ("değildir?") veya BÜYÜK harfle yazarak JSON'a kaydet ki React tarafında bunu vurgulayabilesin.
+
+5. 🗃️ Adım 4: Nihai JSON'u Oluşturma
+Tüm parçalardan (chunk) ürettiğin soruları tek bir devasa sorular.json dosyasında birleştir.
+
+Bu süreçte mutlaka her soruya benzersiz bir id alanı eklemeyi unutma.
+
+JSON
+{
+  "id": 1001, // Bu ID'yi sen vereceksin.
+  "kategori": "Ölçme ve Değerlendirme",
+  ...
+},
+{
+  "id": 1002,
+  "kategori": "Ölçme ve Değerlendirme",
+  ...
+},
+{
+  "id": 2001, // Belki 2000'ler Gelişim Psikolojisi'dir.
+  "kategori": "Gelişim Psikolojisi",
+  ...
+}
+Bu id alanı, daha önce konuştuğumuz "Yanlışlar Bankası" ve "Akıllı Tekrar" özelliklerinin localStorage üzerinde çalışması için teknik bir zorunluluktur.
+
+Sonuç:
+
+Evet, bu önden ciddi bir hamallık gerektirecek. 150 sağlam soruyu bu yöntemle hazırlamak belki de 1-2 tam gününü alacak.
+
+Ama sonuçta elde edeceğin şey, piyasadaki "çöp" quiz uygulamalarından fersah fersah önde, pedagojik olarak değerli, teknik olarak ışık hızında çalışan ve öğrenciler için gerçekten "vazgeçilmez" olacak bir kaynak olacaktır. Kalite, bu ön hazırlıkta gizli.
+
+Bu JSON üretim sürecinde AI'dan daha spesifik bir konuda (örneğin, "iyi bir çeldirici nasıl yazılır" veya "Bloom Taksonomisi'ne göre soru tipleri") destek istersen, hemen sorabilirsin.
