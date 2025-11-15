@@ -21,6 +21,10 @@ const ModeButton: React.FC<ModeButtonProps> = ({
 }) => {
   const navigate = useNavigate();
 
+  const chevronAnimation = disabled
+    ? { opacity: 0.25, x: 0 }
+    : { opacity: 1, x: 6 };
+
   const handleClick = () => {
     if (disabled) return;
     
@@ -33,9 +37,10 @@ const ModeButton: React.FC<ModeButtonProps> = ({
 
   return (
     <motion.button 
+      type="button"
       onClick={handleClick}
       disabled={disabled}
-      className={`mode-button ${disabled ? 'disabled' : ''} ${className}`}
+      className={`mode-button ${disabled ? 'is-disabled' : ''} ${className}`}
       whileHover={!disabled ? { y: -5, scale: 1.02 } : {}}
       whileTap={!disabled ? { scale: 0.98 } : {}}
       initial={{ opacity: 0, y: 25 }}
@@ -45,22 +50,34 @@ const ModeButton: React.FC<ModeButtonProps> = ({
         ease: "easeOut"
       }}
     >
-      <span className="text-lg font-semibold">{title}</span>
-      {typeof badge === 'number' && badge > 0 && (
-        <motion.span 
-          className="badge"
-          initial={{ scale: 0, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ 
-            type: "spring",
-            stiffness: 600,
-            damping: 25,
-            duration: 0.2
-          }}
-        >
-          {badge}
-        </motion.span>
-      )}
+      <span className="mode-button__glow" aria-hidden="true" />
+      <div className="mode-button__main">
+        <span className="mode-button__label">{title}</span>
+        {typeof badge === 'number' && badge > 0 && (
+          <motion.span 
+            className="mode-button__badge"
+            initial={{ scale: 0, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ 
+              type: "spring",
+              stiffness: 600,
+              damping: 25,
+              duration: 0.2
+            }}
+          >
+            {badge}
+          </motion.span>
+        )}
+      </div>
+      <motion.span
+        className="mode-button__chevron"
+        initial={{ opacity: 0, x: -4 }}
+        animate={chevronAnimation}
+        transition={{ duration: 0.25 }}
+        aria-hidden="true"
+      >
+        →
+      </motion.span>
     </motion.button>
   );
 };

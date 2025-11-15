@@ -28,12 +28,13 @@ const StreakIndicator: React.FC<StreakIndicatorProps> = ({ count }) => {
         🔥
       </motion.span>
       <motion.span 
-        className="text-base font-bold"
+        className="streak-count"
         initial={{ opacity: 0, y: 5 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3 }}
       >
-        {count} Günlük Seri!
+        <span className="streak-count-number">{count}</span>
+        <span className="streak-count-label">Günlük Seri</span>
       </motion.span>
     </motion.div>
   );

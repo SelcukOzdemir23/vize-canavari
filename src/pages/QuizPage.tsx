@@ -19,6 +19,12 @@ const QuizPage = () => {
   const [showNextButton, setShowNextButton] = useState(false);
   const nextButtonRef = useRef<HTMLButtonElement>(null);
   const autoNavigateTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const modeLabels: Record<string, string> = {
+    standard: 'Rastgele Test',
+    'mistake-bank': 'Yanlışlarım',
+    'smart-review': 'Akıllı Tekrar',
+    custom: 'Özel Test'
+  };
   
   // Load questions based on mode
   useEffect(() => {
@@ -131,6 +137,11 @@ const QuizPage = () => {
     );
   };
   
+  const totalQuestions = currentQuiz.questions.length;
+  const remainingQuestions = Math.max(totalQuestions - (currentQuestionIndex + 1), 0);
+  const streakCount = userSession.streak.count;
+  const activeMode = mode ?? currentQuiz.mode;
+  const modeLabel = modeLabels[activeMode] ?? 'Quiz Modu';
   const currentQuestion = currentQuiz.questions[currentQuestionIndex];
   
   return (
@@ -144,6 +155,26 @@ const QuizPage = () => {
         current={currentQuestionIndex + 1} 
         total={currentQuiz.questions.length} 
       />
+
+      <motion.div 
+        className="hud-grid quiz-hud"
+        initial={{ opacity: 0, y: 12 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.15, duration: 0.4 }}
+      >
+        <div className="hud-card">
+          <span className="hud-label">Mod</span>
+          <span className="hud-value">{modeLabel}</span>
+        </div>
+        <div className="hud-card">
+          <span className="hud-label">Kalan</span>
+          <span className="hud-value">{remainingQuestions} soru</span>
+        </div>
+        <div className="hud-card">
+          <span className="hud-label">Seri</span>
+          <span className="hud-value">{streakCount} 🔥</span>
+        </div>
+      </motion.div>
       
       <div className="question-container">
         <AnimatePresence mode="wait">

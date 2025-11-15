@@ -8,12 +8,18 @@ import ModeButton from '../components/ModeButton';
 const ResultsPage: React.FC = () => {
   const { mode } = useParams<{ mode: string }>();
   const navigate = useNavigate();
-  const { currentQuiz } = useQuizStore();
+  const { currentQuiz, userSession } = useQuizStore();
   const [showConfetti, setShowConfetti] = useState(false);
   const [windowSize, setWindowSize] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
   });
+  const modeLabels: Record<string, string> = {
+    standard: 'Rastgele Test',
+    'mistake-bank': 'Yanlışlarım',
+    'smart-review': 'Akıllı Tekrar',
+    custom: 'Özel Test'
+  };
 
   // Handle window resize for confetti
   useEffect(() => {
@@ -81,19 +87,34 @@ const ResultsPage: React.FC = () => {
 
   // Get message based on score
   const getResultMessage = () => {
-    if (score >= 90) return "Mükemmel! 🎉";
-    if (score >= 80) return "Harika iş! 👏";
-    if (score >= 70) return "İyi gidiyorsun! 👍";
-    if (score >= 60) return "İdare eder 😊";
-    return "Daha fazla çalışman gerekiyor 💪";
+    if (score >= 90) return "Mükemmel performans";
+    if (score >= 80) return "Güçlü bir sonuç";
+    if (score >= 70) return "Tutarlı ilerleme";
+    if (score >= 60) return "İstikrarlı bir tempo";
+    return "Ek pratik önerilir";
   };
 
   // Get color based on score
   const getScoreColor = () => {
-    if (score >= 80) return "#4CAF50"; // Green
-    if (score >= 60) return "#FFC107"; // Yellow
-    return "#F44336"; // Red
+    if (score >= 80) return "var(--primary)";
+    if (score >= 60) return "var(--secondary)";
+    return "var(--accent)";
   };
+
+  const getFollowUpAction = () => {
+    if (incorrectAnswers === 0) {
+      return 'Harika! Temponu korumak için yeni bir rastgele test başlat ve serine ekstra enerji kat.';
+    }
+    if (incorrectAnswers <= 3) {
+      return 'Yanlışlarını sıcak sıcak temizle: Mistake Bank modu ile bu soruları tekrar çözerek serini büyüt.';
+    }
+    return 'En çok zorlandığın konuları Mistake Bank ve Akıllı Tekrar ile hedefe odaklayarak güçlen.';
+  };
+
+  const streakCount = userSession.streak.count;
+  const activeMode = mode ?? currentQuiz?.mode ?? 'standard';
+  const modeLabel = modeLabels[activeMode] ?? 'Quiz Modu';
+  const followUpMessage = getFollowUpAction();
 
   return (
     <motion.div 
@@ -107,7 +128,8 @@ const ResultsPage: React.FC = () => {
           width={windowSize.width}
           height={windowSize.height}
           recycle={false}
-          numberOfPieces={500}
+          numberOfPieces={260}
+          colors={["#6366F1", "#0EA5E9", "#F97316", "#F43F5E", "#22C55E"]}
         />
       )}
 
@@ -160,6 +182,26 @@ const ResultsPage: React.FC = () => {
         </div>
       </motion.div>
 
+      <motion.div 
+        className="hud-grid result-hud"
+        initial={{ opacity: 0, y: 16 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.4, duration: 0.45 }}
+      >
+        <div className="hud-card">
+          <span className="hud-label">Mod</span>
+          <span className="hud-value">{modeLabel}</span>
+        </div>
+        <div className="hud-card">
+          <span className="hud-label">Seri</span>
+          <span className="hud-value">{streakCount} 🔥</span>
+        </div>
+        <div className="hud-card">
+          <span className="hud-label">Yanlış</span>
+          <span className="hud-value">{incorrectAnswers}</span>
+        </div>
+      </motion.div>
+
       {/* Summary */}
       <motion.div 
         className="results-summary"
@@ -172,6 +214,7 @@ const ResultsPage: React.FC = () => {
         <p>
           {total} sorudan {correctAnswers} tanesini doğru bildin.
         </p>
+        <p className="result-tip">{followUpMessage}</p>
         <div className="stats-container">
           <div className="stat-item">
             <div className="stat-value correct">{correctAnswers}</div>

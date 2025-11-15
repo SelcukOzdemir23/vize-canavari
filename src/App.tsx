@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
-import './index.css';
 
 // Pages
 import HomePage from './pages/HomePage';
@@ -11,8 +10,8 @@ import CustomQuizPage from './pages/CustomQuizPage';
 function App() {
   return (
     <Router>
-      <div className="w-full min-h-screen flex flex-col">
-        <main className="flex-1 flex flex-col w-full">
+      <div className="app-shell">
+        <main className="app-content">
           <AnimatePresence mode="wait">
             <Routes>
               <Route path="/" element={<HomePage />} />

@@ -67,10 +67,15 @@ const CustomQuizPage = () => {
   }, [filteredQuestions, questionCount, maxQuestions]);
 
   const handleStartQuiz = () => {
+    if (!filteredQuestions.length) {
+      return;
+    }
+
     // Get filtered and shuffled questions
+    const count = Math.min(questionCount, filteredQuestions.length);
     const questions = [...filteredQuestions]
       .sort(() => Math.random() - 0.5)
-      .slice(0, questionCount);
+      .slice(0, count);
 
     // Initialize the quiz
     initializeQuiz(questions, 'custom');
@@ -79,77 +84,116 @@ const CustomQuizPage = () => {
     navigate('/quiz/custom');
   };
 
+  const sliderMin = filteredQuestions.length > 0 ? Math.min(5, maxQuestions) : 5;
+  const sliderMax = Math.max(maxQuestions, sliderMin);
+  const hasQuestions = filteredQuestions.length > 0;
+  const displayedQuestionCount = hasQuestions ? Math.min(questionCount, sliderMax) : 0;
+
+  useEffect(() => {
+    if (!hasQuestions) {
+      setQuestionCount(10);
+      return;
+    }
+
+    setQuestionCount(prev => {
+      if (prev < sliderMin) return sliderMin;
+      if (prev > sliderMax) return sliderMax;
+      return prev;
+    });
+  }, [hasQuestions, sliderMin, sliderMax]);
+
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-8 px-4">
-      <h1 className="text-4xl md:text-5xl font-extrabold text-center mb-8 text-gradient-primary">
-        ⚙️ Özel Test Oluştur
-      </h1>
+    <div className="custom-quiz-page">
+      <div className="custom-quiz-container">
+        <header className="custom-quiz-header">
+          <span aria-hidden="true" className="custom-quiz-icon">⚙️</span>
+          <h1>Özel Test Oluştur</h1>
+          <p>İhtiyacına göre kategori, seviye ve soru sayısını seç.</p>
+        </header>
 
-      <div className="w-full max-w-2xl bg-white/80 backdrop-blur-lg rounded-3xl shadow-2xl p-8 space-y-6 border border-white/50">
-        <div className="space-y-2">
-          <label htmlFor="category" className="block text-lg font-bold text-slate-800">
-            📚 Kategori
-          </label>
-          <select
-            id="category"
-            value={selectedCategory}
-            onChange={(e) => setSelectedCategory(e.target.value)}
-            className="w-full px-4 py-3 bg-slate-50 border-2 border-slate-200 rounded-xl text-base font-medium text-slate-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition-all"
-          >
-            <option value="all">Tüm Kategoriler</option>
-            {categories.map(category => (
-              <option key={category} value={category}>{category}</option>
-            ))}
-          </select>
+        <div className="custom-quiz-badges">
+          <span className="custom-quiz-badge">🎯 Odaklı çalışma</span>
+          <span className="custom-quiz-badge">🧠 Spaced repetition dostu</span>
+          <span className="custom-quiz-badge">⚡ 1 dakikada hazır</span>
         </div>
 
-        <div className="space-y-2">
-          <label htmlFor="difficulty" className="block text-lg font-bold text-slate-800">
-            🎯 Zorluk Seviyesi
-          </label>
-          <select
-            id="difficulty"
-            value={selectedDifficulty}
-            onChange={(e) => setSelectedDifficulty(e.target.value)}
-            className="w-full px-4 py-3 bg-slate-50 border-2 border-slate-200 rounded-xl text-base font-medium text-slate-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition-all"
-          >
-            <option value="all">Tüm Seviyeler</option>
-            {difficultyLevels.map(level => (
-              <option key={level} value={level}>{level.charAt(0).toUpperCase() + level.slice(1)}</option>
-            ))}
-          </select>
-        </div>
-
-        <div className="space-y-2">
-          <label htmlFor="questionCount" className="block text-lg font-bold text-slate-800">
-            🔢 Soru Sayısı: <span className="text-indigo-600">{questionCount}</span>
-          </label>
-          <input
-            id="questionCount"
-            type="range"
-            min="5"
-            max={maxQuestions}
-            value={questionCount}
-            onChange={(e) => setQuestionCount(parseInt(e.target.value))}
-            className="w-full h-3 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-indigo-600"
-          />
-          <div className="flex justify-between text-sm text-slate-600 font-medium">
-            <span>5</span>
-            <span>{maxQuestions} (maksimum)</span>
+        <section className="custom-quiz-card">
+          <div className="form-field">
+            <label htmlFor="category" className="field-label">
+              Kategori
+            </label>
+            <select
+              id="category"
+              value={selectedCategory}
+              onChange={(e) => setSelectedCategory(e.target.value)}
+              className="field-input"
+            >
+              <option value="all">Tüm kategoriler</option>
+              {categories.map(category => (
+                <option key={category} value={category}>{category}</option>
+              ))}
+            </select>
           </div>
-        </div>
 
-        <div className="pt-4 space-y-4">
-          <p className="text-center text-base text-slate-600 bg-indigo-50 py-3 px-4 rounded-xl border border-indigo-100">
-            Mevcut <strong className="text-indigo-600">{filteredQuestions.length}</strong> soru arasından <strong className="text-indigo-600">{questionCount}</strong> tanesi seçilecek
+          <div className="form-field">
+            <label htmlFor="difficulty" className="field-label">
+              Zorluk seviyesi
+            </label>
+            <select
+              id="difficulty"
+              value={selectedDifficulty}
+              onChange={(e) => setSelectedDifficulty(e.target.value)}
+              className="field-input"
+            >
+              <option value="all">Tüm seviyeler</option>
+              {difficultyLevels.map(level => (
+                <option key={level} value={level}>{level.charAt(0).toUpperCase() + level.slice(1)}</option>
+              ))}
+            </select>
+          </div>
+
+          <div className="form-field">
+            <label htmlFor="questionCount" className="field-label">
+              Soru sayısı <span className="field-hint">{Math.min(questionCount, sliderMax)}</span>
+            </label>
+            <input
+              id="questionCount"
+              type="range"
+              min={sliderMin}
+              max={sliderMax}
+              value={Math.min(questionCount, sliderMax)}
+              onChange={(e) => setQuestionCount(parseInt(e.target.value, 10))}
+              className="range-input"
+              disabled={!hasQuestions}
+            />
+            <div className="range-meta" aria-live="polite">
+              <span>Min: {sliderMin}</span>
+              <span>
+                Maks: {maxQuestions || 0}
+              </span>
+            </div>
+          </div>
+
+          <p className="custom-quiz-summary" role="status">
+            {hasQuestions ? (
+              <>
+                Filtreye uyan <span>{filteredQuestions.length}</span> soru içinden{' '}
+                <span>{displayedQuestionCount}</span> adet seçilecektir.
+              </>
+            ) : (
+              <>Seçilen filtre ile eşleşen soru bulunamadı.</>
+            )}
           </p>
+
           <button
+            type="button"
             onClick={handleStartQuiz}
-            className="w-full px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-lg font-bold rounded-2xl shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+            className="primary-action"
+            disabled={!hasQuestions}
           >
-            🚀 Testi Başlat
+            Testi Başlat
           </button>
-        </div>
+        </section>
       </div>
     </div>
   );
