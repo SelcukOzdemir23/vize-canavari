@@ -58,7 +58,7 @@ const HomePage = () => {
             transition={{ duration: 0.4 }}
           >
             <img
-              src="/logo.png"
+              src={`${import.meta.env.BASE_URL}logo.png`}
               alt="Vize Canavarı"
               className="h-16 w-16 rounded-xl sm:h-20 sm:w-20"
             />
@@ -101,7 +101,7 @@ const WeekSelector: React.FC<WeekSelectorProps> = ({ mistakeBankCount }) => {
   const [showModal, setShowModal] = React.useState(false);
 
   React.useEffect(() => {
-    fetch('/sorular.json')
+    fetch(`${import.meta.env.BASE_URL}sorular.json`)
       .then(res => res.json())
       .then(questions => {
         const weekMap = new Map<number, number>();

@@ -27,7 +27,7 @@ const QuizPage = () => {
   useEffect(() => {
     const loadQuestions = async () => {
       try {
-        const response = await fetch('/sorular.json');
+        const response = await fetch(`${import.meta.env.BASE_URL}sorular.json`);
         const rawQuestions = await response.json();
         const allQuestions = normalizeQuestionArray(rawQuestions);
         

@@ -22,7 +22,7 @@ const CustomQuizPage = () => {
   useEffect(() => {
     const loadQuestions = async () => {
       try {
-        const response = await fetch('/sorular.json');
+        const response = await fetch(`${import.meta.env.BASE_URL}sorular.json`);
         const data = await response.json();
         setQuestions(normalizeQuestionArray(data));
       } catch (error) {

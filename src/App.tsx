@@ -7,8 +7,10 @@ import QuizPage from './pages/QuizPage';
 import ResultsPage from './pages/ResultsPage';
 
 function App() {
+  const basename = import.meta.env.MODE === 'production' ? '/vize-canavari' : '/';
+  
   return (
-    <Router basename="/vize-canavari">
+    <Router basename={basename}>
       <div className="relative h-screen overflow-hidden bg-canvas-950 text-white">
         <div className="relative mx-auto flex h-full w-full max-w-7xl flex-col p-4 sm:p-6">
           <span
