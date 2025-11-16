@@ -29,7 +29,6 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, onAnswer }) => {
     setIsAnswered(false);
     setShowExplanation(false);
   }, [question.id]);
-  const formatLabel = (value: string) => value ? value.charAt(0).toUpperCase() + value.slice(1) : '';
 
   const handleSelectAnswer = (index: number) => {
     if (isAnswered) return;
