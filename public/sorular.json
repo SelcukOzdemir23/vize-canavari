@@ -162,7 +162,7 @@
       "İstatistik bilmek"
     ],
     "dogruCevap": "Açık fikirli olmak",
-    "aciklama": "Açık fikirlilik [cite: 33], araştırmacının kendi önyargılarına [cite: 34] veya inançlarına karşıt olan kanıtları [cite: 37] dahi objektif bir şekilde değerlendirmesini gerektirir."
+    "aciklama": "Açık fikirlilik , araştırmacının kendi önyargılarına veya inançlarına karşıt olan kanıtları dahi objektif bir şekilde değerlendirmesini gerektirir."
   },
   {
     "id": "eay_1_12",
@@ -192,14 +192,14 @@
       "Bilimsel Yöntem"
     ],
     "dogruCevap": "Görüş Birliği",
-    "aciklama": "Görüş birliği[cite: 24], bir grubun çoğunluğunun veya tamamının bir fikri doğru kabul etmesi yoluyla bilgi edinilmesidir."
+    "aciklama": "Görüş birliği, bir grubun çoğunluğunun veya tamamının bir fikri doğru kabul etmesi yoluyla bilgi edinilmesidir."
   },
   {
     "id": "eay_1_14",
     "konu": "Bilimin Anlamı",
     "zorluk": "Kolay",
     "tip": "PDF Dışı",
-    "soruMetni": "Aşağıdakilerden hangisi bilimin (kanıta dayalı ve sistematik bilgi) [cite: 17] kapsamına girmez?",
+    "soruMetni": "Aşağıdakilerden hangisi bilimin (kanıta dayalı ve sistematik bilgi) kapsamına girmez?",
     "secenekler": [
       "Astroloji (Burç Yorumları)",
       "Biyoloji (Canlıların İncelenmesi)",
@@ -207,7 +207,7 @@
       "Kimya (Maddenin Yapısı)"
     ],
     "dogruCevap": "Astroloji (Burç Yorumları)",
-    "aciklama": "Bilim, kanıta dayalı ve test edilebilir olmalıdır[cite: 17]. Astroloji, test edilebilir ve kanıta dayalı sistematik bir yöntem kullanmadığı için bilim olarak kabul edilmez."
+    "aciklama": "Bilim, kanıta dayalı ve test edilebilir olmalıdır. Astroloji, test edilebilir ve kanıta dayalı sistematik bir yöntem kullanmadığı için bilim olarak kabul edilmez."
   },
   {
     "id": "eay_1_15",
@@ -222,7 +222,7 @@
       "İstatistik bilmek"
     ],
     "dogruCevap": "Yanılabileceğini düşünmek (olasılıksal bakış)",
-    "aciklama": "Bilimsel bilgi mutlak değildir. İyi bir araştırmacı, kendi bulgularının bile yanlışlanabileceğini veya eksik olabileceğini kabul eder ve kesin ifadelerden kaçınır[cite: 40]."
+    "aciklama": "Bilimsel bilgi mutlak değildir. İyi bir araştırmacı, kendi bulgularının bile yanlışlanabileceğini veya eksik olabileceğini kabul eder ve kesin ifadelerden kaçınır."
   },
   {
     "id": "eay_1_16",
@@ -252,7 +252,7 @@
       "Önyargı"
     ],
     "dogruCevap": "Kuşkuculuk",
-    "aciklama": "Kuşkuculuk [cite: 36], iddiaları yeterli kanıt [cite: 38] olmadan kabul etmemeyi ve eleştirel bir sorgulama yapmayı gerektirir."
+    "aciklama": "Kuşkuculuk , iddiaları yeterli kanıt olmadan kabul etmemeyi ve eleştirel bir sorgulama yapmayı gerektirir."
   },
   {
     "id": "eay_1_18",
@@ -267,7 +267,7 @@
       "Görüş Birliği"
     ],
     "dogruCevap": "Mantık (Tümevarım)",
-    "aciklama": "Bu, özel gözlemlerden (tek tek kuğular) genel bir kurala (tüm kuğular) ulaşma eylemidir. Bu akıl yürütme biçimi 'Mantık' [cite: 26] (spesifik olarak tümevarım) olarak bilinir."
+    "aciklama": "Bu, özel gözlemlerden (tek tek kuğular) genel bir kurala (tüm kuğular) ulaşma eylemidir. Bu akıl yürütme biçimi 'Mantık'  (spesifik olarak tümevarım) olarak bilinir."
   },
   {
     "id": "eay_1_19",
@@ -282,7 +282,7 @@
       "Sabırlı olmak"
     ],
     "dogruCevap": "Önyargılı olmamak",
-    "aciklama": "Önyargılı olmamak[cite: 34], araştırmacının kişisel duygularının, inançlarının veya tercihlerinin, verileri veya argümanları analiz etme sürecini etkilemesine izin vermemesi anlamına gelir."
+    "aciklama": "Önyargılı olmamak, araştırmacının kişisel duygularının, inançlarının veya tercihlerinin, verileri veya argümanları analiz etme sürecini etkilemesine izin vermemesi anlamına gelir."
   },
   {
     "id": "eay_1_20",
@@ -297,7 +297,7 @@
       "Hangisi daha mantıklı geliyorsa onu (Mantık)"
     ],
     "dogruCevap": "Deney sonuçlarını (Bilimsel Yöntem), çünkü kanıta dayalıdır",
-    "aciklama": "Bilimsel hiyerarşide, 'Bilimsel Yöntem' [cite: 27] (sistematik, kanıta dayalı [cite: 17] deneyler) her zaman 'Uzman Görüşünden' [cite: 25] daha güçlü bir bilgi kaynağıdır. Uzmanlar da yanılabilir."
+    "aciklama": "Bilimsel hiyerarşide, 'Bilimsel Yöntem' (sistematik, kanıta dayalı deneyler) her zaman 'Uzman Görüşünden' daha güçlü bir bilgi kaynağıdır. Uzmanlar da yanılabilir."
   },
   {
     "id": "eay_1_31",
