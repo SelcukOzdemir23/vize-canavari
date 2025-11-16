@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useQuizStore } from '../store/quizStore';
 import ModeButton from '../components/ModeButton';
 
@@ -100,6 +100,7 @@ interface WeekSelectorProps {
 
 const WeekSelector: React.FC<WeekSelectorProps> = ({ mistakeBankCount }) => {
   const [weeks, setWeeks] = React.useState<Array<{ week: number; count: number }>>([]);
+  const [showModal, setShowModal] = React.useState(false);
 
   React.useEffect(() => {
     fetch('/sorular.json')
@@ -124,36 +125,77 @@ const WeekSelector: React.FC<WeekSelectorProps> = ({ mistakeBankCount }) => {
   const weekDescriptions: Record<number, string> = {
     1: 'Bilimin temelleri',
     3: 'Paradigma & Değişkenler',
-    4: 'Hipotez & Konu seçimi'
+    4: 'Hipotez & Konu seçimi',
+    5: 'Evren & Örnekleme',
+    7: 'Amaçlı Örnekleme'
   };
 
   return (
-    <div className="flex w-full flex-col gap-3 p-4 sm:p-6">
-      <ModeButton to="/quiz/standard" title="🎲 Rastgele Test" description="Tüm haftalardan 5 soru" />
-      
-      <div className="mt-2">
-        <h2 className="mb-3 text-sm font-bold uppercase tracking-wider text-text-muted">📅 Hafta Seç</h2>
+    <>
+      <div className="flex w-full flex-col gap-3 p-4 sm:p-6">
         <div className="grid gap-3 sm:grid-cols-2">
-          {weeks.map(({ week, count }) => (
-            <ModeButton
-              key={week}
-              to={`/quiz/week/${week}`}
-              title={`${weekEmojis[(week - 1) % weekEmojis.length]} ${week}. Hafta`}
-              description={weekDescriptions[week] || `${count} soru`}
-            />
-          ))}
+          <ModeButton to="/quiz/standard" title="🎲 Rastgele Test" description="Tüm haftalardan 5 soru" />
+          <ModeButton
+            to="/quiz/mistake-bank"
+            title="❌ Yanlışlarım"
+            description="Hata bankanı temizle"
+            disabled={mistakeBankCount === 0}
+            badge={mistakeBankCount}
+          />
         </div>
+        
+        <button
+          onClick={() => setShowModal(true)}
+          className="group relative flex w-full items-center justify-between gap-3 rounded-2xl border-2 border-primary-500/30 bg-white px-6 py-5 text-left text-text-primary transition-all duration-200 hover:scale-[1.02] hover:-translate-y-1 hover:border-primary-500 active:scale-100 active:translate-y-0"
+          style={{ boxShadow: 'var(--shadow-md)' }}
+        >
+          <div className="flex flex-1 flex-col gap-1">
+            <span className="text-base font-bold">📅 Hafta Seç</span>
+            <span className="text-sm text-text-muted">{weeks.length} hafta mevcut</span>
+          </div>
+          <span className="text-xl text-text-muted transition-transform group-hover:translate-x-1">
+            →
+          </span>
+        </button>
       </div>
 
-      <ModeButton
-        to="/quiz/mistake-bank"
-        title="❌ Yanlışlarım"
-        description="Hata bankanı temizle"
-        disabled={mistakeBankCount === 0}
-        badge={mistakeBankCount}
-        className="mt-2"
-      />
-    </div>
+      {showModal && (
+        <motion.div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          onClick={() => setShowModal(false)}
+        >
+          <motion.div
+            className="relative max-h-[80vh] w-full max-w-2xl overflow-y-auto rounded-3xl bg-bg-primary p-6"
+            style={{ boxShadow: 'var(--shadow-xl)' }}
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="mb-6 flex items-center justify-between">
+              <h2 className="text-2xl font-black text-text-primary">📅 Hafta Seç</h2>
+              <button
+                onClick={() => setShowModal(false)}
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-bg-tertiary text-text-primary transition-all hover:scale-110"
+              >
+                ✕
+              </button>
+            </div>
+            <div className="grid gap-3 sm:grid-cols-2">
+              {weeks.map(({ week, count }) => (
+                <ModeButton
+                  key={week}
+                  to={`/quiz/week/${week}`}
+                  title={`${weekEmojis[(week - 1) % weekEmojis.length]} ${week}. Hafta`}
+                  description={weekDescriptions[week] || `${count} soru`}
+                />
+              ))}
+            </div>
+          </motion.div>
+        </motion.div>
+      )}
+    </>
   );
 };
 

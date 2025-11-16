@@ -96,7 +96,7 @@ const CustomQuizPage = () => {
 
   return (
     <div
-      className="relative flex h-full w-full flex-col overflow-y-auto rounded-2xl border border-white/10 bg-gradient-to-br from-surface-900/95 to-surface-800/90 backdrop-blur-xl"
+      className="relative flex h-full w-full flex-col overflow-y-auto rounded-2xl border border-white/10 bg-linear-to-br from-surface-900/95 to-surface-800/90 backdrop-blur-xl"
       style={{ boxShadow: 'var(--shadow-xl)' }}
     >
       <span
@@ -116,7 +116,7 @@ const CustomQuizPage = () => {
           >
             ⚙️
           </motion.span>
-          <h1 className="bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-2xl font-bold tracking-tight text-transparent sm:text-3xl">
+          <h1 className="bg-linear-to-r from-primary-400 to-secondary-400 bg-clip-text text-2xl font-bold tracking-tight text-transparent sm:text-3xl">
             Özel Test Oluştur
           </h1>
           <p className="text-sm text-white/70">
@@ -126,7 +126,7 @@ const CustomQuizPage = () => {
 
 
 
-        <section className="mt-6 w-full max-w-md space-y-4 rounded-xl border border-white/10 bg-gradient-to-br from-surface-800/85 to-surface-700/75 p-4 text-left backdrop-blur-md">
+        <section className="mt-6 w-full max-w-md space-y-4 rounded-xl border border-white/10 bg-linear-to-br from-surface-800/85 to-surface-700/75 p-4 text-left backdrop-blur-md">
           <div className="space-y-2">
             <label htmlFor="category" className="text-xs font-semibold text-white">
               📚 Kategori
@@ -198,7 +198,7 @@ const CustomQuizPage = () => {
           <motion.button
             type="button"
             onClick={handleStartQuiz}
-            className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-primary-400 to-secondary-400 py-3 text-sm font-bold text-white transition-all disabled:cursor-not-allowed disabled:opacity-50"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-linear-to-r from-primary-400 to-secondary-400 py-3 text-sm font-bold text-white transition-all disabled:cursor-not-allowed disabled:opacity-50"
             disabled={!hasQuestions}
             whileHover={hasQuestions ? { scale: 1.02 } : {}}
             whileTap={hasQuestions ? { scale: 0.98 } : {}}

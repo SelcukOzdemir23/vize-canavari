@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useQuizStore, type Question } from '../store/quizStore';
@@ -17,8 +17,6 @@ const QuizPage = () => {
   
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [showNextButton, setShowNextButton] = useState(false);
-  const nextButtonRef = useRef<HTMLButtonElement>(null);
-  const autoNavigateTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
   const modeLabels: Record<string, string> = {
     standard: 'Rastgele Test',
     'mistake-bank': 'Yanlışlarım',
@@ -77,12 +75,6 @@ const QuizPage = () => {
   // Reset next button visibility when question changes
   useEffect(() => {
     setShowNextButton(false);
-    
-    // Clear any existing timeout
-    if (autoNavigateTimeout.current) {
-      clearTimeout(autoNavigateTimeout.current);
-      autoNavigateTimeout.current = null;
-    }
   }, [currentQuestionIndex]);
   
   const handleAnswer = (questionId: string, selectedIndex: number) => {
@@ -102,20 +94,7 @@ const QuizPage = () => {
     }
   };
   
-  // Auto-navigate to next question when progress bar fills
-  useEffect(() => {
-    if (showNextButton && nextButtonRef.current) {
-      autoNavigateTimeout.current = setTimeout(() => {
-        handleNext();
-      }, 3000); // 3 seconds delay
-    }
-    
-    return () => {
-      if (autoNavigateTimeout.current) {
-        clearTimeout(autoNavigateTimeout.current);
-      }
-    };
-  }, [showNextButton]);
+
   
   if (!currentQuiz) {
     return (
@@ -128,12 +107,12 @@ const QuizPage = () => {
         >
           <div className="relative">
             <motion.div
-              className="absolute inset-0 rounded-full bg-gradient-to-r from-primary-500 to-accent-400 blur-2xl opacity-50"
+              className="absolute inset-0 rounded-full bg-linear-to-r from-primary-500 to-accent-400 blur-2xl opacity-50"
               animate={{ scale: [1, 1.2, 1] }}
               transition={{ duration: 2, repeat: Infinity }}
             />
             <motion.div
-              className="relative flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-primary-500 to-accent-400"
+              className="relative flex h-20 w-20 items-center justify-center rounded-full bg-linear-to-br from-primary-500 to-accent-400"
               animate={{ rotate: 360 }}
               transition={{ duration: 2, repeat: Infinity, ease: 'linear' }}
             >
@@ -184,7 +163,7 @@ const QuizPage = () => {
   if (!currentQuestion) {
     return (
       <motion.div
-        className="relative flex flex-1 flex-col items-center justify-center overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-surface-900/90 to-surface-800/80 p-8 backdrop-blur-lg"
+        className="relative flex flex-1 flex-col items-center justify-center overflow-hidden rounded-3xl border border-white/10 bg-linear-to-br from-surface-900/90 to-surface-800/80 p-8 backdrop-blur-lg"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
@@ -200,7 +179,7 @@ const QuizPage = () => {
           <motion.button
             type="button"
             onClick={() => navigate('/')}
-            className="inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-primary-400 to-secondary-400 px-6 py-3 text-base font-bold text-white"
+            className="inline-flex items-center justify-center gap-2 rounded-xl bg-linear-to-r from-primary-400 to-secondary-400 px-6 py-3 text-base font-bold text-white"
             whileHover={{ scale: 1.02, y: -2 }}
             whileTap={{ scale: 0.98 }}
             style={{ boxShadow: 'var(--shadow-glow-primary)' }}
@@ -236,7 +215,7 @@ const QuizPage = () => {
 
         <div className="mt-3 h-2 w-full overflow-hidden rounded-full bg-bg-tertiary">
           <motion.div
-            className="h-full rounded-full bg-gradient-to-r from-primary-500 to-accent-400"
+            className="h-full rounded-full bg-linear-to-r from-primary-500 to-accent-400"
             initial={{ width: 0 }}
             animate={{ width: `${((currentQuestionIndex + 1) / totalQuestions) * 100}%` }}
             transition={{ duration: 0.3 }}
@@ -264,8 +243,7 @@ const QuizPage = () => {
         <AnimatePresence>
           {showNextButton && (
             <motion.button
-              ref={nextButtonRef}
-              className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-primary-500 to-accent-400 py-4 text-lg font-black uppercase tracking-wide text-white sm:w-auto sm:self-end sm:px-12"
+              className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-linear-to-r from-primary-500 to-accent-400 py-4 text-lg font-black uppercase tracking-wide text-white sm:w-auto sm:self-end sm:px-12"
               style={{ boxShadow: 'var(--shadow-lg)' }}
               onClick={handleNext}
               initial={{ scale: 0.9, opacity: 0 }}
