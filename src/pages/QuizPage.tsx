@@ -93,7 +93,7 @@ const QuizPage = () => {
     
     // Mode veya week değiştiğinde her zaman yeni quiz yükle
     loadQuestions();
-  }, [mode, week, initializeQuiz, userSession.mistakeBank]);
+  }, [mode, week]); // mistakeBank'ı kaldırdık - sadece mode/week değişince yüklensin
   
   // Reset next button visibility when question changes
   useEffect(() => {
