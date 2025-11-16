@@ -202,6 +202,16 @@ const QuizPage = () => {
       <div className="flex h-full flex-col p-4 sm:p-6">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
+            <motion.button
+              onClick={() => navigate('/')}
+              className="flex h-9 w-9 items-center justify-center rounded-lg bg-bg-secondary transition-all hover:scale-110"
+              style={{ boxShadow: 'var(--shadow-sm)' }}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              aria-label="Ana Sayfa"
+            >
+              <span className="text-lg">🏠</span>
+            </motion.button>
             <div className="rounded-lg bg-primary-500 px-3 py-1.5">
               <span className="text-sm font-bold text-white">{currentQuestionIndex + 1}/{totalQuestions}</span>
             </div>

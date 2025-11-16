@@ -29,6 +29,9 @@ jobs:
         env:
           NODE_ENV: production
 
+      - name: Add .nojekyll
+        run: touch ./dist/.nojekyll
+
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
