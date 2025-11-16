@@ -3,11 +3,13 @@ import { persist, createJSONStorage } from 'zustand/middleware';
 
 // Define the Question type
 export interface Question {
-  id: number;
-  kategori: string;
+  id: string;
+  konu: string;
   zorluk: string;
+  tip?: string;
   soruMetni: string;
   secenekler: string[];
+  dogruCevap: string;
   dogruCevapIndex: number;
   aciklama: string;
 }
@@ -25,7 +27,7 @@ interface Streak {
 }
 
 interface UserSession {
-  mistakeBank: number[];
+  mistakeBank: string[];
   reviewSchedule: Record<string, ReviewItem>;
   streak: Streak;
   settings: {
@@ -42,20 +44,20 @@ interface QuizState {
   currentQuiz: {
     questions: Question[];
     mode: string;
-    userAnswers: Record<number, number>;
+    userAnswers: Record<string, number>;
   } | null;
 
   // Actions
   initializeQuiz: (questions: Question[], mode: string) => void;
-  addAnswer: (questionId: number, selectedIndex: number) => void;
+  addAnswer: (questionId: string, selectedIndex: number) => void;
   finishQuiz: () => void;
 
   // Mistake bank actions
-  addToMistakeBank: (questionId: number) => void;
-  removeFromMistakeBank: (questionId: number) => void;
+  addToMistakeBank: (questionId: string) => void;
+  removeFromMistakeBank: (questionId: string) => void;
 
   // Review schedule actions
-  updateReviewSchedule: (questionId: number, isCorrect: boolean) => void;
+  updateReviewSchedule: (questionId: string, isCorrect: boolean) => void;
 
   // Streak actions
   updateStreak: () => void;
@@ -64,7 +66,7 @@ interface QuizState {
   updateSettings: (settings: Partial<UserSession['settings']>) => void;
   
   // Get questions for review
-  getDueQuestions: () => number[];
+  getDueQuestions: () => string[];
 }
 
 // Calculate spaced repetition interval with more effective algorithm
@@ -162,11 +164,12 @@ export const useQuizStore = create<QuizState>()(
         // Update mistake bank if answer is incorrect
         if (!isCorrect) {
           // Add to mistake bank if not already there
-          if (!userSession.mistakeBank.includes(questionId)) {
+          const normalizedMistakeBank = userSession.mistakeBank.map(id => id.toString());
+          if (!normalizedMistakeBank.includes(questionId)) {
             set({
               userSession: {
                 ...userSession,
-                mistakeBank: [...userSession.mistakeBank, questionId]
+                mistakeBank: [...normalizedMistakeBank, questionId]
               }
             });
           }
@@ -188,11 +191,12 @@ export const useQuizStore = create<QuizState>()(
       // Add question to mistake bank
       addToMistakeBank: (questionId) => {
         const { userSession } = get();
-        if (!userSession.mistakeBank.includes(questionId)) {
+        const normalizedMistakeBank = userSession.mistakeBank.map(id => id.toString());
+        if (!normalizedMistakeBank.includes(questionId)) {
           set({
             userSession: {
               ...userSession,
-              mistakeBank: [...userSession.mistakeBank, questionId]
+              mistakeBank: [...normalizedMistakeBank, questionId]
             }
           });
         }
@@ -204,7 +208,9 @@ export const useQuizStore = create<QuizState>()(
         set({
           userSession: {
             ...userSession,
-            mistakeBank: userSession.mistakeBank.filter(id => id !== questionId)
+            mistakeBank: userSession.mistakeBank
+              .map(id => id.toString())
+              .filter(id => id !== questionId)
           }
         });
       },
@@ -283,10 +289,10 @@ export const useQuizStore = create<QuizState>()(
         const today = new Date().toISOString().split('T')[0];
         
         return Object.entries(userSession.reviewSchedule)
-          .filter(([id, item]) => 
+          .filter(([, item]) => 
             new Date(item.dueDate).toISOString().split('T')[0] <= today
           )
-          .map(([id]) => parseInt(id));
+          .map(([id]) => id.toString());
       }
     }),
     {

@@ -16,30 +16,33 @@ This structure defines the format of the questions that will be loaded into the 
 
 | Field Name         | Type            | Description                                                                                                     | Example                                                                                             |
 | ------------------ | --------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| `id`               | `Number`        | A unique identifier for the question. Essential for tracking mistakes and review schedules.                     | `1001`                                                                                              |
-| `kategori`         | `String`        | The subject or category of the question (e.g., "Ölçme ve Değerlendirme"). Used for filtering.                     | `"Gelişim Psikolojisi"`                                                                             |
-| `zorluk`           | `String`        | The difficulty level of the question. Can be "kolay", "orta", or "zor". Used for filtering.                     | `"orta"`                                                                                            |
-| `soruMetni`        | `String`        | The full text of the question. Can include markdown for emphasis (e.g., **bold** for negative stems).           | `"Aşağıdakilerden hangisi Piaget'nin bilişsel gelişim dönemlerinden biri **değildir**?"`             |
-| `secenekler`       | `Array<String>` | An array of 4 strings representing the multiple-choice options. The order can be shuffled by the client.        | `["Duyusal-Motor", "İşlem Öncesi", "Soyut İşlemler", "Gizil Dönem"]`                                  |
-| `dogruCevapIndex`  | `Number`        | The 0-based index of the correct answer in the `secenekler` array *before* it is shuffled.                      | `3`                                                                                                 |
-| `aciklama`         | `String`        | A detailed explanation of why the correct answer is right and the others are wrong. Displayed after answering.  | `"Gizil dönem, Freud'un psikanalitik kuramında yer alan bir evredir. Piaget'nin dönemleri..."`        |
+| `id`               | `String`        | A unique identifier (slug-like) for the question. Stored as-is for review schedules and mistake bank tracking.  | `"eay_1_1"`                                                                                        |
+| `konu`             | `String`        | The topic heading displayed on the question card (e.g., "Bilimsel Tutum").                                     | `"Bilimsel Tutum"`                                                                                 |
+| `zorluk`           | `String`        | Difficulty label. Current dataset uses title case values: "Kolay", "Orta", "Zor".                             | `"Kolay"`                                                                                        |
+| `tip`              | `String?`       | Optional tag describing the item type (e.g., "Teorik", "Senaryo"). Used as a secondary badge when present.   | `"Senaryo"`                                                                                       |
+| `soruMetni`        | `String`        | The full text of the question. Supports rich formatting elements already embedded in the JSON.                 | `"Aşağıdakilerden hangisi bilimin temel özelliklerinden biridir?"`                                 |
+| `secenekler`       | `Array<String>` | An array of answer choices in display order.                                                                    | `["Kanıta ve deneye dayanması", "Kişisel sezgilere dayanması", ...]`                               |
+| `dogruCevap`       | `String`        | The exact answer text that matches one entry in `secenekler`.                                                   | `"Kanıta ve deneye dayanması"`                                                                     |
+| `dogruCevapIndex`  | `Number`        | Derived at runtime by matching `dogruCevap` against `secenekler`. Used for answer checking.                     | `0`                                                                                                 |
+| `aciklama`         | `String`        | Explanation shown after the user answers. Can include inline references such as `[cite: 33]`.                   | `"Bilim, olguları açıklamak için kanıta ve deneye dayalı sistematik bir bilgi bütünüdür."`          |
 
 **Example `sorular.json`:**
 ```json
 [
   {
-    "id": 1001,
-    "kategori": "Ölçme ve Değerlendirme",
-    "zorluk": "kolay",
-    "soruMetni": "Bir testin aynı gruba farklı zamanlarda uygulanmasıyla elde edilen sonuçlar arasındaki tutarlılık, testin hangi özelliğini gösterir?",
+    "id": "eay_1_1",
+    "konu": "Bilimin Anlamı",
+    "tip": "Teorik",
+    "zorluk": "Kolay",
+    "soruMetni": "Aşağıdakilerden hangisi bilimin temel özelliklerinden biri olarak kabul edilir?",
     "secenekler": [
-      "Geçerlik",
-      "Güvenirlik",
-      "Kullanışlılık",
-      "Objektiflik"
+      "Kanıta ve deneye dayanması",
+      "Kişisel sezgilere dayanması",
+      "Değişmez ve mutlak olması",
+      "Sadece doğa olaylarını incelemesi"
     ],
-    "dogruCevapIndex": 1,
-    "aciklama": "Güvenirlik, bir ölçme aracının tutarlı ve kararlı sonuçlar verme derecesidir. Geçerlik ise ölçmek istediği özelliği ne kadar doğru ölçtüğüdür."
+    "dogruCevap": "Kanıta ve deneye dayanması",
+    "aciklama": "Bilim, olguları açıklamak için kanıta ve deneye dayalı sistematik bir bilgi bütünüdür."
   }
 ]
 ```
@@ -58,7 +61,7 @@ This structure defines the object that will be saved in the browser's `localStor
 
 | Field Name       | Type                  | Description                                                                                                                            | Example                                                              |
 | ---------------- | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| `mistakeBank`    | `Array<Number>`       | An array of `id`s for questions the user has answered incorrectly. Questions are removed when answered correctly in "Mistake Bank" mode. | `[1001, 2045, 3012]`                                                 |
+| `mistakeBank`    | `Array<String>`       | An array of question `id`s the user answered incorrectly. Questions are removed when answered correctly in "Mistake Bank" mode.       | `["eay_1_1", "eay_2_4"]`                                          |
 | `reviewSchedule` | `Object`              | A dictionary where keys are question `id`s and values are `ReviewItem` objects for the spaced repetition system.                         | `{ "1001": { "level": 1, "dueDate": "2025-11-08T10:00:00Z" } }`       |
 | `streak`         | `Object`              | An object containing information about the user's daily study streak.                                                                  | `{ "count": 5, "lastStudiedDate": "2025-11-07" }`                     |
 | `settings`       | `Object`              | User-specific settings, such as preferred theme (e.g., "dark") or animation preferences.                                               | `{ "theme": "dark" }`                                                |

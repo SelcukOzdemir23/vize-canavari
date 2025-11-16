@@ -3,7 +3,6 @@ import { useParams, useNavigate } from 'react-router-dom';
 import Confetti from 'react-confetti';
 import { motion } from 'framer-motion';
 import { useQuizStore } from '../store/quizStore';
-import ModeButton from '../components/ModeButton';
 
 const ResultsPage: React.FC = () => {
   const { mode } = useParams<{ mode: string }>();
@@ -35,7 +34,7 @@ const ResultsPage: React.FC = () => {
   }, []);
 
   // Calculate real quiz results
-  const { score, total, correctAnswers, incorrectAnswers } = React.useMemo(() => {
+  const { score, correctAnswers, incorrectAnswers } = React.useMemo(() => {
     if (!currentQuiz) {
       return { score: 0, total: 0, correctAnswers: 0, incorrectAnswers: 0 };
     }
@@ -81,10 +80,6 @@ const ResultsPage: React.FC = () => {
     navigate('/');
   };
 
-  // Calculate percentage for the donut chart
-  const circumference = 2 * Math.PI * 45; // radius = 45
-  const strokeDashoffset = circumference - (score / 100) * circumference;
-
   // Get message based on score
   const getResultMessage = () => {
     if (score >= 90) return "Mükemmel performans";
@@ -94,33 +89,15 @@ const ResultsPage: React.FC = () => {
     return "Ek pratik önerilir";
   };
 
-  // Get color based on score
-  const getScoreColor = () => {
-    if (score >= 80) return "var(--primary)";
-    if (score >= 60) return "var(--secondary)";
-    return "var(--accent)";
-  };
-
-  const getFollowUpAction = () => {
-    if (incorrectAnswers === 0) {
-      return 'Harika! Temponu korumak için yeni bir rastgele test başlat ve serine ekstra enerji kat.';
-    }
-    if (incorrectAnswers <= 3) {
-      return 'Yanlışlarını sıcak sıcak temizle: Mistake Bank modu ile bu soruları tekrar çözerek serini büyüt.';
-    }
-    return 'En çok zorlandığın konuları Mistake Bank ve Akıllı Tekrar ile hedefe odaklayarak güçlen.';
-  };
-
   const streakCount = userSession.streak.count;
   const activeMode = mode ?? currentQuiz?.mode ?? 'standard';
   const modeLabel = modeLabels[activeMode] ?? 'Quiz Modu';
-  const followUpMessage = getFollowUpAction();
 
   return (
-    <motion.div 
-      className="results-page"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+    <motion.div
+      className="relative flex h-full w-full flex-col bg-transparent"
+      initial={{ opacity: 0, scale: 0.95 }}
+      animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0 }}
     >
       {showConfetti && (
@@ -129,126 +106,93 @@ const ResultsPage: React.FC = () => {
           height={windowSize.height}
           recycle={false}
           numberOfPieces={260}
-          colors={["#6366F1", "#0EA5E9", "#F97316", "#F43F5E", "#22C55E"]}
+          colors={["#8b5cf6", "#ec4899", "#3b82f6", "#10b981", "#f59e0b"]}
         />
       )}
 
-      <motion.h1
-        className="results-title"
-        initial={{ y: -20 }}
-        animate={{ y: 0 }}
-        transition={{ delay: 0.2 }}
-      >
-        Test Sonuçları
-      </motion.h1>
+      <div className="flex flex-1 flex-col items-center justify-center gap-6 p-4">
+        <motion.div
+          className="text-center"
+          initial={{ scale: 0, rotate: -180 }}
+          animate={{ scale: 1, rotate: 0 }}
+          transition={{ type: 'spring', stiffness: 200, damping: 15 }}
+        >
+          <div className="text-7xl">{score >= 80 ? '🎉' : score >= 60 ? '😊' : '💪'}</div>
+        </motion.div>
 
-      {/* Score Donut */}
-      <motion.div 
-        className="score-container"
-        initial={{ scale: 0.8, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ delay: 0.3, type: "spring", stiffness: 300 }}
-      >
-        <div className="score-donut">
-          <svg width="200" height="200" viewBox="0 0 100 100">
-            {/* Background circle */}
-            <circle
-              cx="50"
-              cy="50"
-              r="45"
-              fill="none"
-              stroke="#e0e0e0"
-              strokeWidth="8"
-            />
-            {/* Progress circle */}
-            <motion.circle
-              cx="50"
-              cy="50"
-              r="45"
-              fill="none"
-              stroke={getScoreColor()}
-              strokeWidth="8"
-              strokeDasharray={circumference}
-              initial={{ strokeDashoffset: circumference }}
-              animate={{ strokeDashoffset }}
-              transition={{ duration: 1, ease: "easeOut" }}
-              transform="rotate(-90 50 50)"
-            />
-          </svg>
-          <div className="score-value">
-            <div>{score}%</div>
-            <div className="score-label">Başarı</div>
+        <motion.div
+          className="text-center"
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+        >
+          <div className="text-7xl font-black text-text-primary sm:text-8xl">{score}%</div>
+          <div className="mt-3 text-xl font-bold text-text-secondary">{getResultMessage()}</div>
+        </motion.div>
+
+        <div className="flex items-center gap-3">
+          <div className="flex items-center gap-1.5 text-sm">
+            <span>🎯</span>
+            <span className="text-text-muted">{modeLabel}</span>
+          </div>
+          <div className="h-4 w-px bg-text-muted/30" />
+          <div className="flex items-center gap-1.5 text-sm">
+            <span>🔥</span>
+            <span className="font-bold text-text-primary">{streakCount}</span>
           </div>
         </div>
-      </motion.div>
 
-      <motion.div 
-        className="hud-grid result-hud"
-        initial={{ opacity: 0, y: 16 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.4, duration: 0.45 }}
-      >
-        <div className="hud-card">
-          <span className="hud-label">Mod</span>
-          <span className="hud-value">{modeLabel}</span>
-        </div>
-        <div className="hud-card">
-          <span className="hud-label">Seri</span>
-          <span className="hud-value">{streakCount} 🔥</span>
-        </div>
-        <div className="hud-card">
-          <span className="hud-label">Yanlış</span>
-          <span className="hud-value">{incorrectAnswers}</span>
-        </div>
-      </motion.div>
-
-      {/* Summary */}
-      <motion.div 
-        className="results-summary"
-        initial={{ y: 20, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ delay: 0.5 }}
-      >
-        <h2>Özet</h2>
-        <p className="result-message">{getResultMessage()}</p>
-        <p>
-          {total} sorudan {correctAnswers} tanesini doğru bildin.
-        </p>
-        <p className="result-tip">{followUpMessage}</p>
-        <div className="stats-container">
-          <div className="stat-item">
-            <div className="stat-value correct">{correctAnswers}</div>
-            <div className="stat-label">Doğru</div>
+        <motion.div
+          className="flex gap-4"
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ delay: 0.2 }}
+        >
+          <div className="flex flex-col items-center gap-2 rounded-2xl bg-success-400/15 px-8 py-5">
+            <div className="text-4xl font-black text-success-500">{correctAnswers}</div>
+            <div className="text-xs font-bold uppercase tracking-wider text-success-500/80">Doğru</div>
           </div>
-          <div className="stat-item">
-            <div className="stat-value incorrect">{incorrectAnswers}</div>
-            <div className="stat-label">Yanlış</div>
+          <div className="flex flex-col items-center gap-2 rounded-2xl bg-danger-400/15 px-8 py-5">
+            <div className="text-4xl font-black text-danger-500">{incorrectAnswers}</div>
+            <div className="text-xs font-bold uppercase tracking-wider text-danger-500/80">Yanlış</div>
           </div>
-        </div>
-      </motion.div>
+        </motion.div>
 
-      {/* Next Steps */}
-      <motion.div 
-        className="result-buttons"
-        initial={{ y: 20, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ delay: 0.7 }}
-      >
-        {incorrectAnswers > 0 && (
-          <ModeButton
-            onClick={handleReviewMistakes}
-            title="Yanlışları Tekrar Et"
-          />
-        )}
-        <ModeButton
-          onClick={handleTryAgain}
-          title="Yeni Rastgele Test"
-        />
-        <ModeButton
-          onClick={handleHome}
-          title="Ana Menü"
-        />
-      </motion.div>
+        <motion.div
+          className="flex flex-col gap-3 w-full max-w-sm"
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.3 }}
+        >
+          <motion.button
+            onClick={handleHome}
+            className="w-full rounded-2xl bg-gradient-to-r from-primary-500 to-accent-400 py-4 text-lg font-black uppercase tracking-wide text-white"
+            style={{ boxShadow: 'var(--shadow-lg)' }}
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+          >
+            Devam Et
+          </motion.button>
+          <div className="flex gap-3">
+            {incorrectAnswers > 0 && (
+              <button
+                onClick={handleReviewMistakes}
+                className="flex-1 rounded-2xl bg-bg-secondary py-3 text-sm font-bold text-text-primary hover:bg-bg-tertiary"
+                style={{ boxShadow: 'var(--shadow-sm)' }}
+              >
+                Tekrar Et
+              </button>
+            )}
+            <button
+              onClick={handleTryAgain}
+              className="flex-1 rounded-2xl bg-bg-secondary py-3 text-sm font-bold text-text-primary hover:bg-bg-tertiary"
+              style={{ boxShadow: 'var(--shadow-sm)' }}
+            >
+              Yeni Test
+            </button>
+          </div>
+        </motion.div>
+      </div>
     </motion.div>
   );
 };

@@ -1,12 +1,12 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useQuizStore } from '../store/quizStore';
-import ProgressBar from '../components/ProgressBar';
+import { useQuizStore, type Question } from '../store/quizStore';
 import QuestionCard from '../components/QuestionCard';
+import { normalizeQuestionArray } from '../utils/normalizeQuestion';
 
 const QuizPage = () => {
-  const { mode } = useParams<{ mode: string }>();
+  const { mode, week } = useParams<{ mode: string; week?: string }>();
   const navigate = useNavigate();
   const { 
     currentQuiz, 
@@ -22,8 +22,7 @@ const QuizPage = () => {
   const modeLabels: Record<string, string> = {
     standard: 'Rastgele Test',
     'mistake-bank': 'Yanlışlarım',
-    'smart-review': 'Akıllı Tekrar',
-    custom: 'Özel Test'
+    week: 'Hafta'
   };
   
   // Load questions based on mode
@@ -31,42 +30,33 @@ const QuizPage = () => {
     const loadQuestions = async () => {
       try {
         const response = await fetch('/sorular.json');
-        const allQuestions = await response.json();
+        const rawQuestions = await response.json();
+        const allQuestions = normalizeQuestionArray(rawQuestions);
         
-        let questions = [];
+        let questions: Question[] = [];
         
         switch (mode) {
           case 'standard':
-            // Shuffle and take first 20 questions
             questions = [...allQuestions]
               .sort(() => Math.random() - 0.5)
-              .slice(0, 20);
+              .slice(0, 5);
             break;
             
           case 'mistake-bank':
-            // Filter questions by mistake bank
-            questions = allQuestions.filter(
-              (q: any) => userSession.mistakeBank.includes(q.id)
-            );
+            {
+              const mistakeBankIds = userSession.mistakeBank.map(id => id.toString());
+              questions = allQuestions.filter(
+                (q) => mistakeBankIds.includes(q.id)
+              );
+            }
             break;
             
-          case 'smart-review':
-            // Filter questions by review schedule
-            const today = new Date().toISOString().split('T')[0];
-            const dueQuestionIds = Object.entries(userSession.reviewSchedule)
-              .filter(([id, item]) => 
-                new Date(item.dueDate).toISOString().split('T')[0] <= today
-              )
-              .map(([id]) => parseInt(id));
-              
-            questions = allQuestions.filter(
-              (q: any) => dueQuestionIds.includes(q.id)
-            );
-            break;
-            
-          case 'custom':
-            // For now, use all questions
-            questions = allQuestions.slice(0, 10);
+          case 'week':
+            if (week) {
+              questions = allQuestions.filter(
+                (q) => q.id.startsWith(`eay_${week}_`)
+              ).sort(() => Math.random() - 0.5);
+            }
             break;
             
           default:
@@ -95,12 +85,10 @@ const QuizPage = () => {
     }
   }, [currentQuestionIndex]);
   
-  const handleAnswer = (questionId: number, selectedIndex: number) => {
+  const handleAnswer = (questionId: string, selectedIndex: number) => {
     addAnswer(questionId, selectedIndex);
-    // Show next button immediately after answer
-    setTimeout(() => {
-      setShowNextButton(true);
-    }, 300);
+    // Show next button INSTANTLY
+    setShowNextButton(true);
   };
   
   const handleNext = () => {
@@ -131,84 +119,139 @@ const QuizPage = () => {
   
   if (!currentQuiz) {
     return (
-      <div className="quiz-page">
-        <div className="loading">Yükleniyor...</div>
+      <div
+        className="relative flex flex-1 flex-col items-center justify-center overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-surface-900/90 to-surface-800/80 p-8 backdrop-blur-lg"
+        style={{ boxShadow: 'var(--shadow-xl)' }}
+      >
+        <div className="flex flex-col items-center gap-4 text-center">
+          <motion.span 
+            className="text-4xl"
+            animate={{ rotate: 360 }}
+            transition={{ duration: 1, repeat: Infinity, ease: 'linear' }}
+          >
+            ⏳
+          </motion.span>
+          <p className="text-base text-white/70">Yükleniyor...</p>
+        </div>
       </div>
     );
-  };
+  }
   
   const totalQuestions = currentQuiz.questions.length;
-  const remainingQuestions = Math.max(totalQuestions - (currentQuestionIndex + 1), 0);
   const streakCount = userSession.streak.count;
   const activeMode = mode ?? currentQuiz.mode;
-  const modeLabel = modeLabels[activeMode] ?? 'Quiz Modu';
+  let modeLabel = modeLabels[activeMode] ?? 'Quiz Modu';
+  
+  if (activeMode === 'week' && week) {
+    modeLabel = `${week}. Hafta`;
+  }
+  
   const currentQuestion = currentQuiz.questions[currentQuestionIndex];
+
+  if (!currentQuestion) {
+    return (
+      <motion.div
+        className="relative flex flex-1 flex-col items-center justify-center overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-surface-900/90 to-surface-800/80 p-8 backdrop-blur-lg"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        style={{ boxShadow: 'var(--shadow-xl)' }}
+      >
+        <div className="flex flex-col items-center gap-5 text-center">
+          <span className="text-5xl" aria-hidden>
+            📭
+          </span>
+          <p className="max-w-md text-base leading-relaxed text-white/80">
+            Bu mod için planlanan soru bulunamadı. Yeni bir test oluşturmayı dene veya ana menüye dön.
+          </p>
+          <motion.button
+            type="button"
+            onClick={() => navigate('/')}
+            className="inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-primary-400 to-secondary-400 px-6 py-3 text-base font-bold text-white"
+            whileHover={{ scale: 1.02, y: -2 }}
+            whileTap={{ scale: 0.98 }}
+            style={{ boxShadow: 'var(--shadow-glow-primary)' }}
+          >
+            <span>🏠</span>
+            <span>Ana Menü</span>
+          </motion.button>
+        </div>
+      </motion.div>
+    );
+  }
   
   return (
-    <motion.div 
-      className="quiz-page"
+    <motion.div
+      className="relative flex h-full w-full flex-col overflow-hidden bg-transparent"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <ProgressBar 
-        current={currentQuestionIndex + 1} 
-        total={currentQuiz.questions.length} 
-      />
+      <div className="flex h-full flex-col p-4 sm:p-6">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <div className="rounded-lg bg-primary-500 px-3 py-1.5">
+              <span className="text-sm font-bold text-white">{currentQuestionIndex + 1}/{totalQuestions}</span>
+            </div>
+            <span className="text-sm font-medium text-text-secondary">{modeLabel}</span>
+          </div>
+          <div className="flex items-center gap-2 text-sm">
+            <span>🔥</span>
+            <span className="font-bold text-text-primary">{streakCount}</span>
+          </div>
+        </div>
 
-      <motion.div 
-        className="hud-grid quiz-hud"
-        initial={{ opacity: 0, y: 12 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.15, duration: 0.4 }}
-      >
-        <div className="hud-card">
-          <span className="hud-label">Mod</span>
-          <span className="hud-value">{modeLabel}</span>
-        </div>
-        <div className="hud-card">
-          <span className="hud-label">Kalan</span>
-          <span className="hud-value">{remainingQuestions} soru</span>
-        </div>
-        <div className="hud-card">
-          <span className="hud-label">Seri</span>
-          <span className="hud-value">{streakCount} 🔥</span>
-        </div>
-      </motion.div>
-      
-      <div className="question-container">
-        <AnimatePresence mode="wait">
+        <div className="mt-3 h-2 w-full overflow-hidden rounded-full bg-bg-tertiary">
           <motion.div
-            key={currentQuestionIndex}
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -100 }}
+            className="h-full rounded-full bg-gradient-to-r from-primary-500 to-accent-400"
+            initial={{ width: 0 }}
+            animate={{ width: `${((currentQuestionIndex + 1) / totalQuestions) * 100}%` }}
             transition={{ duration: 0.3 }}
-          >
-            <QuestionCard 
-              question={currentQuestion} 
-              onAnswer={handleAnswer} 
-            />
-          </motion.div>
+          />
+        </div>
+
+        <div className="relative mt-4 flex flex-1 overflow-hidden">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={currentQuestionIndex}
+              className="flex w-full"
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -50 }}
+              transition={{ duration: 0.25 }}
+            >
+              <QuestionCard
+                question={currentQuestion}
+                onAnswer={handleAnswer}
+              />
+            </motion.div>
+          </AnimatePresence>
+        </div>
+
+        <AnimatePresence>
+          {showNextButton && (
+            <motion.button
+              ref={nextButtonRef}
+              className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-primary-500 to-accent-400 py-4 text-lg font-black uppercase tracking-wide text-white sm:w-auto sm:self-end sm:px-12"
+              style={{ boxShadow: 'var(--shadow-lg)' }}
+              onClick={handleNext}
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ type: 'spring', stiffness: 500, damping: 25 }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <span>{currentQuestionIndex < currentQuiz.questions.length - 1 ? 'Devam' : 'Bitir'}</span>
+              <motion.span
+                animate={{ x: [0, 5, 0] }}
+                transition={{ repeat: Infinity, duration: 1 }}
+              >
+                {currentQuestionIndex < currentQuiz.questions.length - 1 ? '→' : '✓'}
+              </motion.span>
+            </motion.button>
+          )}
         </AnimatePresence>
       </div>
-      
-      <AnimatePresence>
-        {showNextButton && (
-          <motion.button 
-            ref={nextButtonRef}
-            className="next-button"
-            onClick={handleNext}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            whileHover={{ scale: 1.03 }}
-            whileTap={{ scale: 0.98 }}
-          >
-            {currentQuestionIndex < currentQuiz.questions.length - 1 ? 'Sonraki Soru →' : 'Testi Bitir ✓'}
-          </motion.button>
-        )}
-      </AnimatePresence>
     </motion.div>
   );
 };

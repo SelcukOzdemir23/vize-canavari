@@ -9,6 +9,7 @@ interface ModeButtonProps {
   badge?: number;
   onClick?: () => void;
   className?: string; // Custom class name property
+  description?: string;
 }
 
 const ModeButton: React.FC<ModeButtonProps> = ({ 
@@ -17,13 +18,10 @@ const ModeButton: React.FC<ModeButtonProps> = ({
   disabled = false, 
   badge,
   onClick,
-  className = ''
+  className = '',
+  description
 }) => {
   const navigate = useNavigate();
-
-  const chevronAnimation = disabled
-    ? { opacity: 0.25, x: 0 }
-    : { opacity: 1, x: 6 };
 
   const handleClick = () => {
     if (disabled) return;
@@ -35,49 +33,43 @@ const ModeButton: React.FC<ModeButtonProps> = ({
     }
   };
 
+  const baseClasses = [
+    'group relative flex w-full items-center justify-between gap-3 rounded-2xl border-2',
+    'px-6 py-5 text-left text-text-primary transition-all duration-200'
+  ].join(' ');
+
+  const enabledHover = [
+    'bg-white border-primary-500/30 hover:border-primary-500 hover:scale-[1.02] hover:-translate-y-1',
+    'active:scale-100 active:translate-y-0'
+  ].join(' ');
+
+  const disabledStyles = 'cursor-not-allowed opacity-40 bg-bg-tertiary border-transparent';
+
   return (
-    <motion.button 
+    <motion.button
       type="button"
       onClick={handleClick}
       disabled={disabled}
-      className={`mode-button ${disabled ? 'is-disabled' : ''} ${className}`}
-      whileHover={!disabled ? { y: -5, scale: 1.02 } : {}}
+      className={`${baseClasses} ${disabled ? disabledStyles : enabledHover} ${className}`.trim()}
+      style={!disabled ? { boxShadow: 'var(--shadow-md)' } : {}}
       whileTap={!disabled ? { scale: 0.98 } : {}}
-      initial={{ opacity: 0, y: 25 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ 
-        duration: 0.3,
-        ease: "easeOut"
-      }}
     >
-      <span className="mode-button__glow" aria-hidden="true" />
-      <div className="mode-button__main">
-        <span className="mode-button__label">{title}</span>
-        {typeof badge === 'number' && badge > 0 && (
-          <motion.span 
-            className="mode-button__badge"
-            initial={{ scale: 0, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ 
-              type: "spring",
-              stiffness: 600,
-              damping: 25,
-              duration: 0.2
-            }}
-          >
-            {badge}
-          </motion.span>
+      <div className="flex flex-1 flex-col gap-1">
+        <span className="text-base font-bold">{title}</span>
+        {description && (
+          <span className="text-sm text-text-muted">{description}</span>
         )}
       </div>
-      <motion.span
-        className="mode-button__chevron"
-        initial={{ opacity: 0, x: -4 }}
-        animate={chevronAnimation}
-        transition={{ duration: 0.25 }}
-        aria-hidden="true"
-      >
-        →
-      </motion.span>
+      {typeof badge === 'number' && badge > 0 && (
+        <span className="flex h-7 w-7 items-center justify-center rounded-full bg-gradient-to-br from-primary-400 to-accent-400 text-xs font-black text-white">
+          {badge}
+        </span>
+      )}
+      {!disabled && (
+        <span className="text-xl text-text-muted transition-transform group-hover:translate-x-1">
+          →
+        </span>
+      )}
     </motion.button>
   );
 };

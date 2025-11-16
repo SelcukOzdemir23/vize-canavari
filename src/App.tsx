@@ -5,22 +5,33 @@ import { AnimatePresence } from 'framer-motion';
 import HomePage from './pages/HomePage';
 import QuizPage from './pages/QuizPage';
 import ResultsPage from './pages/ResultsPage';
-import CustomQuizPage from './pages/CustomQuizPage';
 
 function App() {
   return (
     <Router>
-      <div className="app-shell">
-        <main className="app-content">
+      <div className="relative h-screen overflow-hidden bg-canvas-950 text-white">
+        <div className="relative mx-auto flex h-full w-full max-w-7xl flex-col p-4 sm:p-6">
+          <span
+            aria-hidden
+            className="pointer-events-none absolute inset-0 -z-10 opacity-80"
+            style={{
+              inset: '-120px -180px',
+              background:
+                'radial-gradient(circle at 20% 15%, rgba(139, 92, 246, 0.25), transparent 60%), radial-gradient(circle at 85% 0%, rgba(59, 130, 246, 0.18), transparent 65%)',
+              filter: 'blur(140px)'
+            }}
+          />
+          <main className="relative z-10 flex flex-1 overflow-hidden">
           <AnimatePresence mode="wait">
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/quiz/:mode" element={<QuizPage />} />
+              <Route path="/quiz/:mode/:week" element={<QuizPage />} />
               <Route path="/results/:mode" element={<ResultsPage />} />
-              <Route path="/quiz/custom" element={<CustomQuizPage />} />
             </Routes>
           </AnimatePresence>
-        </main>
+          </main>
+        </div>
       </div>
     </Router>
   );

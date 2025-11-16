@@ -1,93 +1,159 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 import { useQuizStore } from '../store/quizStore';
 import ModeButton from '../components/ModeButton';
-import StreakIndicator from '../components/StreakIndicator';
 
 const HomePage = () => {
   const { userSession } = useQuizStore();
   const mistakeBankCount = userSession.mistakeBank.length;
 
-  const today = new Date().toISOString().split('T')[0];
-  const reviewCount = Object.values(userSession.reviewSchedule).filter(
-    item => new Date(item.dueDate).toISOString().split('T')[0] <= today
-  ).length;
-
   const totalQuestionsStudied = Object.keys(userSession.reviewSchedule).length;
   const levelBreak = 25;
   const currentLevel = totalQuestionsStudied > 0 ? Math.floor(totalQuestionsStudied / levelBreak) + 1 : 1;
-  const nextLevelMilestone = currentLevel * levelBreak;
-  const progressToNextLevel = totalQuestionsStudied > 0 ? Math.min(1, totalQuestionsStudied / nextLevelMilestone) : 0;
-  const questionsToNextLevel = Math.max(0, nextLevelMilestone - totalQuestionsStudied);
 
   return (
-    <motion.div
-      className="home-page"
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.45 }}
+    <motion.section
+      className="relative flex h-full w-full flex-col bg-transparent"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.3 }}
     >
-      <div className="header">
-        <StreakIndicator count={userSession.streak.count} />
+      <header className="flex w-full items-center justify-between p-4">
+        <div className="flex items-center gap-3">
+          <a
+            href="https://github.com/SelcukOzdemir23/vize-canavari"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex h-9 w-9 items-center justify-center rounded-lg bg-bg-secondary transition-all hover:scale-110"
+            style={{ boxShadow: 'var(--shadow-sm)' }}
+            aria-label="GitHub"
+          >
+            <svg className="h-5 w-5 text-text-primary" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/muserref-selcuk-ozdemir/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex h-9 w-9 items-center justify-center rounded-lg bg-bg-secondary transition-all hover:scale-110"
+            style={{ boxShadow: 'var(--shadow-sm)' }}
+            aria-label="LinkedIn"
+          >
+            <svg className="h-5 w-5 text-text-primary" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+        </div>
+        <div className="text-xs font-medium text-text-muted">
+          Geliştirici: Müşerref Selçuk Özdemir
+        </div>
+      </header>
+
+      <div className="flex flex-1 flex-col items-center justify-center gap-8 px-4 pb-8">
+        <motion.div
+          initial={{ scale: 0.9, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ type: 'spring', stiffness: 200, damping: 15 }}
+          whileHover={{ scale: 1.05 }}
+        >
+          <img
+            src="/logo.png"
+            alt="Vize Canavarı"
+            className="h-28 w-28 rounded-3xl sm:h-32 sm:w-32"
+            style={{ boxShadow: 'var(--shadow-lg)' }}
+          />
+        </motion.div>
+        
+        <div className="space-y-2 text-center">
+          <h1 className="text-4xl font-black tracking-tight text-text-primary sm:text-5xl">
+            Vize Canavarı
+          </h1>
+          <p className="text-base font-medium text-text-secondary">
+            Vizelere hazırlan, eğlenerek öğren! 🚀
+          </p>
+        </div>
+
+        {totalQuestionsStudied > 0 && (
+          <motion.div
+            className="flex items-center gap-3 rounded-full bg-bg-secondary px-5 py-2.5"
+            style={{ boxShadow: 'var(--shadow-sm)' }}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+          >
+            <span className="text-lg">📚</span>
+            <span className="text-sm font-bold text-text-primary">{totalQuestionsStudied} soru</span>
+            <div className="h-4 w-px bg-text-muted/30" />
+            <span className="text-sm font-bold text-primary-500">Lv. {currentLevel}</span>
+          </motion.div>
+        )}
       </div>
 
-      <motion.div
-        className="home-hero"
-        initial={{ opacity: 0, scale: 0.96 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ type: 'spring', stiffness: 260, damping: 22 }}
-      >
-        <img src="/logo.png" alt="Vize Canavarı Logo" className="home-logo" />
-        <h1 className="app-title">Vize Canavarı</h1>
-        <p className="app-tagline">
-          Serini koru, hata bankanı temizle ve akıllı tekrar ile vizelere hazır ol.
-        </p>
-      </motion.div>
+      <WeekSelector mistakeBankCount={mistakeBankCount} />
+    </motion.section>
+  );
+};
 
-      {totalQuestionsStudied > 0 && (
-        <motion.div
-          className="study-stats"
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1 }}
-        >
-          <div className="study-stat-line">
-            <span aria-hidden="true" className="study-stat-icon">📚</span>
-            <div className="study-stat-copy">
-              <span className="study-stat-emphasis">{totalQuestionsStudied}</span> soru çözüldü
-            </div>
-          </div>
-          <div className="study-progress" aria-hidden="true">
-            <div className="study-progress-bar">
-              <div className="study-progress-fill" style={{ width: `${Math.max(progressToNextLevel * 100, 8)}%` }} />
-            </div>
-            <span className="study-progress-label">
-              Seviye {currentLevel} · {questionsToNextLevel === 0 ? 'Yeni seviye açıldı!' : `${questionsToNextLevel} soru sonra seviye atla`}
-            </span>
-          </div>
-        </motion.div>
-      )}
+interface WeekSelectorProps {
+  mistakeBankCount: number;
+}
 
-      <motion.div
-        className="mode-buttons"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.2 }}
-      >
-        <ModeButton to="/quiz/standard" title="🎲 Rastgele Test" />
-        <ModeButton
-          to="/quiz/mistake-bank"
-          title="❌ Yanlışlarım"
-          disabled={mistakeBankCount === 0}
-        />
-        <ModeButton
-          to="/quiz/smart-review"
-          title="🧠 Akıllı Tekrar"
-          badge={reviewCount}
-          disabled={reviewCount === 0}
-        />
-        <ModeButton to="/quiz/custom" title="⚙️ Özel Test" />
-      </motion.div>
-    </motion.div>
+const WeekSelector: React.FC<WeekSelectorProps> = ({ mistakeBankCount }) => {
+  const [weeks, setWeeks] = React.useState<Array<{ week: number; count: number }>>([]);
+
+  React.useEffect(() => {
+    fetch('/sorular.json')
+      .then(res => res.json())
+      .then(questions => {
+        const weekMap = new Map<number, number>();
+        questions.forEach((q: any) => {
+          const match = q.id?.match(/^eay_(\d+)_/);
+          if (match) {
+            const weekNum = parseInt(match[1]);
+            weekMap.set(weekNum, (weekMap.get(weekNum) || 0) + 1);
+          }
+        });
+        const weekList = Array.from(weekMap.entries())
+          .map(([week, count]) => ({ week, count }))
+          .sort((a, b) => a.week - b.week);
+        setWeeks(weekList);
+      });
+  }, []);
+
+  const weekEmojis = ['📘', '📗', '📙', '📚', '📕', '📔', '📓', '📒'];
+  const weekDescriptions: Record<number, string> = {
+    1: 'Bilimin temelleri',
+    3: 'Paradigma & Değişkenler',
+    4: 'Hipotez & Konu seçimi'
+  };
+
+  return (
+    <div className="flex w-full flex-col gap-3 p-4 sm:p-6">
+      <ModeButton to="/quiz/standard" title="🎲 Rastgele Test" description="Tüm haftalardan 5 soru" />
+      
+      <div className="mt-2">
+        <h2 className="mb-3 text-sm font-bold uppercase tracking-wider text-text-muted">📅 Hafta Seç</h2>
+        <div className="grid gap-3 sm:grid-cols-2">
+          {weeks.map(({ week, count }) => (
+            <ModeButton
+              key={week}
+              to={`/quiz/week/${week}`}
+              title={`${weekEmojis[(week - 1) % weekEmojis.length]} ${week}. Hafta`}
+              description={weekDescriptions[week] || `${count} soru`}
+            />
+          ))}
+        </div>
+      </div>
+
+      <ModeButton
+        to="/quiz/mistake-bank"
+        title="❌ Yanlışlarım"
+        description="Hata bankanı temizle"
+        disabled={mistakeBankCount === 0}
+        badge={mistakeBankCount}
+        className="mt-2"
+      />
+    </div>
   );
 };
 
