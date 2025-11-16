@@ -62,15 +62,28 @@ export const normalizeQuestion = (raw: unknown, fallbackIndex = 0): Question => 
 
   const dogruCevap = secenekler[safeIndex] ?? dogruCevapRaw;
 
+  // Seçenekleri karıştır - her soru için tutarlı olması için id'ye göre seed kullan
+  const shuffledOptions = [...secenekler];
+  const seed = id.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
+  
+  // Fisher-Yates shuffle with seeded random
+  for (let i = shuffledOptions.length - 1; i > 0; i--) {
+    const j = Math.floor(((seed * (i + 1) * 9301 + 49297) % 233280) / 233280 * (i + 1));
+    [shuffledOptions[i], shuffledOptions[j]] = [shuffledOptions[j], shuffledOptions[i]];
+  }
+  
+  // Yeni doğru cevap index'ini bul
+  const newCorrectIndex = shuffledOptions.indexOf(dogruCevap);
+
   return {
     id,
     konu,
     zorluk,
     tip: tip || undefined,
     soruMetni,
-    secenekler: secenekler.length ? secenekler : dogruCevap ? [dogruCevap] : [],
+    secenekler: shuffledOptions.length ? shuffledOptions : dogruCevap ? [dogruCevap] : [],
     dogruCevap,
-    dogruCevapIndex: safeIndex,
+    dogruCevapIndex: newCorrectIndex >= 0 ? newCorrectIndex : safeIndex,
     aciklama
   };
 };
