@@ -89,4 +89,8 @@
     font: inherit;
     color: inherit;
   }
+
+  /* Improve mobile tap experience */
+  a, button { -webkit-tap-highlight-color: transparent; }
+  button { touch-action: manipulation; }
 }

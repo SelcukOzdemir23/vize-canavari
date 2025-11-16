@@ -11,8 +11,8 @@ function App() {
   
   return (
     <Router basename={basename}>
-      <div className="relative h-screen overflow-hidden bg-canvas-950 text-white">
-        <div className="relative mx-auto flex h-full w-full max-w-7xl flex-col p-4 sm:p-6">
+      <div className="relative min-h-dvh overflow-x-hidden bg-canvas-950 text-white">
+        <div className="relative mx-auto flex min-h-dvh w-full max-w-7xl flex-col p-[max(1rem,env(safe-area-inset-left))] pb-[max(1rem,env(safe-area-inset-bottom))] pt-[max(1rem,env(safe-area-inset-top))] sm:p-6">
           <span
             aria-hidden
             className="pointer-events-none absolute inset-0 -z-10 opacity-80"
@@ -23,7 +23,7 @@ function App() {
               filter: 'blur(140px)'
             }}
           />
-          <main className="relative z-10 flex flex-1 overflow-hidden">
+          <main className="relative z-10 flex flex-1 overflow-y-auto overscroll-contain">
           <AnimatePresence mode="wait">
             <Routes>
               <Route path="/" element={<HomePage />} />

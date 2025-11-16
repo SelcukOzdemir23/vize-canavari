@@ -32,7 +32,7 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, onAnswer }) => {
   };
 
   const getOptionClasses = (index: number) => {
-    const base = 'group relative flex w-full cursor-pointer items-center gap-4 rounded-2xl px-5 py-4 text-left transition-all duration-200';
+    const base = 'group relative flex w-full cursor-pointer items-center gap-4 rounded-2xl px-5 py-4 text-left transition-all duration-200 min-h-[52px]';
     const isSelected = index === selectedAnswerIndex;
     const isCorrect = index === question.dogruCevapIndex;
 
