@@ -32,7 +32,7 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, onAnswer }) => {
   };
 
   const getOptionClasses = (index: number) => {
-    const base = 'group relative flex w-full cursor-pointer items-center gap-4 rounded-2xl px-5 py-4 text-left transition-all duration-200 min-h-[52px]';
+    const base = 'group relative flex w-full cursor-pointer items-center gap-4 rounded-2xl px-5 py-4 text-left transition-all duration-150 min-h-[52px] will-change-[transform,background-color]';
     const isSelected = index === selectedAnswerIndex;
     const isCorrect = index === question.dogruCevapIndex;
 
@@ -63,22 +63,22 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, onAnswer }) => {
     const isCorrect = index === question.dogruCevapIndex;
 
     if (!isAnswered) {
-      return 'flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-base font-bold transition-all bg-bg-secondary text-text-primary';
+      return 'flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-base font-bold transition-all duration-100 bg-bg-secondary text-text-primary';
     }
 
     if (isSelected && isCorrect) {
-      return 'flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-base font-bold transition-all bg-success-400 text-white';
+      return 'flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-base font-bold transition-all duration-100 bg-success-400 text-white';
     }
 
     if (isSelected && !isCorrect) {
-      return 'flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-base font-bold transition-all bg-danger-400 text-white';
+      return 'flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-base font-bold transition-all duration-100 bg-danger-400 text-white';
     }
 
     if (!isSelected && isCorrect) {
-      return 'flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-base font-bold transition-all bg-success-400 text-white';
+      return 'flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-base font-bold transition-all duration-100 bg-success-400 text-white';
     }
 
-    return 'flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-base font-bold transition-all bg-bg-secondary text-text-muted';
+    return 'flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-base font-bold transition-all duration-100 bg-bg-secondary text-text-muted';
   };
 
   const getOptionIcon = (index: number) => {
@@ -147,9 +147,9 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, onAnswer }) => {
                 aria-pressed={selectedAnswerIndex === index}
                 whileHover={!isAnswered ? { x: 10 } : {}}
                 whileTap={!isAnswered ? { scale: 0.98 } : {}}
-                initial={{ opacity: 0, x: -20 }}
+                initial={{ opacity: 0, x: -10 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: index * 0.05 }}
+                transition={{ delay: index * 0.03, duration: 0.15 }}
               >
                 <span className={getLetterClasses(index)} aria-hidden="true">
                   {String.fromCharCode(65 + index)}
@@ -170,9 +170,9 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, onAnswer }) => {
         {isAnswered && (
           <motion.div
             className="mt-4 rounded-2xl bg-bg-tertiary p-4"
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            transition={{ duration: 0.2 }}
+            initial={{ opacity: 0, maxHeight: 0 }}
+            animate={{ opacity: 1, maxHeight: '500px' }}
+            transition={{ duration: 0.15, ease: 'easeOut' }}
           >
             <div className="flex items-center gap-2 text-sm font-bold text-text-primary">
               <span>💡</span>

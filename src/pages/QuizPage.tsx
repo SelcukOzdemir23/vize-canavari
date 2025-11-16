@@ -260,10 +260,10 @@ const QuizPage = () => {
             <motion.div
               key={currentQuestionIndex}
               className="flex w-full"
-              initial={{ opacity: 0, x: 50 }}
+              initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -50 }}
-              transition={{ duration: 0.25 }}
+              exit={{ opacity: 0, x: -20 }}
+              transition={{ duration: 0.15, ease: 'easeOut' }}
             >
               <QuestionCard
                 question={currentQuestion}
@@ -279,9 +279,9 @@ const QuizPage = () => {
               className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-linear-to-r from-primary-500 to-accent-400 py-4 text-lg font-black uppercase tracking-wide text-white sm:w-auto sm:self-end sm:px-12"
               style={{ boxShadow: 'var(--shadow-lg)' }}
               onClick={handleNext}
-              initial={{ scale: 0.9, opacity: 0 }}
+              initial={{ scale: 0.95, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
-              transition={{ type: 'spring', stiffness: 500, damping: 25 }}
+              transition={{ duration: 0.15, ease: 'easeOut' }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

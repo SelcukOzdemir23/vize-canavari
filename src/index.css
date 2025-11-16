@@ -93,4 +93,7 @@
   /* Improve mobile tap experience */
   a, button { -webkit-tap-highlight-color: transparent; }
   button { touch-action: manipulation; }
+  
+  /* GPU acceleration for animations */
+  [class*="motion"] { transform: translateZ(0); backface-visibility: hidden; }
 }
