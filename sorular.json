@@ -1,0 +1,3761 @@
+[
+  {
+    "id": "eay_1_1",
+    "konu": "Bilimin Anlamı",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Aşağıdakilerden hangisi bilimin temel özelliklerinden biri olarak kabul edilir?",
+    "secenekler": [
+      "Kanıta ve deneye dayanması",
+      "Kişisel sezgilere dayanması",
+      "Değişmez ve mutlak olması",
+      "Sadece doğa olaylarını incelemesi"
+    ],
+    "dogruCevap": "Kanıta ve deneye dayanması",
+    "aciklama": "Bilim, olguları açıklamak için kanıta ve deneye dayalı sistematik bir bilgi bütünüdür."
+  },
+  {
+    "id": "eay_1_2",
+    "konu": "Bilmenin Yolları",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Bireyin kişisel yaşantıları yoluyla edindiği bilgilere ne ad verilir?",
+    "secenekler": [
+      "Deneyim",
+      "Mantık",
+      "Uzman Görüşü",
+      "Görüş Birliği"
+    ],
+    "dogruCevap": "Deneyim",
+    "aciklama": "Deneyim, bireyin kendi yaşadıklarından çıkardığı sonuçlar ve edindiği bilgilerdir."
+  },
+  {
+    "id": "eay_1_3",
+    "konu": "Araştırma Basamakları",
+    "zorluk": "Kolay",
+    "tip": "Senaryo",
+    "soruMetni": "Bir öğrenci, bitirme tezi için 'sınav kaygısı' konusunu seçmiştir. Bu öğrenci, araştırma basamaklarının hangisindedir?",
+    "secenekler": [
+      "Konu Seçimi",
+      "Verileri Toplama",
+      "Bulguları Yorumlama",
+      "Tasarımı Kurma"
+    ],
+    "dogruCevap": "Konu Seçimi",
+    "aciklama": "Bir araştırmada ilk adım, çalışılacak genel alanın veya başlığın belirlenmesi, yani konu seçimidir."
+  },
+  {
+    "id": "eay_1_4",
+    "konu": "Bilimsel Tutum",
+    "zorluk": "Kolay",
+    "tip": "PDF Dışı",
+    "soruMetni": "Bir bilim insanının, kendi fikrine uymasa bile bir deneyi defalarca bıkmadan tekrarlaması, onun hangi özelliğini gösterir?",
+    "secenekler": [
+      "Sabırlı olması",
+      "Yaratıcı olması",
+      "Aceleci olması",
+      "Önyargılı olması"
+    ],
+    "dogruCevap": "Sabırlı olması",
+    "aciklama": "Bilimsel süreç, çoğu zaman tekrarlanan ve zaman alan denemeler gerektirir; bu da araştırmacının sabırlı olmasını zorunlu kılar."
+  },
+  {
+    "id": "eay_1_5",
+    "konu": "Bilimsel Tutum",
+    "zorluk": "Orta",
+    "tip": "Teorik",
+    "soruMetni": "Bir araştırmacının, kendi hipotezinin aksini gösteren bulgularla karşılaştığında bu bulguları görmezden gelmesi, hangi bilimsel tutum ilkesine en çok aykırıdır?",
+    "secenekler": [
+      "Gerçeklere saygılı olmalıdır",
+      "Yaratıcı olmalıdır",
+      "Konu alanını iyi tanımalıdır",
+      "Sabırlı olmalıdır"
+    ],
+    "dogruCevap": "Gerçeklere saygılı olmalıdır",
+    "aciklama": "Bilimsel tutum, elde edilen veriler araştırmacının beklentileriyle çelişse bile, bu gerçeklerin olduğu gibi kabul edilmesini ve raporlanmasını gerektirir."
+  },
+  {
+    "id": "eay_1_6",
+    "konu": "Bilmenin Yolları",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Dişi ağrıyan bir kişinin, diş hekiminin tavsiyelerine uyarak ağrı kesici kullanması, hangi bilme yoluna örnektir?",
+    "secenekler": [
+      "Uzman Görüşü",
+      "Deneyim",
+      "Mantık",
+      "Görüş Birliği"
+    ],
+    "dogruCevap": "Uzman Görüşü",
+    "aciklama": "Bu durumda kişi, konu hakkında özel eğitim almış ve bilgi sahibi olan bir 'uzmanın' (diş hekimi) fikrine başvurmuştur."
+  },
+  {
+    "id": "eay_1_7",
+    "konu": "Araştırma Basamakları",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, 'X yöntemi Y yönteminden daha etkilidir' şeklinde bir problem cümlesi belirlemiştir. Araştırma basamakları akışına göre araştırmacının bir sonraki adımı ne olmalıdır?",
+    "secenekler": [
+      "Tasarımı Kurma",
+      "Verileri Çözümleme",
+      "Konu Seçimi",
+      "Sonucu Sunma"
+    ],
+    "dogruCevap": "Tasarımı Kurma",
+    "aciklama": "Araştırma basamakları akışına göre, problem belirlendikten sonra (Problem Üzerine Odaklanma), bu problemi test etmek için 'nasıl' bir yol izleneceği, yani 'Tasarımı Kurma' aşamasına geçilir."
+  },
+  {
+    "id": "eay_1_8",
+    "konu": "Bilimsel Tutum",
+    "zorluk": "Orta",
+    "tip": "PDF Dışı",
+    "soruMetni": "Bir panelde, kendi görüşünün tam zıttı bir sunum yapıldığında, sunumu yapan kişiyi saygıyla dinlemek ve 'Acaba benim bilmediğim bir şey mi var?' diye düşünmek, hangi bilimsel tutum özelliğidir?",
+    "secenekler": [
+      "Açık fikirli olmak",
+      "Kuşkucu olmak",
+      "Yaratıcı olmak",
+      "İstatistik bilmek"
+    ],
+    "dogruCevap": "Açık fikirli olmak",
+    "aciklama": "Açık fikirli olmak, kendi düşüncelerimizin yanlış olabileceğini kabul etmeyi ve karşıt görüşlerdeki mantığı veya yeni bilgileri dikkate almayı içerir."
+  },
+  {
+    "id": "eay_1_9",
+    "konu": "Bilmenin Yolları",
+    "zorluk": "Zor",
+    "tip": "Senaryo",
+    "soruMetni": "İki öncül veriliyor: 1) 'Tüm eğitim fakültesi öğrencileri formasyon alır.' 2) 'Ali bir eğitim fakültesi öğrencisidir.' Sonuç: 'Öyleyse Ali de formasyon alır.' Bu sonuca ulaşırken kullanılan bilme yolu hangisidir?",
+    "secenekler": [
+      "Mantık",
+      "Deneyim",
+      "Görüş Birliği",
+      "Bilimsel Yöntem"
+    ],
+    "dogruCevap": "Mantık",
+    "aciklama": "Bu örnek, tümdengelimsel bir akıl yürütmeyi (mantık) göstermektedir. Genel bir doğrudan (tüm öğrenciler) özele (Ali) bir çıkarım yapılmıştır."
+  },
+  {
+    "id": "eay_1_10",
+    "konu": "Bilmenin Yolları",
+    "zorluk": "Zor",
+    "tip": "PDF Dışı",
+    "soruMetni": "Bir köyde insanlar, 'Yağmur duasına çıkarsak yağmur yağar' bilgisine sahipler çünkü geçmişte ne zaman dua etseler yağmur yağmış. Bu bilme yolu (Deneyim) ile 'Bilimsel Yöntem' arasındaki temel fark nedir?",
+    "secenekler": [
+      "Bilimsel yöntemde kontrollü gözlem ve test etme vardır",
+      "Bilimsel yöntem her zaman daha hızlı sonuç verir",
+      "Deneyim her zaman yanlıştır, bilimsel yöntem her zaman doğrudur",
+      "Bilimsel yöntem uzman görüşüne dayanır, deneyim dayanmaz"
+    ],
+    "dogruCevap": "Bilimsel yöntemde kontrollü gözlem ve test etme vardır",
+    "aciklama": "Deneyim, iki olayın art arda gelmesine (korelasyon) dayanabilir. Bilimsel yöntem ise bu ilişkinin (neden-sonuç) kontrollü deneylerle test edilmesini, alternatif açıklamaların elenmesini ve sistematik olmasını gerektirir."
+  },
+  {
+    "id": "eay_1_11",
+    "konu": "Bilimsel Tutum",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Bilimsel tutuma sahip bir araştırmacının, kendi kişisel inançlarına aykırı olsa bile kanıtları dikkate alması, öncelikle hangi özelliğini yansıtır?",
+    "secenekler": [
+      "Açık fikirli olmak",
+      "Yaratıcı olmak",
+      "Sabırlı olmak",
+      "İstatistik bilmek"
+    ],
+    "dogruCevap": "Açık fikirli olmak",
+    "aciklama": "Açık fikirlilik [cite: 33], araştırmacının kendi önyargılarına [cite: 34] veya inançlarına karşıt olan kanıtları [cite: 37] dahi objektif bir şekilde değerlendirmesini gerektirir."
+  },
+  {
+    "id": "eay_1_12",
+    "konu": "Araştırma Basamakları",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Araştırma basamakları döngüsünde, 'Bulguları Yorumlama' aşamasından sonra gelen ve döngüyü tamamlayan adım hangisidir?",
+    "secenekler": [
+      "Sonucu Diğerlerine Sunma",
+      "Verileri Toplama",
+      "Tasarımı Kurma",
+      "Konu Seçimi"
+    ],
+    "dogruCevap": "Sonucu Diğerlerine Sunma",
+    "aciklama": "Araştırma döngüsü, bulguların yorumlanması  ve ardından bu sonuçların (rapor, makale vb. yoluyla) başkalarına sunulmasıyla  tamamlanır."
+  },
+  {
+    "id": "eay_1_13",
+    "konu": "Bilmenin Yolları",
+    "zorluk": "Kolay",
+    "tip": "Senaryo",
+    "soruMetni": "Bir grup öğrencinin, 'En iyi çalışma yöntemi gece çalışmaktır' konusunda hemfikir olması, hangi bilme yoluna bir örnektir?",
+    "secenekler": [
+      "Görüş Birliği",
+      "Deneyim",
+      "Mantık",
+      "Bilimsel Yöntem"
+    ],
+    "dogruCevap": "Görüş Birliği",
+    "aciklama": "Görüş birliği[cite: 24], bir grubun çoğunluğunun veya tamamının bir fikri doğru kabul etmesi yoluyla bilgi edinilmesidir."
+  },
+  {
+    "id": "eay_1_14",
+    "konu": "Bilimin Anlamı",
+    "zorluk": "Kolay",
+    "tip": "PDF Dışı",
+    "soruMetni": "Aşağıdakilerden hangisi bilimin (kanıta dayalı ve sistematik bilgi) [cite: 17] kapsamına girmez?",
+    "secenekler": [
+      "Astroloji (Burç Yorumları)",
+      "Biyoloji (Canlıların İncelenmesi)",
+      "Fizik (Maddenin Hareketi)",
+      "Kimya (Maddenin Yapısı)"
+    ],
+    "dogruCevap": "Astroloji (Burç Yorumları)",
+    "aciklama": "Bilim, kanıta dayalı ve test edilebilir olmalıdır[cite: 17]. Astroloji, test edilebilir ve kanıta dayalı sistematik bir yöntem kullanmadığı için bilim olarak kabul edilmez."
+  },
+  {
+    "id": "eay_1_15",
+    "konu": "Bilimsel Tutum",
+    "zorluk": "Orta",
+    "tip": "Teorik",
+    "soruMetni": "Araştırmacıların raporlarında 'kesinlikle kanıtlanmıştır' veya 'her zaman doğrudur' gibi ifadelerden kaçınmalarının nedeni hangi bilimsel tutum özelliğidir?",
+    "secenekler": [
+      "Yanılabileceğini düşünmek (olasılıksal bakış)",
+      "Yaratıcı olmak",
+      "Sabırlı olmak",
+      "İstatistik bilmek"
+    ],
+    "dogruCevap": "Yanılabileceğini düşünmek (olasılıksal bakış)",
+    "aciklama": "Bilimsel bilgi mutlak değildir. İyi bir araştırmacı, kendi bulgularının bile yanlışlanabileceğini veya eksik olabileceğini kabul eder ve kesin ifadelerden kaçınır[cite: 40]."
+  },
+  {
+    "id": "eay_1_16",
+    "konu": "Araştırma Basamakları",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, 'oyun temelli öğrenme' konusunda yaptığı anketlerden elde ettiği puanları bilgisayara girip ortalamalarını ve standart sapmalarını hesaplıyorsa, araştırma basamaklarından hangisindedir?",
+    "secenekler": [
+      "Verileri Çözümleme",
+      "Verileri Toplama",
+      "Tasarımı Kurma",
+      "Bulguları Yorumlama"
+    ],
+    "dogruCevap": "Verileri Çözümleme",
+    "aciklama": "Veri çözümleme, toplanan ham verilerin (anketler) istatistiksel işlemler (ortalama, vb.) kullanılarak anlamlı hale getirilmesi aşamasıdır."
+  },
+  {
+    "id": "eay_1_17",
+    "konu": "Bilimsel Tutum",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir öğretmen, 'Yeni çıkan Y öğrenme metodu %50 daha başarılı' şeklindeki bir reklamı gördüğünde, 'Bu iddiayı destekleyen bilimsel bir araştırma var mı?' diye sorguluyorsa, hangi bilimsel tutumu göstermektedir?",
+    "secenekler": [
+      "Kuşkuculuk",
+      "Yaratıcılık",
+      "Sabır",
+      "Önyargı"
+    ],
+    "dogruCevap": "Kuşkuculuk",
+    "aciklama": "Kuşkuculuk [cite: 36], iddiaları yeterli kanıt [cite: 38] olmadan kabul etmemeyi ve eleştirel bir sorgulama yapmayı gerektirir."
+  },
+  {
+    "id": "eay_1_18",
+    "konu": "Bilmenin Yolları",
+    "zorluk": "Orta",
+    "tip": "PDF Dışı",
+    "soruMetni": "Bir öğrenci, gözlemlediği 10 farklı kuğunun beyaz olduğunu görüp, 'Tüm kuğular beyazdır' genellemesine ulaşıyorsa, hangi bilme yolunu kullanmıştır?",
+    "secenekler": [
+      "Mantık (Tümevarım)",
+      "Deneyim",
+      "Uzman Görüşü",
+      "Görüş Birliği"
+    ],
+    "dogruCevap": "Mantık (Tümevarım)",
+    "aciklama": "Bu, özel gözlemlerden (tek tek kuğular) genel bir kurala (tüm kuğular) ulaşma eylemidir. Bu akıl yürütme biçimi 'Mantık' [cite: 26] (spesifik olarak tümevarım) olarak bilinir."
+  },
+  {
+    "id": "eay_1_19",
+    "konu": "Bilimsel Tutum",
+    "zorluk": "Zor",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, sevmediği bir siyasi görüşe sahip kişilerin argümanlarını analiz ederken, kendi duygularını bir kenara bırakıp sadece söylenenlerin mantıksal tutarlılığına odaklanıyorsa, hangi bilimsel tutum özelliğini sergilemektedir?",
+    "secenekler": [
+      "Önyargılı olmamak",
+      "Kuşkucu olmak",
+      "Yaratıcı olmak",
+      "Sabırlı olmak"
+    ],
+    "dogruCevap": "Önyargılı olmamak",
+    "aciklama": "Önyargılı olmamak[cite: 34], araştırmacının kişisel duygularının, inançlarının veya tercihlerinin, verileri veya argümanları analiz etme sürecini etkilemesine izin vermemesi anlamına gelir."
+  },
+  {
+    "id": "eay_1_20",
+    "konu": "Bilmenin Yolları",
+    "zorluk": "Zor",
+    "tip": "PDF Dışı",
+    "soruMetni": "Bir konu hakkında Nobel ödüllü bir profesör (Uzman Görüşü) 'A doğrudur' derken, 10 farklı kontrollü deney (Bilimsel Yöntem) 'B doğrudur' diyorsa, bilimsel yaklaşım hangisini tercih etmeyi gerektirir?",
+    "secenekler": [
+      "Deney sonuçlarını (Bilimsel Yöntem), çünkü kanıta dayalıdır",
+      "Profesörün görüşünü (Uzman Görüşü), çünkü daha tecrübelidir",
+      "Toplumun çoğunluğunun dediğini (Görüş Birliği)",
+      "Hangisi daha mantıklı geliyorsa onu (Mantık)"
+    ],
+    "dogruCevap": "Deney sonuçlarını (Bilimsel Yöntem), çünkü kanıta dayalıdır",
+    "aciklama": "Bilimsel hiyerarşide, 'Bilimsel Yöntem' [cite: 27] (sistematik, kanıta dayalı [cite: 17] deneyler) her zaman 'Uzman Görüşünden' [cite: 25] daha güçlü bir bilgi kaynağıdır. Uzmanlar da yanılabilir."
+  },
+  {
+    "id": "eay_1_31",
+    "konu": "Bilimsel Tutum",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Aşağıdakilerden hangisi bilimsel tutuma sahip bir araştırmacının özelliklerinden biri *değildir*?",
+    "secenekler": [
+      "Kendi görüşünü kanıtlamak için verileri zorlamak",
+      "Önyargılı olmamak",
+      "Kuşkucu olmak",
+      "Yaratıcı olmak"
+    ],
+    "dogruCevap": "Kendi görüşünü kanıtlamak için verileri zorlamak",
+    "aciklama": "Bilimsel tutum, gerçeklere saygılı olmayı ve önyargısızlığı gerektirir. Araştırmacı, verileri kendi istediği sonuca uydurmaya çalışmamalıdır."
+  },
+  {
+    "id": "eay_1_32",
+    "konu": "Araştırma Yöntemlerinin Katkısı",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir öğretmen adayı, \"Araştırma etiği nedir?\" sorusunu cevaplayabiliyor (1), bir araştırma için \"etik kurul onayı alabiliyor\" (2) ve \"etik ihlallere karşı duyarlı hale geliyor\" (3). Bu durumlar sırasıyla hangi katkı boyutlarına örnektir?",
+    "secenekler": [
+      "(1) Bilgi, (2) Beceri, (3) Tutum",
+      "(1) Beceri, (2) Bilgi, (3) Tutum",
+      "(1) Bilgi, (2) Tutum, (3) Beceri",
+      "(1) Tutum, (2) Bilgi, (3) Beceri"
+    ],
+    "dogruCevap": "(1) Bilgi, (2) Beceri, (3) Tutum",
+    "aciklama": "Bilmek (Bilgi), o bilgiyi kullanarak bir eylemde bulunabilmek (Beceri) ve o konudaki duyarlılığı içselleştirmek (Tutum) araştırma eğitiminin farklı boyutlarıdır."
+  },
+  {
+    "id": "eay_1_33",
+    "konu": "Araştırma Basamakları",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Araştırma basamakları döngüsünde \"Tasarımı Kurma\" aşamasından *hemen önce* gelen adım hangisidir?",
+    "secenekler": [
+      "Problem Üzerine Odaklanma",
+      "Konu Seçimi",
+      "Verileri Toplama",
+      "Verileri Çözümleme"
+    ],
+    "dogruCevap": "Problem Üzerine Odaklanma",
+    "aciklama": "Araştırma sürecinde, genel konu seçildikten sonra spesifik bir problem üzerine odaklanılır ve bu probleme cevap aramak için tasarım kurulur."
+  },
+  {
+    "id": "eay_1_34",
+    "konu": "Bilimsel Tutum",
+    "zorluk": "Orta",
+    "tip": "PDF Dışı",
+    "soruMetni": "Bilimsel \"Kuşkuculuk\" (Skepticism) ile \"İnkârcılık\" (Denialism) arasındaki temel fark nedir?",
+    "secenekler": [
+      "Kuşkuculuk kanıt talep eder, İnkârcılık kanıta rağmen reddeder.",
+      "Kuşkuculuk her şeye inanmaktır, İnkârcılık hiçbir şeye inanmamaktır.",
+      "Kuşkuculuk önyargıdır, İnkârcılık açık fikirliliktir.",
+      "Kuşkuculuk ve İnkârcılık aynı bilimsel tutumdur."
+    ],
+    "dogruCevap": "Kuşkuculuk kanıt talep eder, İnkârcılık kanıta rağmen reddeder.",
+    "aciklama": "Bilimsel kuşkuculuk, bir iddiayı kabul etmek için yeterli kanıt arar. İnkârcılık ise, kanıtlar sunulsa bile ideolojik veya kişisel nedenlerle gerçeği reddetmektir."
+  },
+  {
+    "id": "eay_1_35",
+    "konu": "Bilimsel Tutum",
+    "zorluk": "Zor",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, A yönteminin B yönteminden daha iyi olduğunu düşünmektedir. Bir deney yapar ve sonuçlar A ile B arasında anlamlı bir fark olmadığını gösterir. Araştırmacı, \"Belki de ölçme aracım yanlıştı\" diyerek fark çıkana kadar deneyi tekrarlar. Bu durum hangi bilimsel tutum ilkesine *en çok* aykırıdır?",
+    "secenekler": [
+      "Gerçeklere saygılı olmak (Önyargılı olmamak)",
+      "Yaratıcı olmak",
+      "Sabırlı olmak",
+      "İstatistik bilmek"
+    ],
+    "dogruCevap": "Gerçeklere saygılı olmak (Önyargılı olmamak)",
+    "aciklama": "Araştırmacı, verilerin gösterdiği gerçeği (fark yok) kabul etmek yerine, kendi önyargısını (A daha iyi) doğrulama çabasına girmiştir. Bu, verileri manipüle etmeye yol açabilecek bir önyargıdır."
+  },
+  {
+    "id": "eay_1_36",
+    "konu": "Bilmenin Yolları",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "\"Bilimsel Yöntem\"i diğer \"Bilme Yolları\"ndan (Deneyim, Mantık, Uzman Görüşü) ayıran en temel özellik nedir?",
+    "secenekler": [
+      "Sistematik, kontrollü ve kanıta dayalı olması.",
+      "Sadece uzmanlar tarafından kullanılması.",
+      "Her zaman en hızlı sonucu vermesi.",
+      "Akıl yürütme (Mantık) gerektirmemesi."
+    ],
+    "dogruCevap": "Sistematik, kontrollü ve kanıta dayalı olması.",
+    "aciklama": "Bilimsel yöntem, sadece deneyime veya mantığa dayanmak yerine, iddiaları sistematik ve kontrollü deneylerle/gözlemlerle (kanıta dayalı) test etmeyi içerir."
+  },
+  {
+    "id": "eay_1_37",
+    "konu": "Araştırma Basamakları",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, topladığı verileri istatistik programına girmiş, frekans ve yüzde tabloları oluşturmuştur. Bulgular kısmına \"Katılımcıların %60'ı kadındır\" yazmıştır. Bu araştırmacı, araştırma basamaklarından hangisini tamamlamıştır?",
+    "secenekler": [
+      "Verileri Çözümleme (Analiz Etme)",
+      "Verileri Toplama",
+      "Tasarımı Kurma",
+      "Bulguları Yorumlama"
+    ],
+    "dogruCevap": "Verileri Çözümleme (Analiz Etme)",
+    "aciklama": "Verileri istatistiksel programlara girip tablolar (betimsel istatistikler) oluşturma eylemi, 'Verileri Çözümleme' aşamasıdır. 'Bulguları Yorumlama' ise bu %60'ın ne anlama geldiğini tartışacağı bir sonraki adımdır."
+  },
+  {
+    "id": "eay_1_38",
+    "konu": "Araştırma Yöntemlerinin Katkısı",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Bir öğretmen adayının, araştırmalara karşı \"eleştirel ve sorgulayıcı bir bakış açısı kazanması\" hangi boyutta bir katkıdır?",
+    "secenekler": [
+      "Tutum",
+      "Beceri",
+      "Bilgi",
+      "Deneyim"
+    ],
+    "dogruCevap": "Tutum",
+    "aciklama": "Eleştirel ve sorgulayıcı bakış açısı, bilimsel düşünceyi içselleştirmeyi ifade eder; bu da 'Tutum' boyutu altındadır."
+  },
+  {
+    "id": "eay_1_39",
+    "konu": "Bilimin Anlamı",
+    "zorluk": "Zor",
+    "tip": "PDF Dışı",
+    "soruMetni": "Aşağıdaki sorulardan hangisi \"Bilimsel Yöntem\" kullanılarak (kanıta ve deneye dayalı olarak) cevaplanamaz?",
+    "secenekler": [
+      "Bir insanın yaşamının anlamı ne olmalıdır?",
+      "Belirli bir eğitim metodu öğrencilerin matematik notlarını yükseltir mi?",
+      "COVID-19 aşısı bağışıklık sağlar mı?",
+      "Yetersiz beslenme çocuk gelişimini nasıl etkiler?"
+    ],
+    "dogruCevap": "Bir insanın yaşamının anlamı ne olmalıdır?",
+    "aciklama": "Bilimsel yöntem, kanıta dayalı ve test edilebilir (olgusal) soruları cevaplayabilir. 'Yaşamın anlamı' gibi etik, felsefi veya metafizik sorular ('olması gereken' veya 'değer' yargıları) bilimin kapsamı dışındadır."
+  },
+  {
+    "id": "eay_1_40",
+    "konu": "Bilimsel Tutum",
+    "zorluk": "Orta",
+    "tip": "Teorik",
+    "soruMetni": "Bir araştırmacının, elde ettiği bulgular kendi beklentisiyle (hipoteziyle) çelişse bile, bu bulguları olduğu gibi raporlaması hangi bilimsel tutum ilkesiyle doğrudan ilgilidir?",
+    "secenekler": [
+      "Gerçeklere saygılı olmak",
+      "Yaratıcı olmak",
+      "Sabırlı olmak",
+      "Konu alanını iyi tanımak"
+    ],
+    "dogruCevap": "Gerçeklere saygılı olmak",
+    "aciklama": "Gerçeklere saygılı olmak, araştırmacının kişisel tercihleri veya önyargıları ne olursa olsun, elde edilen verileri (gerçekleri) dürüstçe kabul etmesini ve raporlamasını gerektirir."
+  },
+
+  {
+    "id": "eay_1_41",
+    "konu": "Bilimin Anlamı",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Aşağıdakilerden hangisi bilimi \"gerçeği arama ve açıklama süreci\" olarak tanımlayan bir ifadedir?",
+    "secenekler": [
+      "Bilim, olguların nedenlerini ve nasıl işlediğini sorgulayan sistematik bir süreçtir.",
+      "Bilim, sadece kişisel deneyimlerimizin bir toplamıdır.",
+      "Bilim, çoğunluğun üzerinde anlaştığı değişmez kurallardır.",
+      "Bilim, sadece yaratıcı olmaktır."
+    ],
+    "dogruCevap": "Bilim, olguların nedenlerini ve nasıl işlediğini sorgulayan sistematik bir süreçtir.",
+    "aciklama": "Bilim, sadece bilmek (scire) değil, aynı zamanda bu bilgiyi elde etme süreci, yani gerçeği sistematik ve kanıta dayalı olarak arama ve açıklama eylemidir."
+  },
+  {
+    "id": "eay_1_42",
+    "konu": "Bilimsel Tutum",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Bir araştırmacının, alışılmadık bağlantılar kurarak probleme yeni bir çözüm yolu önermesi, hangi bilimsel tutum özelliğine örnektir?",
+    "secenekler": [
+      "Yaratıcı olmak",
+      "Sabırlı olmak",
+      "Kuşkucu olmak",
+      "Gerçeklere saygılı olmak"
+    ],
+    "dogruCevap": "Yaratıcı olmak",
+    "aciklama": "Yaratıcılık, bilimsel tutumun bir parçası olarak, problemlere özgün ve yenilikçi bakış açıları veya çözümler geliştirebilmeyi ifade eder."
+  },
+  {
+    "id": "eay_1_43",
+    "konu": "Bilmenin Yolları",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir öğrenci, \"Benim için en iyi çalışma yöntemi müzik dinlemektir, çünkü hep böyle yaptım\" diyorsa (1), sınıf arkadaşlarının hepsi de \"Evet, bizim için de en iyisi bu\" diyorsa (2), bu iki durum sırasıyla hangi bilme yollarına örnektir?",
+    "secenekler": [
+      "(1) Deneyim, (2) Görüş Birliği",
+      "(1) Mantık, (2) Deneyim",
+      "(1) Uzman Görüşü, (2) Mantık",
+      "(1) Görüş Birliği, (2) Bilimsel Yöntem"
+    ],
+    "dogruCevap": "(1) Deneyim, (2) Görüş Birliği",
+    "aciklama": "Bireyin kendi yaşantısından çıkardığı sonuç 'Deneyim'dir. Bir grubun bu fikri paylaşması ve doğru kabul etmesi ise 'Görüş Birliği'dir."
+  },
+  {
+    "id": "eay_1_44",
+    "konu": "Araştırma Basamakları",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, yaptığı anket sonucunda \"okul müdürlerinin %80'i mesleki gelişim eğitimlerinin yetersiz olduğunu düşünüyor\" bulgusuna ulaşmıştır. Raporunda \"Bu durum, müdürlerin yeni yönetim tekniklerine adapte olmasını zorlaştırmaktadır\" cümlesini yazıyorsa, hangi basamağa geçmiştir?",
+    "secenekler": [
+      "Bulguları Yorumlama",
+      "Verileri Çözümleme",
+      "Verileri Toplama",
+      "Tasarımı Kurma"
+    ],
+    "dogruCevap": "Bulguları Yorumlama",
+    "aciklama": "Veriyi analiz edip '%80' bulgusunu elde etmek 'Veri Çözümleme'dir. Ancak bu bulgunun 'ne anlama geldiğini' veya 'neye yol açtığını' açıklamak 'Bulguları Yorumlama' aşamasıdır."
+  },
+  {
+    "id": "eay_1_45",
+    "konu": "Bilimsel Tutum",
+    "zorluk": "Zor",
+    "tip": "Kavramsal",
+    "soruMetni": "Bir araştırmacının kansere çare ararken 1000. deneyini de aynı titizlikle yapması (1) ile 1001. deneyde kimsenin aklına gelmeyen farklı bir molekülü denemesi (2) hangi iki özelliği gösterir?",
+    "secenekler": [
+      "(1) Sabırlı olmak, (2) Yaratıcı olmak",
+      "(1) Kuşkucu olmak, (2) Sabırlı olmak",
+      "(1) İstatistik bilmek, (2) Açık fikirli olmak",
+      "(1) Yaratıcı olmak, (2) Önyargılı olmak"
+    ],
+    "dogruCevap": "(1) Sabırlı olmak, (2) Yaratıcı olmak",
+    "aciklama": "Defalarca bıkmadan denemek 'Sabır' gerektirir. Süreç tıkandığında yeni ve özgün bir yol denemek ise 'Yaratıcılık' gerektirir. Her ikisi de bilimsel tutum için önemlidir."
+  },
+  {
+    "id": "eay_1_46",
+    "konu": "Araştırma Basamakları",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Araştırma basamaklarını gösteren şemanın döngüsel (dairesel) olması neyi ifade eder?",
+    "secenekler": [
+      "Bilimsel araştırmanın bir sonuca ulaştıktan sonra yeni sorularla tekrar başlayabileceğini.",
+      "Araştırmanın her zaman 'Konu Seçimi' ile bitmesi gerektiğini.",
+      "Tüm basamakların aynı anda yapılması gerektiğini.",
+      "Veri toplamanın en önemsiz adım olduğunu."
+    ],
+    "dogruCevap": "Bilimsel araştırmanın bir sonuca ulaştıktan sonra yeni sorularla tekrar başlayabileceğini.",
+    "aciklama": "Araştırma döngüseldir; bir 'Sonucu Sunma' aşaması, genellikle yeni bir 'Konu Seçimi' veya 'Problem Üzerine Odaklanma' için zemin hazırlar. Bilim bu döngüyle ilerler."
+  },
+  {
+    "id": "eay_1_47",
+    "konu": "Bilimsel Tutum",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir öğretmen, \"Oyun temelli öğrenme benim tarzım değil, ben geleneksel yöntemi tercih ederim\" diyerek bu konudaki yeni araştırmaları okumayı reddediyorsa, hangi bilimsel tutumdan uzaktır?",
+    "secenekler": [
+      "Açık fikirli olmak (Önyargılı olmak)",
+      "Sabırlı olmak",
+      "Yaratıcı olmak",
+      "Kuşkucu olmak"
+    ],
+    "dogruCevap": "Açık fikirli olmak (Önyargılı olmak)",
+    "aciklama": "Açık fikirli olmak, yeni bilgilere veya kanıtlara (araştırmalara) karşı kişisel tercihlerin veya önyargıların ötesinde değerlendirme yapmayı gerektirir."
+  },
+  {
+    "id": "eay_1_48",
+    "konu": "Bilmenin Yolları",
+    "zorluk": "Zor",
+    "tip": "Kavramsal",
+    "soruMetni": "\"Mantık\" ve \"Bilimsel Yöntem\" arasındaki temel fark nedir?",
+    "secenekler": [
+      "Mantık sadece akıl yürütmedir, Bilimsel Yöntem ise akıl yürütmeyi kanıtlarla test eder.",
+      "Mantık her zaman doğrudur, Bilimsel Yöntem ise yanıltıcı olabilir.",
+      "Bilimsel Yöntem mantığa ihtiyaç duymaz, sadece deneye dayanır.",
+      "Mantık uzman görüşüdür, Bilimsel Yöntem deneyimdir."
+    ],
+    "dogruCevap": "Mantık sadece akıl yürütmedir, Bilimsel Yöntem ise akıl yürütmeyi kanıtlarla test eder.",
+    "aciklama": "Mantık, öncüllerden sonuca giden bir akıl yürütme yoludur (Örn: Tüm insanlar ölümlüdür, Sokrates insandır, öyleyse Sokrates ölümlüdür). Ancak Bilimsel Yöntem, bu öncüllerin veya sonuçların 'gerçek dünyada' kanıtlarla (deney/gözlem) desteklenip desteklenmediğini de kontrol eder."
+  },
+  {
+    "id": "eay_1_49",
+    "konu": "Bilimsel Tutum",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Bir araştırmacının \"bilimsel yöntemi ve istatistiği iyi bilmesi\" neden önemlidir?",
+    "secenekler": [
+      "Topladığı verileri doğru analiz edip anlamlı sonuçlar çıkarabilmek için.",
+      "Araştırmayı daha yaratıcı hale getirmek için.",
+      "Araştırmayı daha sabırlı yürütebilmek için.",
+      "Önyargılı olmasını engellemek için."
+    ],
+    "dogruCevap": "Topladığı verileri doğru analiz edip anlamlı sonuçlar çıkarabilmek için.",
+    "aciklama": "Bilimsel yöntem ve istatistik, bir araştırmacının temel araçlarıdır. Bu araçlar olmadan veriler toplanamaz, toplansa bile doğru analiz edilemez ve güvenilir sonuçlara ulaşılamaz."
+  },
+  {
+    "id": "eay_1_50",
+    "konu": "Bilimin Anlamı",
+    "zorluk": "Orta",
+    "tip": "PDF Dışı",
+    "soruMetni": "Bilim, \"yaşamı anlamlandırma ve geliştirme aracıdır\" ifadesi ne anlama gelmektedir?",
+    "secenekler": [
+      "Bilimsel bilgi (örn: tıp, teknoloji) insan yaşamının kalitesini artırmak için kullanılabilir.",
+      "Bilim sadece felsefi bir anlam arayışıdır.",
+      "Bilim, yaşamın manevi anlamını kanıtlamayı amaçlar.",
+      "Bilim, yaşamı sadece daha karmaşık hale getirir."
+    ],
+    "dogruCevap": "Bilimsel bilgi (örn: tıp, teknoloji) insan yaşamının kalitesini artırmak için kullanılabilir.",
+    "aciklama": "Bilim sadece evreni anlamakla (anlamlandırma) kalmaz, aynı zamanda bu bilgiyi kullanarak karşılaştığımız sorunlara (hastalık, iletişim vb.) çözümler üreterek (geliştirme) yaşam kalitemizi artırır."
+  },
+  {
+    "id": "eay_3_1",
+    "konu": "Araştırma Paradigması",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Bir araştırmacının olaylara baktığı 'pencereyi' veya 'dünya görüşünü' ifade eden, ona hangi soruları nasıl sorması gerektiği konusunda rehberlik eden inanç sistemine ne ad verilir?",
+    "secenekler": [
+      "Paradigma",
+      "Hipotez",
+      "Değişken",
+      "Ölçek"
+    ],
+    "dogruCevap": "Paradigma",
+    "aciklama": "Paradigma, bir araştırmacının gerçeklik ve bilgi anlayışını şekillendiren, araştırma sürecine rehberlik eden genel bir çerçeve veya dünya görüşüdür."
+  },
+  {
+    "id": "eay_3_2",
+    "konu": "Değişken Türleri",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Bir araştırmada, gözlemden gözleme farklılık gösteren ve en az iki farklı değer alabilen özelliklere ne ad verilir?",
+    "secenekler": [
+      "Değişken",
+      "Sabit",
+      "Paradigma",
+      "Ölçek"
+    ],
+    "dogruCevap": "Değişken",
+    "aciklama": "Cinsiyet (kadın/erkek), yaş veya başarı puanı gibi farklı değerler alabilen özellikler 'değişken' olarak adlandırılır."
+  },
+  {
+    "id": "eay_33",
+    "konu": "Değişken Türleri (Bağımlı/Bağımsız)",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "'Uykusuz kalma süresinin (X) problem çözme becerisi (Y) üzerindeki etkisi' incelenen bir araştırmada, 'problem çözme becerisi (Y)' hangi tür değişkendir?",
+    "secenekler": [
+      "Bağımlı Değişken",
+      "Bağımsız Değişken",
+      "Nitel Değişken",
+      "Süreksiz Değişken"
+    ],
+    "dogruCevap": "Bağımlı Değişken",
+    "aciklama": "Bağımlı değişken, araştırmanın 'sonucu'dur ve bağımsız değişkenden (burada uykusuzluk) etkilenmesi beklenir. Neden 'bağımsız', sonuç 'bağımlı' değişkendir."
+  },
+  {
+    "id": "eay_3_4",
+    "konu": "Ölçek Türleri",
+    "zorluk": "Kolay",
+    "tip": "Senaryo",
+    "soruMetni": "Bir ankette katılımcıların 'medeni durumunu' (Evli, Bekar, Boşanmış) kategorilendiren ölçek türü hangisidir?",
+    "secenekler": [
+      "Sınıflama (Nominal)",
+      "Sıralama (Ordinal)",
+      "Aralıklı (Interval)",
+      "Oranlı (Ratio)"
+    ],
+    "dogruCevap": "Sınıflama (Nominal)",
+    "aciklama": "Sınıflama ölçekleri, özellikleri sadece isimsel olarak kategorilere ayırır (örn: cinsiyet, meslek, okul türü). Kategoriler arasında bir üstünlük veya sıra yoktur."
+  },
+  {
+    "id": "eay_3_5",
+    "konu": "Araştırma Paradigması",
+    "zorluk": "Orta",
+    "tip": "Kavramsal",
+    "soruMetni": "'Tek, nesnel ve ölçülebilir bir gerçeklik vardır' diyen Pozitivist Paradigma ile 'Gerçeklik, bireylerin yorumlarına ve bağlama göre değişen, çoklu bir yapıdadır' diyen Yorumlayıcı Paradigma arasındaki temel fark nedir?",
+    "secenekler": [
+      "Gerçeklik Anlayışı (Ontoloji)",
+      "Araştırmacının Rolü",
+      "Veri Toplama Yöntemi",
+      "Değişken Sayısı"
+    ],
+    "dogruCevap": "Gerçeklik Anlayışı (Ontoloji)",
+    "aciklama": "Bu iki paradigma arasındaki en temel felsefi ayrım, 'gerçekliğin' doğasına (Ontoloji) bakış açılarıdır. Pozitivizm tek bir gerçeklik (nesnel), Yorumlayıcılık çoklu gerçeklik (öznel) varsayar."
+  },
+  {
+    "id": "eay_3_6",
+    "konu": "Değişken Türleri (Sürekli/Süreksiz)",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Aşağıdaki değişken çiftlerinden hangisi 'Sürekli - Süreksiz' olarak doğru sıralanmıştır?",
+    "secenekler": [
+      "Boy uzunluğu (metre) - Medeni durum (evli/bekar)",
+      "Medeni durum (evli/bekar) - Kardeş sayısı",
+      "Kardeş sayısı - Test puanı",
+      "Cinsiyet - Boy uzunluğu (metre)"
+    ],
+    "dogruCevap": "Boy uzunluğu (metre) - Medeni durum (evli/bekar)",
+    "aciklama": "Sürekli değişken, iki değer arasında sonsuz değer alabilir (örn: 1.70m ile 1.71m arası). Süreksiz değişken ise sadece sınırlı sayıda değer alır (örn: medeni durum, kardeş sayısı)."
+  },
+  {
+    "id": "eay_3_7",
+    "konu": "Ölçek Türleri",
+    "zorluk": "Zor",
+    "tip": "Kavramsal",
+    "soruMetni": "'Eşit Aralıklı' ölçek (örn: Termometrede Santigrat) ile 'Eşit Oranlı' ölçek (örn: Metre) arasındaki temel fark nedir?",
+    "secenekler": [
+      "Oranlı ölçekte 'gerçek sıfır' (yokluk) vardır, Aralıklı ölçekte yoktur.",
+      "Aralıklı ölçek sıralama yapar, Oranlı ölçek yapamaz.",
+      "Aralıklı ölçek süreklidir, Oranlı ölçek süreksizdir.",
+      "Oranlı ölçek kategoriktir, Aralıklı ölçek sayısal değildir."
+    ],
+    "dogruCevap": "Oranlı ölçekte 'gerçek sıfır' (yokluk) vardır, Aralıklı ölçekte yoktur.",
+    "aciklama": "0 derece Santigrat 'sıcaklığın yokluğu' anlamına gelmez (izafi sıfır). Ancak 0 metre 'uzunluğun yokluğu' anlamına gelir (gerçek sıfır). Bu nedenle sadece Oranlı ölçekte 'iki katı' gibi ifadeler kullanılabilir."
+  },
+  {
+    "id": "eay_3_8",
+    "konu": "Araştırma Paradigması",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "'Gerçeklik nesneldir, ölçülebilir ve gözlemlenebilir' varsayımına dayanan ve evreni yöneten genel yasaları bulmayı amaçlayan paradigma hangisidir?",
+    "secenekler": [
+      "Pozitivist Paradigma",
+      "Post-pozitivist Paradigma",
+      "Yorumlayıcı Paradigma",
+      "Eleştirel Paradigma"
+    ],
+    "dogruCevap": "Pozitivist Paradigma",
+    "aciklama": "Pozitivist paradigma (Auguste Comte) rasyonalizm ve empirizme dayanır; gerçeğin tek, nesnel ve ölçülebilir olduğunu varsayar."
+  },
+  {
+    "id": "eay_3_9",
+    "konu": "Ölçek Türleri",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir öğretmenin, öğrencilerinin matematik performansını 'Kötü, İdare Eder, İyi, Harika' şeklinde derecelendirmesi hangi ölçek düzeyine örnektir?",
+    "secenekler": [
+      "Sıralama (Ordinal)",
+      "Sınıflama (Nominal)",
+      "Aralıklı (Interval)",
+      "Oranlı (Ratio)"
+    ],
+    "dogruCevap": "Sıralama (Ordinal)",
+    "aciklama": "Sıralama ölçeği, kategoriler arasında bir büyüklük sırası (iyiden kötüye) olduğunu belirtir, ancak aralarındaki farkın 'eşit' olduğunu garanti etmez ('İyi' ile 'Harika' arasındaki fark, 'Kötü' ile 'İdare Eder' arasındaki farkla aynı olmayabilir)."
+  },
+  {
+    "id": "eay_3_10",
+    "konu": "Değişken Türleri (Nitel/Nicel)",
+    "zorluk": "Zor",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmada 'Cinsiyet' ve 'Medeni Durum' değişkenleri kullanılıyorsa, bu değişkenlerin ortak özelliği nedir?",
+    "secenekler": [
+      "İkisi de Nitel (Kategorik) değişkendir.",
+      "İkisi de Nicel (Sayısal) değişkendir.",
+      "İkisi de Sürekli değişkendir.",
+      "İkisi de Bağımlı değişkendir."
+    ],
+    "dogruCevap": "İkisi de Nitel (Kategorik) değişkendir.",
+    "aciklama": "Hem Cinsiyet (K/E) hem de Medeni Durum (Evli/Bekar vb.), özelliğe ilişkin sayısal bir miktar değil, bir sınıflandırma (kategori) belirten Nitel (Kategorik) değişkenlerdir."
+  },
+  {
+    "id": "eay_3_11",
+    "konu": "Değişken Türleri (Nicel/Nitel)",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Bir özelliğe ilişkin sayı veya miktar veren (test puanı, ücret, boy uzunluğu) değişken türü hangisidir?",
+    "secenekler": [
+      "Nicel Değişken",
+      "Nitel Değişken",
+      "Bağımlı Değişken",
+      "Süreksiz Değişken"
+    ],
+    "dogruCevap": "Nicel Değişken",
+    "aciklama": "Nicel değişkenler, bir özelliğin miktarını sayısal olarak ifade ederken (örn: ağırlık), Nitel değişkenler sınıflandırma yapar (örn: medeni durum)."
+  },
+  {
+    "id": "eay_3_12",
+    "konu": "Araştırma Paradigması",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "'Mutlak gerçeklik yoktur, ancak bilimsel yöntemle gerçekliğe olabildiğince yaklaşılabilir' görüşünü savunan ve hem nicel hem nitel yöntemleri (karma yöntem) kullanabilen paradigma hangisidir?",
+    "secenekler": [
+      "Post-pozitivist Paradigma",
+      "Pozitivist Paradigma",
+      "Yorumlayıcı Paradigma",
+      "Determinist Paradigma"
+    ],
+    "dogruCevap": "Post-pozitivist Paradigma",
+    "aciklama": "Post-pozitivist paradigma, Pozitivizmin katı nesnelliğini eleştirir ve bilginin olasılıksal olduğunu, mutlak doğruya sadece 'yaklaşılabileceğini' savunur."
+  },
+  {
+    "id": "eay_3_13",
+    "konu": "Araştırma Paradigması",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, 'Köy okulundaki öğrencilerin 'eğitim' kavramını nasıl deneyimlediklerini' anlamak için onlarla derinlemesine mülakatlar yapıyorsa, hangi paradigmaya daha yakındır?",
+    "secenekler": [
+      "Yorumlayıcı (Nitel)",
+      "Pozitivist (Nicel)",
+      "Post-pozitivist",
+      "Deneysel"
+    ],
+    "dogruCevap": "Yorumlayıcı (Nitel)",
+    "aciklama": "Yorumlayıcı paradigma, 'anlamı' ve 'deneyimi' derinlemesine anlamayı hedefler. Mülakat gibi nitel yöntemler, çoklu ve bağlama bağlı gerçekliği ortaya çıkarmak için bu paradigmada kullanılır."
+  },
+  {
+    "id": "eay_3_14",
+    "konu": "Değişken Türleri (Bağımlı/Bağımsız)",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "'Öğretim yönteminin (X), sınav kaygısının (Y) ve cinsiyetin (Z), öğrencilerin sınav performansı (T) üzerindeki etkisi' inceleniyorsa, bu araştırmadaki bağımlı değişken hangisidir?",
+    "secenekler": [
+      "Sınav performansı (T)",
+      "Öğretim yöntemi (X)",
+      "Sınav kaygısı (Y)",
+      "Cinsiyet (Z)"
+    ],
+    "dogruCevap": "Sınav performansı (T)",
+    "aciklama": "Bağımlı değişken (T), araştırmada açıklanmaya çalışılan 'sonuç'tur. Diğer tüm değişkenler (X, Y, Z) bu sonucu etkileyen olası 'nedenler' yani bağımsız değişkenlerdir."
+  },
+  {
+    "id": "eay_3_15",
+    "konu": "Ölçek Türleri",
+    "zorluk": "Kolay",
+    "tip": "Senaryo",
+    "soruMetni": "Bir yarışmada atletlerin 'birinci', 'ikinci' ve 'üçüncü' olarak belirlenmesi hangi ölçek düzeyine örnektir?",
+    "secenekler": [
+      "Sıralama (Ordinal)",
+      "Sınıflama (Nominal)",
+      "Aralıklı (Interval)",
+      "Oranlı (Ratio)"
+    ],
+    "dogruCevap": "Sıralama (Ordinal)",
+    "aciklama": "Bu ölçekte bir sıra (birincinin ikinciden iyi olması) vardır, ancak aralarındaki farkın (birinci ile ikinci arasındaki süre farkı) eşit olduğu garanti edilmez."
+  },
+  {
+    "id": "eay_3_16",
+    "konu": "Değişken Türleri (Sürekli/Süreksiz)",
+    "zorluk": "Orta",
+    "tip": "Kavramsal",
+    "soruMetni": "'Süreksiz (Kesikli)' bir değişkenin temel özelliği nedir?",
+    "secenekler": [
+      "Sadece sınırlı sayıda veya sayılabilir değer alır.",
+      "İki ölçüm arasında sonsuz sayıda değer alır.",
+      "Her zaman bir neden belirtir.",
+      "Her zaman bir sonuç belirtir."
+    ],
+    "dogruCevap": "Sadece sınırlı sayıda veya sayılabilir değer alır.",
+    "aciklama": "Süreksiz (veya kesikli) değişkenler tam değerler alır; arada kesirli değerler alamaz (örn: 2.5 kardeş, 3.7 cinsiyet olamaz). Sürekli değişkenler ise (örn: boy) arada sonsuz değer alabilir."
+  },
+  {
+    "id": "eay_3_17",
+    "konu": "Ölçek Türleri",
+    "zorluk": "Zor",
+    "tip": "Senaryo",
+    "soruMetni": "Bir öğrencinin 'Tarih dersi tutum puanı' (1-5 arası Likert) (1) ve 'Aylık harcadığı harçlık' (TL) (2) hangi ölçek düzeylerine örnektir?",
+    "secenekler": [
+      "(1) Aralıklı, (2) Oranlı",
+      "(1) Sıralama, (2) Aralıklı",
+      "(1) Oranlı, (2) Aralıklı",
+      "(1) Sınıflama, (2) Oranlı"
+    ],
+    "dogruCevap": "(1) Aralıklı, (2) Oranlı",
+    "aciklama": "Sosyal bilimlerde tutum puanları gibi (Likert) test ölçeklerinin aralıklarının eşit olduğu varsayılır (Aralıklı). Harçlıkta (TL) ise '0 TL' gerçek bir yokluk belirttiği ve 'iki katı' denilebildiği için 'Oranlı' bir ölçektir."
+  },
+  {
+    "id": "eay_3_18",
+    "konu": "Araştırma Paradigması",
+    "zorluk": "Orta",
+    "tip": "Kavramsal",
+    "soruMetni": "Pozitivist paradigmanın amacı 'genelleme yapmak' iken, Yorumlayıcı paradigmanın amacı nedir?",
+    "secenekler": [
+      "Anlamı ve deneyimi derinlemesine anlamak",
+      "Hataları azaltarak doğruya yaklaşmak",
+      "Neden-sonuç ilişkisini kanıtlamak",
+      "Tüm yasaları bulmak"
+    ],
+    "dogruCevap": "Anlamı ve deneyimi derinlemesine anlamak",
+    "aciklama": "Pozitivizm (nicel) genellenebilir yasalar arar. Yorumlayıcılık (nitel) ise bir durumu genellemek yerine, o durumun bağlama bağlı anlamını derinlemesine kavramayı amaçlar."
+  },
+  {
+    "id": "eay_3_19",
+    "konu": "Değişken Türleri",
+    "zorluk": "Zor",
+    "tip": "Kavramsal",
+    "soruMetni": "'Kaygı' soyut bir kavramdır. Bir araştırmacının 'kaygıyı', 'bir ölçekten alınan puan' veya 'kalp atış hızı' olarak tanımlaması sürecine ne ad verilir?",
+    "secenekler": [
+      "İşlemsel Tanımlama (Somutlaştırma)",
+      "Hipotez Kurma",
+      "Paradigma Belirleme",
+      "Sıralama Ölçeği Kullanma"
+    ],
+    "dogruCevap": "İşlemsel Tanımlama (Somutlaştırma)",
+    "aciklama": "İşlemsel tanımlama, 'kaygı', 'başarı', 'zeka' gibi soyut kavramların nasıl ölçüleceğini somut ve gözlemlenebilir terimlerle (örn: ölçek puanı) tanımlama sürecidir."
+  },
+  {
+    "id": "eay_3_20",
+    "konu": "Değişken Türleri (Nicel/Nitel)",
+    "zorluk": "Kolay",
+    "tip": "Senaryo",
+    "soruMetni": "'Üretilen ekmek sayısı', 'Çocuk sayısı', 'Test puanı' gibi değişkenlerin ortak özelliği nedir?",
+    "secenekler": [
+      "Nicel (Sayısal) olmaları",
+      "Nitel (Kategorik) olmaları",
+      "Hepsinin Sınıflama ölçeğinde olması",
+      "Hepsinin Sürekli olması"
+    ],
+    "dogruCevap": "Nicel (Sayısal) olmaları",
+    "aciklama": "Bu değişkenlerin tümü bir özelliğin 'miktarını' sayısal olarak verir; bu nedenle Nicel (sayısal) değişkenlerdir. (Not: Çocuk sayısı Süreksiz, Test puanı Aralıklı, Ekmek sayısı Süreksizdir, ancak hepsi Nicel'dir.)"
+  },
+    {
+    "id": "eay_3_21",
+    "konu": "Değişken Türleri (Bağımsız)",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Bir araştırmada 'olası neden' olarak görülen ve etkisi test edilen değişkene ne ad verilir?",
+    "secenekler": [
+      "Bağımsız Değişken",
+      "Bağımlı Değişken",
+      "Sürekli Değişken",
+      "Nitel Değişken"
+    ],
+    "dogruCevap": "Bağımsız Değişken",
+    "aciklama": "Bağımsız değişken, araştırmacının manipüle ettiği veya seçtiği, sonuç (bağımlı değişken) üzerindeki etkisi merak edilen 'neden' değişkenidir."
+  },
+  {
+    "id": "eay_3_22",
+    "konu": "Ölçek Türleri",
+    "zorluk": "Kolay",
+    "tip": "Senaryo",
+    "soruMetni": "Bir öğrenci bilgi formunda 'Doğum Yeri' sorusuna 'Ankara', 'İstanbul' veya 'İzmir' gibi cevaplar veriyorsa, bu değişken hangi ölçek türündedir?",
+    "secenekler": [
+      "Sınıflama (Nominal)",
+      "Sıralama (Ordinal)",
+      "Aralıklı (Interval)",
+      "Oranlı (Ratio)"
+    ],
+    "dogruCevap": "Sınıflama (Nominal)",
+    "aciklama": "Şehir isimleri arasında herhangi bir büyüklük veya üstünlük sıralaması yoktur; sadece isimlendirme ve kategorize etme (sınıflama) amacı taşır."
+  },
+  {
+    "id": "eay_3_23",
+    "konu": "Değişken Türleri (Sürekli)",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Aşağıdaki değişkenlerden hangisi yapısı gereği 'Sürekli' bir değişkendir?",
+    "secenekler": [
+      "Bir çuval pirincin ağırlığı (kg)",
+      "Bir sınıftaki öğrenci sayısı",
+      "Bir otoparkta park etmiş araba sayısı",
+      "Bir kütüphanedeki kitap sayısı"
+    ],
+    "dogruCevap": "Bir çuval pirincin ağırlığı (kg)",
+    "aciklama": "Ağırlık, iki ölçüm arasında sonsuz sayıda değer alabilir (örn: 10.5 kg, 10.55 kg). Diğer seçenekler (öğrenci, araba, kitap sayıları) tam sayılarla ifade edilen süreksiz değişkenlerdir."
+  },
+  {
+    "id": "eay_3_24",
+    "konu": "Araştırma Paradigması",
+    "zorluk": "Orta",
+    "tip": "Kavramsal",
+    "soruMetni": "Pozitivist paradigmanın araştırmacıya biçtiği rol 'Tarafsız Gözlemci' iken, Yorumlayıcı (Nitel) paradigmanın biçtiği rol nedir?",
+    "secenekler": [
+      "Katılımcı ve Yorumlayıcı",
+      "Dışarıdan Kontrol Eden",
+      "İstatistiksel Analist",
+      "Mutlak Otorite"
+    ],
+    "dogruCevap": "Katılımcı ve Yorumlayıcı",
+    "aciklama": "Yorumlayıcı paradigmada araştırmacı, çalışılan grubun içine girebilir, onlarla etkileşim kurar ve elde ettiği verileri kendi süzgecinden geçirerek yorumlar (subjektiflik kabul edilir)."
+  },
+  {
+    "id": "eay_3_25",
+    "konu": "Ölçek Türleri",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Hava sıcaklığının 0°C olması 'sıcaklığın hiç olmadığı' anlamına gelmez. Bu durum, sıcaklık ölçümünün (Celcius) hangi ölçek türünde olduğunu gösterir?",
+    "secenekler": [
+      "Eşit Aralıklı (Interval)",
+      "Eşit Oranlı (Ratio)",
+      "Sıralama (Ordinal)",
+      "Sınıflama (Nominal)"
+    ],
+    "dogruCevap": "Eşit Aralıklı (Interval)",
+    "aciklama": "Eşit aralıklı ölçeklerde '0' noktası keyfidir (izafi sıfır), özelliğin yokluğunu göstermez. Bu yüzden sıcaklık (Celcius) aralıklı ölçektir."
+  },
+  {
+    "id": "eay_3_26",
+    "konu": "Değişken Türleri",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Bir araştırmada incelenen durumun 'sonucu' olan ve araştırmacının açıklamak istediği temel değişkene ne denir?",
+    "secenekler": [
+      "Bağımlı Değişken",
+      "Bağımsız Değişken",
+      "Kontrol Değişkeni",
+      "Süreksiz Değişken"
+    ],
+    "dogruCevap": "Bağımlı Değişken",
+    "aciklama": "Bağımlı değişken, bağımsız değişkendeki değişimlerden etkilenmesi beklenen ve araştırmanın sonucunu oluşturan değişkendir."
+  },
+  {
+    "id": "eay_3_27",
+    "konu": "Araştırma Paradigması",
+    "zorluk": "Hard",
+    "tip": "Mantıksal/Kavramsal",
+    "soruMetni": "Eğer bir araştırmacı 'Gerçeklik insan zihninden bağımsız olarak orada durmaktadır, biz onu doğru yöntemlerle (deney) keşfederiz' diyorsa (1); diğeri 'Gerçeklik insanların etkileşimleri sonucu inşa edilir, sabit bir gerçek yoktur' diyorsa (2); bu araştırmacılar sırasıyla hangi paradigmaları savunmaktadır?",
+    "secenekler": [
+      "(1) Pozitivist, (2) Yorumlayıcı",
+      "(1) Yorumlayıcı, (2) Pozitivist",
+      "(1) Post-pozitivist, (2) Pozitivist",
+      "(1) Pozitivist, (2) Post-pozitivist"
+    ],
+    "dogruCevap": "(1) Pozitivist, (2) Yorumlayıcı",
+    "aciklama": "Pozitivizm 'nesnel, dışsal gerçekliği' (Realizm) savunurken; Yorumlayıcı paradigma gerçekliğin 'sosyal olarak inşa edildiğini' ve öznel olduğunu (Rölativizm) savunur."
+  },
+  {
+    "id": "eay_3_28",
+    "konu": "Ölçek Türleri",
+    "zorluk": "Zor",
+    "tip": "Kavramsal",
+    "soruMetni": "Neden 'Ali'nin kilosu Veli'nin kilosunun iki katıdır' (Oranlı) diyebiliyoruz da, 'Bugün hava dünkünün iki katı sıcaktır' (Aralıklı) diyemiyoruz?",
+    "secenekler": [
+      "Çünkü ağırlıkta 'gerçek sıfır' (yokluk) vardır, sıcaklıkta yoktur.",
+      "Çünkü ağırlık daha hassas ölçülür.",
+      "Çünkü sıcaklık sürekli değişir.",
+      "Çünkü ağırlık niceldir, sıcaklık niteldir."
+    ],
+    "dogruCevap": "Çünkü ağırlıkta 'gerçek sıfır' (yokluk) vardır, sıcaklıkta yoktur.",
+    "aciklama": "Oran (katı) hesabı yapabilmek için başlangıç noktasının 'mutlak yokluk' (gerçek sıfır) olması gerekir. 20°C, 10°C'nin ısıl enerji olarak iki katı değildir çünkü 0°C ısı enerjisinin bittiği nokta değildir."
+  },
+  {
+    "id": "eay_3_29",
+    "konu": "Değişken Türleri (Bağımsız)",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "'Farklı dozlardaki (10mg, 20mg, 30mg) bir ilacın hastaların iyileşme süresine etkisi' araştırılıyor. Burada 'ilaç dozu' değişkeni, yapısı bakımından (değerleri bakımından) nasıl sınıflandırılabilir?",
+    "secenekler": [
+      "Süreksiz (Kesikli) Değişken",
+      "Sürekli Değişken",
+      "Bağımlı Değişken",
+      "Nitel Değişken"
+    ],
+    "dogruCevap": "Süreksiz (Kesikli) Değişken",
+    "aciklama": "Araştırmacı ilacı sadece belirli dozlarda (10, 20, 30 gibi tam, kesikli değerlerde) vermiştir. Ara değerler (örn: 10.004 mg) kullanılmadığı veya tanımlanmadığı için bu bağlamda süreksiz olarak ele alınır (veya kategorikleştirilmiş nicel)."
+  },
+  {
+    "id": "eay_3_30",
+    "konu": "Araştırma Paradigması",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Aşağıdakilerden hangisi Pozitivist paradigmanın özelliklerinden biri *değildir*?",
+    "secenekler": [
+      "Gerçekliğin öznel ve çoklu olduğunu savunmak.",
+      "Neden-sonuç ilişkilerini belirlemeye çalışmak.",
+      "Ölçülebilir ve gözlemlenebilir verilere odaklanmak.",
+      "Tarafsız gözlemci rolünü benimsemek."
+    ],
+    "dogruCevap": "Gerçekliğin öznel ve çoklu olduğunu savunmak.",
+    "aciklama": "Gerçekliğin öznel ve çoklu olduğu görüşü Yorumlayıcı (Nitel) paradigmanın özelliğidir. Pozitivizm, gerçekliğin tek ve nesnel olduğunu savunur."
+  },
+   {
+    "id": "eay_3_21",
+    "konu": "Araştırma Paradigması",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Kurucusu Auguste Comte olan, felsefi temelini Rasyonalizm ve Empirizmden alan, gerçekliğin tek ve nesnel olduğunu savunan paradigma hangisidir?",
+    "secenekler": [
+      "Pozitivist Paradigma",
+      "Yorumlayıcı Paradigma",
+      "Post-pozitivist Paradigma",
+      "Eleştirel Paradigma"
+    ],
+    "dogruCevap": "Pozitivist Paradigma",
+    "aciklama": "Pozitivist paradigma, 19. yüzyılda Auguste Comte tarafından şekillendirilen, doğa bilimlerinin yöntemlerini sosyal bilimlere uyarlayan yaklaşımdır."
+  },
+  {
+    "id": "eay_3_22",
+    "konu": "Değişken Türleri (Bağımlı/Bağımsız)",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Bir deneysel araştırmada, araştırmacının değiştirdiği, manipüle ettiği ve 'neden' rolünü üstlenen değişken türü hangisidir?",
+    "secenekler": [
+      "Bağımsız Değişken",
+      "Bağımlı Değişken",
+      "Sürekli Değişken",
+      "Kontrol Değişkeni"
+    ],
+    "dogruCevap": "Bağımsız Değişken",
+    "aciklama": "Bağımsız değişken, araştırmada olası 'nedeni' ifade eder ve etkisi test edilecek olan değişkendir."
+  },
+  {
+    "id": "eay_3_23",
+    "konu": "Ölçek Türleri",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir ankette katılımcılara 'Eğitim Durumunuz' sorulmuş ve seçenekler 'İlkokul - Lise - Lisans - Lisansüstü' olarak verilmiştir. Bu değişken hangi ölçek türündedir?",
+    "secenekler": [
+      "Sıralama (Ordinal)",
+      "Sınıflama (Nominal)",
+      "Eşit Oranlı (Ratio)",
+      "Eşit Aralıklı (Interval)"
+    ],
+    "dogruCevap": "Sıralama (Ordinal)",
+    "aciklama": "Seçenekler arasında hiyerarşik bir yapı (küçükten büyüğe doğru bir sıra) vardır, ancak aralarındaki mesafe (ilkokul ile lise arasındaki farkın lise ile lisans arasındaki farka eşit olup olmadığı) sayısal olarak belirsizdir."
+  },
+  {
+    "id": "eay_3_24",
+    "konu": "Değişken Türleri (Sürekli/Süreksiz)",
+    "zorluk": "Orta",
+    "tip": "Kavramsal",
+    "soruMetni": "Aşağıdaki değişkenlerden hangisi 'Sürekli' (Continuous) bir değişken *değildir*?",
+    "secenekler": [
+      "Kardeş sayısı",
+      "Ağırlık (kg)",
+      "Boy uzunluğu (cm)",
+      "Sınavdan alınan puan"
+    ],
+    "dogruCevap": "Kardeş sayısı",
+    "aciklama": "Ağırlık, boy ve puan gibi değişkenler küsuratlı değerler alabilirken (Sürekli), 'kardeş sayısı' buçuklu olamaz (örn: 2.5 kardeş), sadece tam sayı değerleri alır (Süreksiz/Kesikli)."
+  },
+  {
+    "id": "eay_3_25",
+    "konu": "Araştırma Paradigması",
+    "zorluk": "Zor",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, 'X ilacının iyileşme süresine etkisini' (Nicel) ölçtükten sonra, hastalara 'ilaç kullanım sürecinde neler hissettiklerini' (Nitel) sormuştur. Araştırmacı, 'tek bir yöntem gerçeği tam yansıtamaz' düşüncesiyle hareket ettiğine göre hangi paradigmaya uygundur?",
+    "secenekler": [
+      "Post-pozitivist Paradigma",
+      "Pozitivist Paradigma",
+      "Yorumlayıcı Paradigma",
+      "Radikal Paradigma"
+    ],
+    "dogruCevap": "Post-pozitivist Paradigma",
+    "aciklama": "Post-pozitivizm, nesnel gerçekliğe ulaşmanın zorluğunu kabul eder ve hatayı minimize etmek için hem nicel hem nitel yöntemlerin birlikte kullanıldığı 'Karma Yöntem'i destekler."
+  },
+  {
+    "id": "eay_3_26",
+    "konu": "Ölçek Türleri",
+    "zorluk": "Zor",
+    "tip": "Kavramsal",
+    "soruMetni": "Sıcaklık ölçümünde 0°C 'sıcaklığın yokluğu' anlamına gelmezken, ağırlık ölçümünde 0 kg 'ağırlığın yokluğu' anlamına gelir. Bu durum, sırasıyla hangi iki ölçek türü arasındaki farkı açıklar?",
+    "secenekler": [
+      "Eşit Aralıklı - Eşit Oranlı",
+      "Sıralama - Eşit Aralıklı",
+      "Sınıflama - Eşit Oranlı",
+      "Eşit Oranlı - Eşit Aralıklı"
+    ],
+    "dogruCevap": "Eşit Aralıklı - Eşit Oranlı",
+    "aciklama": "Eşit Aralıklı ölçeklerde (Sıcaklık, Takvim, Puan) sıfır noktası keyfidir (izafi). Eşit Oranlı ölçeklerde (Ağırlık, Uzunluk) ise sıfır noktası gerçektir (yokluk belirtir)."
+  },
+  {
+    "id": "eay_3_27",
+    "konu": "Araştırma Paradigması",
+    "zorluk": "Kolay",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacının amacı 'X değişkeni Y değişkenini etkiler mi?' sorusuna cevap bulmak ve neden-sonuç ilişkilerini belirlemekse, hangi paradigmaya göre çalışıyordur?",
+    "secenekler": [
+      "Pozitivist Paradigma",
+      "Yorumlayıcı Paradigma",
+      "Nitel Paradigma",
+      "Fenomenolojik Paradigma"
+    ],
+    "dogruCevap": "Pozitivist Paradigma",
+    "aciklama": "Pozitivist paradigma, değişkenler arasındaki neden-sonuç ilişkilerini (etkiyi) ölçmeyi ve genel yasalara ulaşmayı hedefler."
+  },
+  {
+    "id": "eay_3_28",
+    "konu": "Değişken Türleri (Nitel/Nicel)",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmada kullanılan 'Medeni Durum' (Evli/Bekar) ve 'Meslek' (Öğretmen/Mühendis) değişkenleri, yapıları bakımından hangi tür değişkendir?",
+    "secenekler": [
+      "Nitel Değişken",
+      "Nicel Değişken",
+      "Sürekli Değişken",
+      "Bağımlı Değişken"
+    ],
+    "dogruCevap": "Nitel Değişken",
+    "aciklama": "Bu değişkenler sayısal bir miktar (azlık-çokluk) belirtmez, sadece bireyleri belirli özelliklerine göre kategorilere ayırır (sınıflandırır). Bu nedenle Niteldir."
+  },
+  {
+    "id": "eay_3_29",
+    "konu": "Ölçek Türleri",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Değişkenlerin sadece isimsel olarak kategorilere ayrıldığı (örn: Kadın-Erkek), kategoriler arasında herhangi bir üstünlük veya sıralamanın olmadığı en basit ölçek türü hangisidir?",
+    "secenekler": [
+      "Sınıflama (Nominal)",
+      "Sıralama (Ordinal)",
+      "Aralıklı (Interval)",
+      "Oranlı (Ratio)"
+    ],
+    "dogruCevap": "Sınıflama (Nominal)",
+    "aciklama": "Sınıflama ölçekleri, varlıkları özelliklerine göre adlandırır ve gruplar (Örn: Göz rengi, Plaka kodu). Matematiksel işlem yapılamaz."
+  },
+  {
+    "id": "eay_3_30",
+    "konu": "Araştırma Paradigması",
+    "zorluk": "Orta",
+    "tip": "Teorik",
+    "soruMetni": "Yorumlayıcı (Nitel) paradigmanın 'Bilgi Anlayışı (Epistemoloji)' nasıldır?",
+    "secenekler": [
+      "Bilgi özneldir ve yoruma dayalıdır.",
+      "Bilgi tamamen nesneldir ve gözlemciden bağımsızdır.",
+      "Bilgi sadece istatistiksel verilerden oluşur.",
+      "Bilgi evrenseldir ve değişmez."
+    ],
+    "dogruCevap": "Bilgi özneldir ve yoruma dayalıdır.",
+    "aciklama": "Yorumlayıcı paradigma, bilginin araştırmacı ile katılımcı arasındaki etkileşimden doğduğunu, bağlama bağlı olduğunu ve öznel yorumlar içerdiğini savunur."
+  },
+  {
+    "id": "eay_3_31",
+    "konu": "Değişken Türleri (Bağımlı/Bağımsız)",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Araştırmada 'etkisi test edilecek olan' değişkene (olası neden) ne ad verilir?",
+    "secenekler": [
+      "Bağımsız Değişken",
+      "Bağımlı Değişken",
+      "Nitel Değişken",
+      "Sürekli Değişken"
+    ],
+    "dogruCevap": "Bağımsız Değişken",
+    "aciklama": "Bağımsız değişken 'neden' veya 'etkiyi' temsil ederken, bağımlı değişken 'sonucu' temsil eder."
+  },
+  {
+    "id": "eay_3_32",
+    "konu": "Ölçek Türleri",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir öğrencinin 'Tutum Ölçeğinden' aldığı puan (Örn: 80 puan) hangi ölçek düzeyindedir?",
+    "secenekler": [
+      "Eşit Aralıklı (Interval)",
+      "Eşit Oranlı (Ratio)",
+      "Sıralama (Ordinal)",
+      "Sınıflama (Nominal)"
+    ],
+    "dogruCevap": "Eşit Aralıklı (Interval)",
+    "aciklama": "Eğitim ve psikolojide kullanılan testler ve ölçek puanları (başarı, tutum, zeka) 'gerçek sıfır' noktasına sahip olmadıkları, ancak aralıkların eşit olduğu varsayıldığı için 'Eşit Aralıklı' olarak kabul edilir."
+  },
+  {
+    "id": "eay_3_33",
+    "konu": "Araştırma Paradigması",
+    "zorluk": "Orta",
+    "tip": "Kavramsal",
+    "soruMetni": "Pozitivist paradigma hangi veri türünü ve araştırmacı rolünü benimser?",
+    "secenekler": [
+      "Veri: Sayısal (Nicel) / Rol: Tarafsız gözlemci",
+      "Veri: Sözel (Nitel) / Rol: Katılımcı-yorumlayıcı",
+      "Veri: Sayısal + Sözel (Karma) / Rol: Eleştirel gözlemci",
+      "Veri: Metinsel / Rol: Tarafsız gözlemci"
+    ],
+    "dogruCevap": "Veri: Sayısal (Nicel) / Rol: Tarafsız gözlemci",
+    "aciklama": "Pozitivist paradigma, nesnel gerçekliği ölçebilmek için sayısal (nicel) verileri kullanır ve araştırmacının süreçten tamamen bağımsız, tarafsız bir gözlemci olması gerektiğini savunur."
+  },
+  {
+    "id": "eay_3_34",
+    "konu": "Değişken Türleri",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Bir durumdan diğerine farklılık göstermeyen, tüm gözlemlerde aynı değeri alan özelliklere ne ad verilir?",
+    "secenekler": [
+      "Sabit",
+      "Değişken",
+      "Sürekli Değişken",
+      "Nitel Değişken"
+    ],
+    "dogruCevap": "Sabit",
+    "aciklama": "Değişken en az iki farklı değer alırken (örn: yaş), 'sabit' tek bir değer alır (örn: araştırmayı sadece 8. sınıflara yapmak; burada 'sınıf düzeyi' sabittir)."
+  },
+  {
+    "id": "eay_3_35",
+    "konu": "Ölçek Türleri",
+    "zorluk": "Kolay",
+    "tip": "Senaryo",
+    "soruMetni": "Aşağıdaki değişkenlerden hangisi 'Eşit Oranlı' (Ratio) ölçek düzeyindedir?",
+    "secenekler": [
+      "Ağırlık (kg)",
+      "Sıcaklık (Celcius)",
+      "Zeka Puanı (IQ)",
+      "Eğitim Düzeyi (Lise, Lisans vb.)"
+    ],
+    "dogruCevap": "Ağırlık (kg)",
+    "aciklama": "Ağırlık, uzunluk, hacim gibi ölçümlerde '0' gerçek bir yokluğu belirttiği (gerçek sıfır) için Eşit Oranlı ölçek düzeyindedir."
+  },
+  {
+    "id": "eay_3_36",
+    "konu": "Araştırma Paradigması",
+    "zorluk": "Zor",
+    "tip": "PDF Dışı",
+    "soruMetni": "Bir araştırmacı 'Eğitimde fırsat eşitsizliğinin altında yatan güç yapılarını ve toplumsal adaletsizlikleri' ortaya çıkarmayı hedefliyorsa, hangi paradigmaya daha yakındır?",
+    "secenekler": [
+      "Eleştirel Paradigma",
+      "Pozitivist Paradigma",
+      "Yorumlayıcı Paradigma",
+      "Post-pozitivist Paradigma"
+    ],
+    "dogruCevap": "Eleştirel Paradigma",
+    "aciklama": "Eleştirel paradigma (sunumda doğrudan yer almasa da), sadece anlamayı (Yorumlayıcı) veya açıklamayı (Pozitivist) değil, aynı zamanda toplumsal adaletsizlikleri ve güç yapılarını açığa çıkarmayı ve değiştirmeyi amaçlar."
+  },
+  {
+    "id": "eay_3_37",
+    "konu": "Değişken Türleri (Bağımlı/Bağımsız)",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "'Cinsiyetin (X) meslek seçimi (Y) üzerindeki etkisi' araştırıldığında, 'Cinsiyet' değişkeni hangi rolü üstlenir?",
+    "secenekler": [
+      "Bağımsız Değişken",
+      "Bağımlı Değişken",
+      "Sürekli Değişken",
+      "Oranlı Değişken"
+    ],
+    "dogruCevap": "Bağımsız Değişken",
+    "aciklama": "Bu araştırmada Cinsiyet'in (neden) Meslek Seçimini (sonuç) etkileyip etkilemediği incelenmektedir. Cinsiyet, bağımsız değişkendir."
+  },
+  {
+    "id": "eay_3_38",
+    "konu": "Ölçek Türleri",
+    "zorluk": "Zor",
+    "tip": "Kavramsal",
+    "soruMetni": "Neden bir 'Sıralama' (Ordinal) ölçeğindeki verilerin ortalamasını almak istatistiksel olarak genellikle anlamsızdır?",
+    "secenekler": [
+      "Çünkü sıralar arasındaki mesafelerin (aralıkların) eşit olduğu bilinmez.",
+      "Çünkü sıralama ölçeği sadece iki kategoriye sahip olabilir.",
+      "Çünkü sıralama ölçeğinde gerçek sıfır noktası yoktur.",
+      "Çünkü sıralama ölçeği aslında nitel değil, niceldir."
+    ],
+    "dogruCevap": "Çünkü sıralar arasındaki mesafelerin (aralıkların) eşit olduğu bilinmez.",
+    "aciklama": "Örneğin, 1. ve 2. ile 2. ve 3. arasındaki farkın eşit olduğunu garanti edemediğimiz için (örn: Likert'te 'Katılıyorum' ile 'Çok Katılıyorum' arası), ortalama gibi aritmetik işlemler anlamsızlaşır."
+  },
+  {
+    "id": "eay_3_39",
+    "konu": "Değişken Türleri (Sürekli/Süreksiz)",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir okuldaki 'Öğretmen sayısı' hangi tür bir değişkendir?",
+    "secenekler": [
+      "Süreksiz (Kesikli)",
+      "Sürekli",
+      "Sınıflama",
+      "Bağımlı"
+    ],
+    "dogruCevap": "Süreksiz (Kesikli)",
+    "aciklama": "Öğretmen sayısı, çocuk sayısı gibi değişkenler sadece tam sayı değerleri alabilir (örn: 10 öğretmen, 11 öğretmen), arada 10.5 öğretmen gibi bir değer alamaz. Bu nedenle süreksizdir."
+  },
+  {
+    "id": "eay_3_40",
+    "konu": "Araştırma Paradigması",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Yorumlayıcı paradigmanın (nitel) temel amacı nedir?",
+    "secenekler": [
+      "Bir olguyu veya deneyimi derinlemesine anlamak.",
+      "Evrensel yasaları bulmak ve genelleme yapmak.",
+      "Değişkenler arası neden-sonuç ilişkisini istatistiksel olarak kanıtlamak.",
+      "Mutlak doğruya olabildiğince yaklaşmak."
+    ],
+    "dogruCevap": "Bir olguyu veya deneyimi derinlemesine anlamak.",
+    "aciklama": "Yorumlayıcı paradigma, 'Katılımcılar bu olguyu nasıl deneyimliyor?' gibi sorular sorar ve genellemeden ziyade o bağlama özgü derinlemesine anlamayı hedefler."
+  },
+  {
+    "id": "eay_3_41",
+    "konu": "Ölçek Türleri",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "En gelişmiş ölçek türü olan ve 'gerçek sıfır' noktasına sahip olduğu için toplama, çıkarma, çarpma ve bölme işlemlerine izin veren ölçek türü hangisidir?",
+    "secenekler": [
+      "Eşit Oranlı (Ratio)",
+      "Eşit Aralıklı (Interval)",
+      "Sıralama (Ordinal)",
+      "Sınıflama (Nominal)"
+    ],
+    "dogruCevap": "Eşit Oranlı (Ratio)",
+    "aciklama": "Eşit Oranlı ölçekler (uzunluk, ağırlık vb.) 'yokluk' belirten gerçek bir sıfır noktasına sahip oldukları için en gelişmiş ölçme düzeyidir."
+  },
+  {
+    "id": "eay_3_42",
+    "konu": "Değişken Türleri (Nitel/Nicel)",
+    "zorluk": "Kolay",
+    "tip": "Senaryo",
+    "soruMetni": "Aşağıdaki değişkenlerden hangisi 'Nitel (Kategorik)' bir değişkendir?",
+    "secenekler": [
+      "Devam edilen okul türü (Devlet/Özel)",
+      "Test puanı",
+      "Ücret (TL)",
+      "Çocuk sayısı"
+    ],
+    "dogruCevap": "Devam edilen okul türü (Devlet/Özel)",
+    "aciklama": "Okul türü, bireyleri sayısal bir miktar yerine bir sınıfa veya kategoriye ayırır. Diğer seçenekler sayısal bir miktar belirttiği için (Nicel)dir."
+  },
+  {
+    "id": "eay_3_43",
+    "konu": "Araştırma Paradigması",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, 'X öğretim yöntemi (Nicel) ile Y öğretim yönteminin (Nicel) başarıya etkisi' üzerine deneysel bir çalışma yürütüyorsa, hangi paradigmaya göre çalışmaktadır?",
+    "secenekler": [
+      "Pozitivist",
+      "Yorumlayıcı",
+      "Nitel",
+      "Etnografik"
+    ],
+    "dogruCevap": "Pozitivist",
+    "aciklama": "Deneysel yöntemler, ölçülebilir veriler (nicel) ve neden-sonuç ilişkileri, Pozitivist paradigmanın temel özellikleridir."
+  },
+  {
+    "id": "eay_3_44",
+    "konu": "Değişken Türleri (Bağımlı/Bağımsız)",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "'Sınav kaygısının (X) sınav performansına (Y) etkisi' inceleniyorsa, X ve Y sırasıyla hangi tür değişkenlerdir?",
+    "secenekler": [
+      "X: Bağımsız, Y: Bağımlı",
+      "X: Bağımlı, Y: Bağımsız",
+      "X: Nicel, Y: Nitel",
+      "X: Sürekli, Y: Süreksiz"
+    ],
+    "dogruCevap": "X: Bağımsız, Y: Bağımlı",
+    "aciklama": "Bu araştırmada 'Sınav Kaygısı' (neden) bağımsız değişken, 'Sınav Performansı' (sonuç) ise bağımlı değişkendir."
+  },
+  {
+    "id": "eay_3_45",
+    "konu": "Ölçek Türleri",
+    "zorluk": "Zor",
+    "tip": "Kavramsal",
+    "soruMetni": "Aşağıdaki ölçek türlerinden hangisi hem 'kategoriler arası sıra' belirtir hem de 'aralıkların eşit olduğunu' varsayar, ancak 'gerçek sıfır' noktasına sahip değildir?",
+    "secenekler": [
+      "Eşit Aralıklı (Interval)",
+      "Eşit Oranlı (Ratio)",
+      "Sıralama (Ordinal)",
+      "Sınıflama (Nominal)"
+    ],
+    "dogruCevap": "Eşit Aralıklı (Interval)",
+    "aciklama": "Aralıklı ölçekler, Sıralamanın tüm özelliklerine sahiptir (sıra belirtir), ek olarak aralıkların eşit olduğu varsayılır (örn: Başarı puanları, Sıcaklık)."
+  },
+  {
+    "id": "eay_3_46",
+    "konu": "Değişken Türleri (Nitel/Nicel)",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Değişkenler, yapılarına (özelliklerine) göre temelde hangi iki sınıfa ayrılır?",
+    "secenekler": [
+      "Nicel ve Nitel",
+      "Bağımlı ve Bağımsız",
+      "Sürekli ve Süreksiz",
+      "Aralıklı ve Oranlı"
+    ],
+    "dogruCevap": "Nicel ve Nitel",
+    "aciklama": "Değişkenlerin sınıflandırılmasında ilk ayrım, özelliğin sayısal bir miktar (Nicel) mı yoksa bir kategori/sınıf (Nitel) mı belirttiğidir."
+  },
+  {
+    "id": "eay_3_47",
+    "konu": "Araştırma Paradigması",
+    "zorluk": "Orta",
+    "tip": "Kavramsal",
+    "soruMetni": "Bir araştırmacının, araştırma sürecinde 'katılımcı-yorumlayıcı' bir rol üstlenmesi ve verilerin 'sözel, metinsel' olması hangi paradigmanın özelliğidir?",
+    "secenekler": [
+      "Yorumlayıcı (Nitel)",
+      "Pozitivist (Nicel)",
+      "Post-pozitivist (Karma)",
+      "Deneysel"
+    ],
+    "dogruCevap": "Yorumlayıcı (Nitel)",
+    "aciklama": "Yorumlayıcı paradigmada araştırmacı, gerçeği katılımcıyla birlikte yorumlayan, sürecin bir parçası olan (katılımcı-yorumlayıcı) bir rol üstlenir ve sözel/metinsel verilerle çalışır."
+  },
+  {
+    "id": "eay_3_48",
+    "konu": "Ölçek Türleri",
+    "zorluk": "Zor",
+    "tip": "Senaryo",
+    "soruMetni": "Bir öğrencinin 'Okul Numarası' (örn: 456) hangi ölçek düzeyindedir?",
+    "secenekler": [
+      "Sınıflama (Nominal)",
+      "Sıralama (Ordinal)",
+      "Eşit Aralıklı (Interval)",
+      "Eşit Oranlı (Ratio)"
+    ],
+    "dogruCevap": "Sınıflama (Nominal)",
+    "aciklama": "Okul numarası, TC kimlik numarası veya forma numarası gibi sayılar, matematiksel bir miktar veya sıra belirtmez; sadece kişiyi 'sınıflandırmak' veya 'adlandırmak' için kullanılan sembollerdir. Bu nedenle Sınıflama düzeyindedir."
+  },
+  {
+    "id": "eay_3_49",
+    "konu": "Değişken Türleri (Sürekli/Süreksiz)",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Aşağıdaki değişkenlerden hangisi 'Sürekli' bir değişkendir?",
+    "secenekler": [
+      "Bir koşucunun yarışı bitirme süresi (saniye)",
+      "Bir ailenin çocuk sayısı",
+      "Cinsiyet (Kadın/Erkek)",
+      "Medeni durum (Evli/Bekar)"
+    ],
+    "dogruCevap": "Bir koşucunun yarışı bitirme süresi (saniye)",
+    "aciklama": "Süre, iki değer arasında sonsuz sayıda ara değer alabilir (örn: 10.5 saniye, 10.52 saniye). Çocuk sayısı, cinsiyet ve medeni durum ise kesikli (süreksiz) değişkenlerdir."
+  },
+  {
+    "id": "eay_3_50",
+    "konu": "Değişken Türleri",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "'Tutum', 'zeka' veya 'başarı' gibi soyut kavramların somut ve ölçülebilir hale getirilmesine (örn: Başarı = Test Puanı) ne ad verilir?",
+    "secenekler": [
+      "İşlemsel Tanımlama",
+      "Hipotez",
+      "Paradigma",
+      "Nitel Değişken"
+    ],
+    "dogruCevap": "İşlemsel Tanımlama",
+    "aciklama": "İşlemsel tanımlama, soyut kavramların (kaygı, başarı vb.) araştırmada nasıl gözlemleneceğini veya ölçüleceğini somut terimlerle ifade etme sürecidir."
+  },
+  {
+    "id": "eay_4_1",
+    "konu": "Hipotez Tanımı",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Araştırmacının, değişkenler arasında ne tür bir ilişki olduğuna dair öne sürdüğü ve henüz test edilmemiş önermeye ne ad verilir?",
+    "secenekler": [
+      "Hipotez",
+      "Paradigma",
+      "Değişken",
+      "Sınırlılık"
+    ],
+    "dogruCevap": "Hipotez",
+    "aciklama": "Hipotez, araştırmacının beklentilerini ve değer yargılarını barındıran, doğruluğu veya yanlışlığı araştırma sonucunda test edilecek olan bir önermedir."
+  },
+  {
+    "id": "eay_4_2",
+    "konu": "Hipotez Türleri (H₀)",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Araştırmalarda 'ilişki veya fark yoktur' şeklinde kurulan ve H₀ sembolü ile gösterilen hipotez türü hangisidir?",
+    "secenekler": [
+      "Sıfır (Null) Hipotez",
+      "Araştırma (Alternatif) Hipotez",
+      "Yönlü Hipotez",
+      "Yönsüz Hipotez"
+    ],
+    "dogruCevap": "Sıfır (Null) Hipotez",
+    "aciklama": "Sıfır hipotezi (H₀), değişkenler arasında test edilen farkın veya ilişkinin istatistiksel olarak anlamsız olduğunu (yani olmadığını) varsayar."
+  },
+  {
+    "id": "eay_4_3",
+    "konu": "Araştırmanın Sınırlılıkları",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Aşağıdakilerden hangisi bir araştırma konusunu belirlerken dikkate alınması gereken 'sınırlılıklar' arasında *yer almaz*?",
+    "secenekler": [
+      "Araştırmacının hipotezi",
+      "Zaman",
+      "Maliyet",
+      "Etik kaygılar"
+    ],
+    "dogruCevap": "Araştırmacının hipotezi",
+    "aciklama": "Zaman, maliyet, kaynaklara erişim ve etik kaygılar araştırmanın yapılabilirliğini kısıtlayan sınırlılıklardır. Hipotez ise test edilecek bir önermedir, sınırlılık değildir."
+  },
+  {
+    "id": "eay_4_4",
+    "konu": "Hipotez Türleri (H₁)",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, 'Oyun temelli öğrenme (A), geleneksel öğretime (B) göre akademik başarıyı daha fazla artırır' şeklinde bir beklentiye sahiptir. Bu beklentiyi ifade eden H₁ (Araştırma Hipotezi) cümlesi nasıl olmalıdır?",
+    "secenekler": [
+      "H₁: A yöntemi ile B yöntemi arasında akademik başarı farkı vardır.",
+      "H₀: A yöntemi ile B yöntemi arasında akademik başarı farkı yoktur.",
+      "H₁: A yöntemi geleneksel öğretimdir.",
+      "H₀: B yöntemi akademik başarıyı artırır."
+    ],
+    "dogruCevap": "H₁: A yöntemi ile B yöntemi arasında akademik başarı farkı vardır.",
+    "aciklama": "Araştırma (Alternatif) hipotezi (H₁), araştırmacının beklediği durumu, yani 'ilişki veya fark vardır' önermesini ifade eder."
+  },
+  {
+    "id": "eay_4_5",
+    "konu": "Konu Belirleme",
+    "zorluk": "Kolay",
+    "tip": "Senaryo",
+    "soruMetni": "Bir öğretmen adayının, staj yaptığı okuldaki kaynaştırma öğrencilerinin yaşadığı zorlukları fark edip bu konuda tez yazmaya karar vermesi, hangi konu belirleme kaynağına örnektir?",
+    "secenekler": [
+      "Kişisel deneyim",
+      "Medyada yer alan haber",
+      "Kaynaklara erişim",
+      "Uzmanlık"
+    ],
+    "dogruCevap": "Kişisel deneyim",
+    "aciklama": "Kişisel deneyimler, sizin ya da tanıdıklarınızın başına gelen olaylar veya gözlemler yoluyla araştırma konusu bulmanın bir yoludur."
+  },
+  {
+    "id": "eay_4_6",
+    "konu": "Araştırmanın Sınırlılıkları",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir öğrenci, 'Türkiye'deki tüm lise öğrencilerinin' siber zorbalık düzeyini incelemek istemiş ancak sadece kendi ilindeki öğrencilere ulaşabilmiştir. Bu durum, 'kaynaklara erişim' dışında hangi iki sınırlılıkla doğrudan ilgilidir?",
+    "secenekler": [
+      "Zaman ve Maliyet",
+      "Etik kaygılar ve Uzmanlık",
+      "Uzmanlık ve Zaman",
+      "Hipotez ve Etik kaygılar"
+    ],
+    "dogruCevap": "Zaman ve Maliyet",
+    "aciklama": "Tüm Türkiye'ye ulaşmak, kısıtlı bir öğrenci projesi için genellikle çok yüksek zaman ve maliyet gerektireceği için pratik bir sınırlılıktır."
+  },
+  {
+    "id": "eay_4_7",
+    "konu": "Hipotez Türleri (H₀)",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmanın problemi 'Egzersiz yapma süresi ile stres düzeyi arasında bir ilişki var mıdır?' şeklindedir. Bu araştırma için kurulacak Sıfır (Null) Hipotez (H₀) aşağıdakilerden hangisidir?",
+    "secenekler": [
+      "H₀: Egzersiz yapma süresi ile stres düzeyi arasında anlamlı bir ilişki yoktur.",
+      "H₁: Egzersiz yapma süresi ile stres düzeyi arasında anlamlı bir ilişki vardır.",
+      "H₁: Egzersiz yapma süresi stresi azaltır.",
+      "H₀: Egzersiz yapmak strese neden olur."
+    ],
+    "dogruCevap": "H₀: Egzersiz yapma süresi ile stres düzeyi arasında anlamlı bir ilişki yoktur.",
+    "aciklama": "Sıfır hipotezi (H₀), daima 'ilişki yoktur' veya 'fark yoktur' şeklinde kurulan ve istatistiksel olarak test edilen hipotezdir."
+  },
+  {
+    "id": "eay_4_8",
+    "konu": "Hipotez Türleri",
+    "zorluk": "Zor",
+    "tip": "PDF Dışı",
+    "soruMetni": "Bir araştırmada neden 'fark yoktur' diyen bir H₀ hipotezine ihtiyaç duyarız?",
+    "secenekler": [
+      "Bilimsel yöntem, bir iddiayı (H₁) kanıtlamak yerine, 'fark yoktur' diyen H₀'ı çürütmeye (yanlışlamaya) dayalı olduğu için.",
+      "Çünkü H₀ her zaman araştırmacının kanıtlamak istediği şeydir.",
+      "Çünkü H₀ olmadan araştırma daha az maliyetli olur.",
+      "Çünkü H₀, H₁'den daha kolay anlaşıldığı için."
+    ],
+    "dogruCevap": "Bilimsel yöntem, bir iddiayı (H₁) kanıtlamak yerine, 'fark yoktur' diyen H₀'ı çürütmeye (yanlışlamaya) dayalı olduğu için.",
+    "aciklama": "İstatistiksel olarak, 'fark vardır' (H₁) gibi belirsiz bir şeyi doğrudan kanıtlamak çok zordur. Bunun yerine, 'fark yoktur' (H₀) gibi net bir iddiayı istatistiksel olarak çürütmeye çalışırız. H₀'ı çürütürsek, H₁'i (fark vardır) desteklemiş oluruz."
+  },
+  {
+    "id": "eay_4_9",
+    "konu": "Araştırmanın Sınırlılıkları",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, 'yeni bir ilaç denemesi' yapmak istemiş ancak çalışmaya başlamadan önce katılımcıların güvenliğini sağlamak için bir hastaneden 'Yetkililerin Onayı'nı (Etik Kurul) almak zorunda kalmıştır. Bu durum hangi sınırlılıkla ilgilidir?",
+    "secenekler": [
+      "Etik kaygılar",
+      "Maliyet",
+      "Zaman",
+      "Uzmanlık"
+    ],
+    "dogruCevap": "Etik kaygılar",
+    "aciklama": "Özellikle insanlar veya hayvanlar üzerinde yapılan araştırmalarda, katılımcılara zarar vermemek için 'etik kaygılar' nedeniyle yetkili kurullardan (Etik Kurul) onay almak bir zorunluluk ve sınırlılıktır."
+  },
+  {
+    "id": "eay_4_10",
+    "konu": "Hipotez Türleri",
+    "zorluk": "Zor",
+    "tip": "PDF Dışı",
+    "soruMetni": "H₁: 'Özel okul öğrencilerinin (A) başarısı, devlet okulu öğrencilerinin (B) başarısından *yüksektir*' hipotezi ile H₁: 'Özel okul (A) ve devlet okulu (B) öğrencilerinin başarıları *farklıdır*' hipotezi arasındaki fark nedir?",
+    "secenekler": [
+      "İlki yönlü (tek kuyruk) bir hipotezdir, ikincisi yönsüz (çift kuyruk) bir hipotezdir.",
+      "İlki H₀ hipotezidir, ikincisi H₁ hipotezidir.",
+      "İlki yönsüz bir hipotezdir, ikincisi yönlü bir hipotezdir.",
+      "İkisi arasında bilimsel açıdan hiçbir fark yoktur."
+    ],
+    "dogruCevap": "İlki yönlü (tek kuyruk) bir hipotezdir, ikincisi yönsüz (çift kuyruk) bir hipotezdir.",
+    "aciklama": "İlk hipotez, farkın 'yönünü' (yüksektir) belirttiği için 'Yönlü Hipotez'dir. İkinci hipotez ise sadece 'fark vardır' dediği, yön belirtmediği (yüksek de olabilir, düşük de) için 'Yönsüz Hipotez'dir."
+  },
+
+  {
+    "id": "eay_4_11",
+    "konu": "Konu Belirleme",
+    "zorluk": "Kolay",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacının, gazetede 'evsizler' üzerine bir haber okuyup bu konuda bir çalışma yapmaya karar vermesi, hangi konu belirleme kaynağına örnektir?",
+    "secenekler": [
+      "Medyada yer alan bir şeye dayalı merak",
+      "Kişisel deneyim",
+      "Araştırmanın sınırlılıkları",
+      "Yetkililerin onayı"
+    ],
+    "dogruCevap": "Medyada yer alan bir şeye dayalı merak",
+    "aciklama": "Araştırma konuları, gazete, TV veya sosyal medya gibi mecralarda yer alan ve araştırmacının merakını çeken haberlere veya olaylara dayanabilir."
+  },
+  {
+    "id": "eay_4_12",
+    "konu": "Araştırmanın Sınırlılıkları",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Bir araştırmacının, seçtiği konunun kendi bilgi ve beceri alanının dışında kalması durumu, hangi sınırlılıkla ilgilidir?",
+    "secenekler": [
+      "Uzmanlık",
+      "Maliyet",
+      "Zaman",
+      "Hipotez"
+    ],
+    "dogruCevap": "Uzmanlık",
+    "aciklama": "Bir konunun araştırılabilmesi için araştırmacının o konuda yeterli teorik bilgiye ve metodolojik beceriye (uzmanlık) sahip olması gerekir."
+  },
+  {
+    "id": "eay_4_13",
+    "konu": "Hipotez Türleri (H₁)",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Araştırmacının beklentisini ifade eden, 'ilişki veya fark vardır' şeklindeki önermeye ne ad verilir?",
+    "secenekler": [
+      "Araştırma (Alternatif) Hipotez (H₁)",
+      "Sıfır (Null) Hipotez (H₀)",
+      "Sınırlılık",
+      "Paradigma"
+    ],
+    "dogruCevap": "Araştırma (Alternatif) Hipotez (H₁)",
+    "aciklama": "H₁ hipotezi, araştırmacının araştırma sonucunda bulmayı beklediği farkı veya ilişkiyi belirten cümledir."
+  },
+  {
+    "id": "eay_4_14",
+    "konu": "Konu Belirleme",
+    "zorluk": "Kolay",
+    "tip": "Senaryo",
+    "soruMetni": "Bir öğrencinin, 'eğitimde fırsat eşitliği' üzerine bir makale okurken, konunun 'özel ve devlet okulları arasındaki farklar' yönünü merak ederek yeni bir araştırma konusu belirlemesi, hangi kaynağa örnektir?",
+    "secenekler": [
+      "Bir konuda okudukça farklı yönlerini merak etme",
+      "Kişisel deneyim",
+      "Maliyet sınırlılığı",
+      "Medyada yer alan haber"
+    ],
+    "dogruCevap": "Bir konuda okudukça farklı yönlerini merak etme",
+    "aciklama": "Mevcut literatürü (makale, kitap) okumak, o konunun eksik veya farklı yönlerini fark ederek yeni araştırma konuları üretmenin yaygın bir yoludur."
+  },
+  {
+    "id": "eay_4_15",
+    "konu": "Hipotez Tanımı",
+    "zorluk": "Orta",
+    "tip": "Teorik",
+    "soruMetni": "Hipotezin (H₀ veya H₁) temel işlevi nedir?",
+    "secenekler": [
+      "Araştırma problemindeki değişkenler arasındaki ilişkiye dair test edilebilir bir önerme sunmak.",
+      "Araştırmanın maliyetini belirlemek.",
+      "Araştırmanın ne kadar süreceğini göstermek.",
+      "Araştırmacının kişisel deneyimlerini listelemek."
+    ],
+    "dogruCevap": "Araştırma problemindeki değişkenler arasındaki ilişkiye dair test edilebilir bir önerme sunmak.",
+    "aciklama": "Hipotez, araştırmanın odak noktasını belirler ve değişkenler arasında beklenen ilişkiye dair test edilebilir bir iddia ortaya koyar."
+  },
+  {
+    "id": "eay_4_16",
+    "konu": "Hipotez Türleri (H₀)",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "'Öğrencilerin günlük ekran süresi ile dikkat eksikliği puanları arasında anlamlı bir ilişki yoktur' cümlesi hangi hipotez türüne örnektir?",
+    "secenekler": [
+      "Sıfır (Null) Hipotez (H₀)",
+      "Araştırma (Alternatif) Hipotez (H₁)",
+      "Yönlü Hipotez",
+      "Sınırlılık"
+    ],
+    "dogruCevap": "Sıfır (Null) Hipotez (H₀)",
+    "aciklama": "Bu cümle, değişkenler arasında 'ilişki yoktur' varsayımını belirttiği için Sıfır (Null) Hipotezdir (H₀)."
+  },
+  {
+    "id": "eay_4_17",
+    "konu": "Hipotez Türleri (H₁)",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "'Yeni geliştirilen X eğitim programı, mevcut Y programından daha etkilidir' cümlesi hangi hipotez türüne örnektir?",
+    "secenekler": [
+      "Araştırma (Alternatif) Hipotez (H₁)",
+      "Sıfır (Null) Hipotez (H₀)",
+      "Sabit Hipotez",
+      "Sınırlılık"
+    ],
+    "dogruCevap": "Araştırma (Alternatif) Hipotez (H₁)",
+    "aciklama": "Bu cümle, araştırmacının beklentisini ve iki program arasında bir 'fark olduğunu' iddia ettiği için Araştırma (Alternatif) Hipotezidir (H₁)."
+  },
+  {
+    "id": "eay_4_18",
+    "konu": "Araştırmanın Sınırlılıkları",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, 'mültecilerin travma sonrası stres bozukluklarını' incelemek istemiş, ancak bu hassas konu nedeniyle çalışmasına başlamadan önce katılımcılardan 'bilgilendirilmiş onam' almak ve bir etik kuruldan 'yetkili onayı' almak zorunda kalmıştır. Bu durum hangi sınırlılıkla ilgilidir?",
+    "secenekler": [
+      "Etik kaygılar ve Yetkili onayı",
+      "Maliyet ve Zaman",
+      "Uzmanlık ve Maliyet",
+      "Kişisel deneyim ve Uzmanlık"
+    ],
+    "dogruCevap": "Etik kaygılar ve Yetkili onayı",
+    "aciklama": "Hassas konuları çalışmak veya insan katılımcılardan veri toplamak, etik kurallara uymayı ve resmi onay almayı gerektiren önemli sınırlılıklardır."
+  },
+  {
+    "id": "eay_4_19",
+    "konu": "Hipotez Türleri",
+    "zorluk": "Zor",
+    "tip": "Kavramsal",
+    "soruMetni": "Bir araştırma sonucunda H₀ (Sıfır hipotezi) reddedilirse, bu durum ne anlama gelir?",
+    "secenekler": [
+      "Değişkenler arasında anlamlı bir farkın veya ilişkinin varlığı (H₁) desteklenmiş olur.",
+      "Değişkenler arasında hiçbir fark veya ilişki olmadığı kanıtlanmış olur.",
+      "Araştırmanın maliyeti çok yüksek çıkmış olur.",
+      "Araştırmanın etik kaygıları olduğu anlaşılır."
+    ],
+    "dogruCevap": "Değişkenler arasında anlamlı bir farkın veya ilişkinin varlığı (H₁) desteklenmiş olur.",
+    "aciklama": "Araştırmada istatistiksel olarak 'fark yoktur' (H₀) varsayımı test edilir. Eğer bu varsayım reddedilirse, 'fark vardır' (H₁) hipotezi için kanıt bulunmuş olur."
+  },
+  {
+    "id": "eay_4_20",
+    "konu": "Hipotez Türleri",
+    "zorluk": "Zor",
+    "tip": "Kavramsal",
+    "soruMetni": "Sıfır Hipotezi (H₀) ve Araştırma Hipotezi (H₁) arasındaki temel ilişki nedir?",
+    "secenekler": [
+      "Birbirinin tam zıttı ve birbirini dışlayan önermelerdir.",
+      "H₁ hipotezi, H₀ hipotezinin bir alt kümesidir.",
+      "H₀ hipotezi, H₁ hipotezinin bir alt kümesidir.",
+      "İkisi de 'fark yoktur' anlamına gelir, sadece sembolleri farklıdır."
+    ],
+    "dogruCevap": "Birbirinin tam zıttı ve birbirini dışlayan önermelerdir.",
+    "aciklama": "H₀ 'fark yoktur' derken, H₁ 'fark vardır' der. Bu iki önerme mantıksal olarak birbirinin tam tersidir ve araştırma sonucunda sadece biri desteklenebilir."
+  },
+  {
+    "id": "eay_4_21",
+    "konu": "Hipotez Türleri (H₀)",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "H₀ sembolü ile gösterilen Sıfır (Null) Hipotezinin temel iddiası nedir?",
+    "secenekler": [
+      "Değişkenler arasında ilişki veya fark yoktur.",
+      "Değişkenler arasında mutlaka bir ilişki vardır.",
+      "Araştırma maliyetlidir.",
+      "Araştırma etik değildir."
+    ],
+    "dogruCevap": "Değişkenler arasında ilişki veya fark yoktur.",
+    "aciklama": "Sıfır hipotezi (H₀), istatistiksel testin temelini oluşturan, 'farkın' veya 'ilişkinin' olmadığı yönündeki önermedir."
+  },
+  {
+    "id": "eay_4_22",
+    "konu": "Araştırmanın Sınırlılıkları",
+    "zorluk": "Kolay",
+    "tip": "Senaryo",
+    "soruMetni": "Bir sosyal bilgiler öğretmeninin, 'Kuantum Fiziğinin Eğitim Programlarına Entegrasyonu' üzerine bir araştırma yapmaktan, konunun kendi bilgisi dahilinde olmaması nedeniyle vazgeçmesi, hangi sınırlılıkla ilgilidir?",
+    "secenekler": [
+      "Uzmanlık",
+      "Maliyet",
+      "Kişisel deneyim",
+      "Medyada yer alan haber"
+    ],
+    "dogruCevap": "Uzmanlık",
+    "aciklama": "Araştırmacının, seçeceği konuyu yürütebilecek düzeyde metodolojik ve alansal bilgiye, yani 'uzmanlığa' sahip olması gerekir."
+  },
+  {
+    "id": "eay_4_23",
+    "konu": "Hipotez Türleri (H₀)",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, 'özel okul (A) ve devlet okulu (B) öğrencilerinin akademik başarıları arasında fark olup olmadığını' inceliyorsa, test edeceği H₀ (Sıfır Hipotezi) ne olmalıdır?",
+    "secenekler": [
+      "H₀: Özel ve devlet okulları arasında akademik başarı farkı yoktur.",
+      "H₁: Özel ve devlet okulları arasında akademik başarı farkı vardır.",
+      "H₀: Özel okullar (A) daha başarılıdır.",
+      "H₁: Devlet okulları (B) daha başarılıdır."
+    ],
+    "dogruCevap": "H₀: Özel ve devlet okulları arasında akademik başarı farkı yoktur.",
+    "aciklama": "H₀, daima iki (veya daha fazla) grup arasında 'fark yoktur' veya değişkenler arasında 'ilişki yoktur' şeklinde kurulur."
+  },
+  {
+    "id": "eay_4_24",
+    "konu": "Hipotez Türleri (H₁)",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "H₁ sembolü ile gösterilen Araştırma (Alternatif) Hipotezinin temel iddiası nedir?",
+    "secenekler": [
+      "Değişkenler arasında ilişki veya fark vardır.",
+      "Değişkenler arasında ilişki veya fark yoktur.",
+      "Araştırma zaman alıcıdır.",
+      "Araştırma için uzmanlık gerekir."
+    ],
+    "dogruCevap": "Değişkenler arasında ilişki veya fark vardır.",
+    "aciklama": "Araştırma hipotezi (H₁), araştırmacının bulmayı beklediği durumu (fark veya ilişki olduğunu) ifade eder ve H₀'ın zıttıdır."
+  },
+  {
+    "id": "eay_4_25",
+    "konu": "Hipotez Türleri (H₁)",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, 'Kafein tüketiminin (X) reaksiyon süresini (Y) etkilediğini' düşünüyorsa, kuracağı H₁ (Araştırma Hipotezi) ne olmalıdır?",
+    "secenekler": [
+      "H₁: Kafein tüketimi ile reaksiyon süresi arasında anlamlı bir ilişki vardır.",
+      "H₀: Kafein tüketimi ile reaksiyon süresi arasında anlamlı bir ilişki yoktur.",
+      "H₀: Kafein tüketimi reaksiyon süresini artırır.",
+      "H₁: Araştırma maliyetlidir."
+    ],
+    "dogruCevap": "H₁: Kafein tüketimi ile reaksiyon süresi arasında anlamlı bir ilişki vardır.",
+    "aciklama": "Araştırmacının 'etkilediğini düşünmesi' (beklentisi), 'ilişki vardır' anlamına gelir ve bu H₁ hipotezi olarak ifade edilir."
+  },
+  {
+    "id": "eay_4_26",
+    "konu": "Araştırmanın Sınırlılıkları",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, 'Türkiye'deki tüm öğretmenlerin' görüşlerini almak için bir anket yapmak istemiş, ancak posta ve anket basım masraflarının bütçesini aşması nedeniyle çalışmasını sadece bir il ile sınırlandırmıştır. Bu durum hangi sınırlılıkla ilgilidir?",
+    "secenekler": [
+      "Maliyet",
+      "Uzmanlık",
+      "Etik kaygılar",
+      "Kişisel deneyim"
+    ],
+    "dogruCevap": "Maliyet",
+    "aciklama": "Araştırma konusu belirlenirken, o araştırmayı yürütebilecek bütçenin (maliyetin) olup olmadığı önemli bir pratik sınırlılıktır."
+  },
+  {
+    "id": "eay_4_27",
+    "konu": "Hipotez Türleri",
+    "zorluk": "Zor",
+    "tip": "Kavramsal",
+    "soruMetni": "Bir araştırma sonucunda H₀ (Sıfır hipotezi) reddedilemezse (kabul edilirse), bu durum ne anlama gelir?",
+    "secenekler": [
+      "Değişkenler arasında anlamlı bir fark veya ilişki bulunamadığı anlamına gelir.",
+      "Değişkenler arasında mutlaka bir fark olduğu kanıtlanmış olur.",
+      "Araştırmanın (H₁) hipotezinin kesinlikle doğru olduğu anlamına gelir.",
+      "Araştırmanın yanlış tasarlandığı anlamına gelir."
+    ],
+    "dogruCevap": "Değişkenler arasında anlamlı bir fark veya ilişki bulunamadığı anlamına gelir.",
+    "aciklama": "H₀ ('fark yoktur') hipotezi reddedilemezse, H₁ ('fark vardır') hipotezini destekleyecek yeterli kanıt bulunamamış demektir."
+  },
+  {
+    "id": "eay_4_28",
+    "konu": "Konu Belirleme",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Aşağıdakilerden hangisi bir araştırma konusu belirlerken kullanılan kaynaklardan biridir?",
+    "secenekler": [
+      "Kişisel deneyimler ve gözlemler",
+      "Sıfır hipotezini (H₀) test etmek",
+      "Araştırmanın maliyetini hesaplamak",
+      "Araştırmacının uzmanlık alanı"
+    ],
+    "dogruCevap": "Kişisel deneyimler ve gözlemler",
+    "aciklama": "Kişisel deneyimler, medyada çıkan haberler veya bir konuda yapılan okumalar, yeni araştırma konuları için ilham kaynağı olabilir."
+  },
+  {
+    "id": "eay_4_29",
+    "konu": "Hipotez Tanımı",
+    "zorluk": "Orta",
+    "tip": "Teorik",
+    "soruMetni": "Bir hipotez cümlesi, araştırma problemindeki hangi iki unsur arasındaki ilişkiye dair bir önerme içerir?",
+    "secenekler": [
+      "Değişkenler arasında",
+      "Sınırlılıklar arasında",
+      "Paradigmalar arasında",
+      "Maliyet ve zaman arasında"
+    ],
+    "dogruCevap": "Değişkenler arasında",
+    "aciklama": "Hipotez, en az iki değişken (örn: bağımlı ve bağımsız) arasındaki beklenen ilişkiyi (fark veya ilişki) test edilebilir bir cümleye dönüştürür."
+  },
+  {
+    "id": "eay_4_30",
+    "konu": "Hipotez Türleri",
+    "zorluk": "Zor",
+    "tip": "Kavramsal",
+    "soruMetni": "Neden 'H₁: Fark vardır' hipotezi doğrudan test edilmez de, 'H₀: Fark yoktur' hipotezi test edilir?",
+    "secenekler": [
+      "Çünkü 'fark yoktur' (H₀) 'sıfır' gibi net ve test edilebilir bir noktadır, 'fark vardır' (H₁) ise sonsuz olasılık içerir.",
+      "Çünkü H₁ hipotezi her zaman H₀ hipotezinden daha karmaşıktır.",
+      "Çünkü H₀ hipotezini test etmek daha az maliyetlidir.",
+      "Çünkü H₁ hipotezini sadece uzmanlar test edebilir."
+    ],
+    "dogruCevap": "Çünkü 'fark yoktur' (H₀) 'sıfır' gibi net ve test edilebilir bir noktadır, 'fark vardır' (H₁) ise sonsuz olasılık içerir.",
+    "aciklama": "İstatistiksel olarak, 'fark eşittir sıfır' (H₀) demek, 'fark sıfır değildir' (H₁) demekten daha spesifik ve test edilebilir bir iddiadır. Bilim, H₀'ı çürüterek H₁'i destekleme mantığıyla ilerler."
+  },
+
+  {
+    "id": "eay_4_31",
+    "konu": "Araştırmanın Sınırlılıkları",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Aşağıdakilerden hangisi bir araştırma konusunu seçerken dikkate alınması gereken pratik bir sınırlılıktır?",
+    "secenekler": [
+      "Maliyet",
+      "Hipotez (H₁)",
+      "Hipotez (H₀)",
+      "Değişken"
+    ],
+    "dogruCevap": "Maliyet",
+    "aciklama": "Maliyet, zaman ve kaynaklara erişim gibi faktörler, bir araştırmanın yapılabilirliğini belirleyen pratik sınırlılıklardır."
+  },
+  {
+    "id": "eay_4_32",
+    "konu": "Hipotez Türleri (H₁)",
+    "zorluk": "Kolay",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, 'A tekniğinin B tekniğinden *daha iyi* olduğunu' öne sürüyorsa, bu hangi hipotez türüne örnektir?",
+    "secenekler": [
+      "Araştırma (Alternatif) Hipotez (H₁)",
+      "Sıfır (Null) Hipotez (H₀)",
+      "Sınırlılık Hipotezi",
+      "Deneyim Hipotezi"
+    ],
+    "dogruCevap": "Araştırma (Alternatif) Hipotez (H₁)",
+    "aciklama": "Araştırma hipotezi (H₁), araştırmacının 'fark vardır' veya (daha spesifik olarak) 'A, B'den daha iyidir' şeklindeki beklentisini ifade eder."
+  },
+  {
+    "id": "eay_4_33",
+    "konu": "Konu Belirleme",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacının, kendi çocuğunun okulda yaşadığı bir 'akran zorbalığı' olayından etkilenerek bu konuyu araştırmaya karar vermesi, hangi konu belirleme kaynağına dayanır?",
+    "secenekler": [
+      "Kişisel deneyim",
+      "Maliyet analizi",
+      "Hipotez testi",
+      "Medyada yer alan haber"
+    ],
+    "dogruCevap": "Kişisel deneyim",
+    "aciklama": "Kişisel deneyimler (sizin ya da tanıdıklarınızın yaşadıkları), bir araştırmacı için güçlü bir motivasyon ve konu kaynağı olabilir."
+  },
+  {
+    "id": "eay_4_34",
+    "konu": "Araştırmanın Sınırlılıkları",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Bir araştırmacının, belirlediği konuyu bitirme tezinin teslim tarihine kadar yetiştiremeyeceğini fark etmesi, hangi sınırlılıkla karşılaştığını gösterir?",
+    "secenekler": [
+      "Zaman",
+      "Uzmanlık",
+      "Etik kaygılar",
+      "Hipotez"
+    ],
+    "dogruCevap": "Zaman",
+    "aciklama": "Araştırmalar belirli bir takvime bağlıdır ve 'Zaman' faktörü, konunun kapsamını belirlemede önemli bir sınırlılıktır."
+  },
+  {
+    "id": "eay_4_35",
+    "konu": "Hipotez Türleri (H₀)",
+    "zorluk": "Kolay",
+    "tip": "Senaryo",
+    "soruMetni": "'Öğrencilerin derse karşı tutumları ile matematik başarıları arasında anlamlı bir ilişki yoktur' cümlesi hangi hipotezdir?",
+    "secenekler": [
+      "Sıfır (Null) Hipotez (H₀)",
+      "Araştırma (Alternatif) Hipotez (H₁)",
+      "Yönlü Hipotez",
+      "Nitel Hipotez"
+    ],
+    "dogruCevap": "Sıfır (Null) Hipotez (H₀)",
+    "aciklama": "Değişkenler arasında 'ilişki yoktur' (veya 'fark yoktur') iddiası, daima Sıfır Hipotezi (H₀) olarak ifade edilir."
+  },
+  {
+    "id": "eay_4_36",
+    "konu": "Araştırmanın Sınırlılıkları",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, 'devletin gizli askeri arşivlerini' incelemek istemiş ancak 'Yetkililerin Onayı'nı alamamıştır. Bu durum hangi sınırlılığa örnektir?",
+    "secenekler": [
+      "Kaynaklara erişim",
+      "Uzmanlık",
+      "Maliyet",
+      "Zaman"
+    ],
+    "dogruCevap": "Kaynaklara erişim",
+    "aciklama": "Bazı veriler (resmi kayıtlar, özel arşivler) veya katılımcı grupları, 'kaynaklara erişim' konusunda yasal veya idari izinler gerektirebilir."
+  },
+  {
+    "id": "eay_4_37",
+    "konu": "Hipotez Türleri",
+    "zorluk": "Zor",
+    "tip": "PDF Dışı",
+    "soruMetni": "Bir araştırmacı, 'A ilacı B ilacından daha etkilidir' şeklinde 'Yönlü (Tek Kuyruk)' bir H₁ hipotezi kurduğunda, bu durum araştırmacının neyi varsaydığını gösterir?",
+    "secenekler": [
+      "Farkın yönü hakkında güçlü bir ön bilgisi veya beklentisi olduğunu.",
+      "İki ilaç arasında hiçbir fark beklemediğini.",
+      "Araştırmanın maliyetinin düşük olacağını.",
+      "Araştırmanın etik olmadığını."
+    ],
+    "dogruCevap": "Farkın yönü hakkında güçlü bir ön bilgisi veya beklentisi olduğunu.",
+    "aciklama": "Yönlü hipotez ('daha iyi', 'daha az'), sadece 'fark vardır' diyen yönsüz hipotezin aksine, araştırmacının önceki çalışmalara veya teorilere dayanarak farkın yönünü tahmin ettiğini gösterir."
+  },
+  {
+    "id": "eay_4_38",
+    "konu": "Hipotez Türleri",
+    "zorluk": "Orta",
+    "tip": "Kavramsal",
+    "soruMetni": "İstatistiksel analizlerde test edilen temel hipotez hangisidir?",
+    "secenekler": [
+      "Sıfır (Null) Hipotez (H₀)",
+      "Araştırma (Alternatif) Hipotez (H₁)",
+      "Yönlü Hipotez",
+      "Yönsüz Hipotez"
+    ],
+    "dogruCevap": "Sıfır (Null) Hipotez (H₀)",
+    "aciklama": "İstatistiksel testler, 'fark vardır' (H₁) hipotezini doğrudan kanıtlamak yerine, 'fark yoktur' (H₀) hipotezini çürütmeye (reddetmeye) çalışır."
+  },
+  {
+    "id": "eay_4_39",
+    "konu": "Araştırmanın Sınırlılıkları",
+    "zorluk": "Orta",
+    "tip": "Teorik",
+    "soruMetni": "Bir konudan araştırma sorusu oluştururken 'sınırlılıkların' (zaman, maliyet, erişim) göz önüne alınmasının temel amacı nedir?",
+    "secenekler": [
+      "Araştırmanın yapılabilir (uygulanabilir) olmasını sağlamak.",
+      "Araştırmanın H₀ hipotezini doğrulamak.",
+      "Araştırmanın H₁ hipotezini doğrulamak.",
+      "Araştırmayı daha karmaşık hale getirmek."
+    ],
+    "dogruCevap": "Araştırmanın yapılabilir (uygulanabilir) olmasını sağlamak.",
+    "aciklama": "Sınırlılıklar, bir fikrin (konunun) gerçek dünyada tamamlanabilir bir projeye dönüşüp dönüşemeyeceğini belirler."
+  },
+  {
+    "id": "eay_4_40",
+    "konu": "Hipotez Türleri",
+    "zorluk": "Zor",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı H₀ hipotezini 'μ₁ = μ₂' (ortalama 1, ortalama 2'ye eşittir) olarak kurmuştur. Araştırma sonucunda H₀ reddedilmiştir. Bu durumda aşağıdakilerden hangisi *desteklenmiş* olur?",
+    "secenekler": [
+      "H₁: μ₁ ≠ μ₂ (Ortalamalar eşit değildir)",
+      "H₁: μ₁ = μ₂ (Ortalamalar eşittir)",
+      "H₀: μ₁ ≠ μ₂ (Ortalamalar eşit değildir)",
+      "Araştırma maliyetlidir."
+    ],
+    "dogruCevap": "H₁: μ₁ ≠ μ₂ (Ortalamalar eşit değildir)",
+    "aciklama": "H₀ (fark yoktur) hipotezinin reddedilmesi, mantıksal zıttı olan H₁ (fark vardır) hipotezinin desteklenmesi anlamına gelir. μ₁ = μ₂'nin zıttı μ₁ ≠ μ₂'dir."
+  },
+ 
+  {
+    "id": "eay_4_41",
+    "konu": "Konu Belirleme",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Aşağıdakilerden hangisi bir araştırma konusu belirlerken kullanılabilecek kaynaklardan biri *değildir*?",
+    "secenekler": [
+      "Sıfır Hipotezi (H₀)",
+      "Kişisel deneyim",
+      "Medyada yer alan haberler",
+      "Bir konuda yapılan okumalar"
+    ],
+    "dogruCevap": "Sıfır Hipotezi (H₀)",
+    "aciklama": "Hipotez, konu belirlendikten sonra kurulan bir önermedir. Kişisel deneyim, medya veya okumalar ise konu bulmak için kullanılan kaynaklardır."
+  },
+  {
+    "id": "eay_4_42",
+    "konu": "Hipotez Tanımı",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Bir hipotezin doğruluğu veya yanlışlığı ne zaman belli olur?",
+    "secenekler": [
+      "Araştırma yapılıp veriler analiz edildikten sonra.",
+      "Araştırma konusu belirlendiği anda.",
+      "Araştırmanın maliyeti hesaplandığında.",
+      "Araştırmacı uzmanlığını belirlediğinde."
+    ],
+    "dogruCevap": "Araştırma yapılıp veriler analiz edildikten sonra.",
+    "aciklama": "Hipotez, araştırmanın başında öne sürülen ve test edilmemiş bir önermedir. Doğruluğu ancak araştırma süreci tamamlandığında test edilebilir."
+  },
+  {
+    "id": "eay_4_43",
+    "konu": "Hipotez Türleri (H₀)",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, 'X markalı gübre ile Y markalı gübre arasında bitki büyümesi açısından *anlamlı bir fark olmadığını* varsayarak' deneyine başlıyorsa, bu varsayım nedir?",
+    "secenekler": [
+      "Sıfır (Null) Hipotez (H₀)",
+      "Araştırma (Alternatif) Hipotez (H₁)",
+      "Bir sınırlılık",
+      "Bir konu belirleme yolu"
+    ],
+    "dogruCevap": "Sıfır (Null) Hipotez (H₀)",
+    "aciklama": "'Fark yoktur' veya 'ilişki yoktur' varsayımı, istatistiksel olarak test edilen Sıfır Hipotezidir (H₀)."
+  },
+  {
+    "id": "eay_4_44",
+    "konu": "Araştırmanın Sınırlılıkları",
+    "zorluk": "Kolay",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacının, 'Öğrencilerin 10 yıl önceki verilerine' ulaşmak istemesi ancak arşivlerin yetersiz olması nedeniyle bu verilere ulaşamaması, hangi tür sınırlılığa örnektir?",
+    "secenekler": [
+      "Kaynaklara erişim",
+      "Maliyet",
+      "Uzmanlık",
+      "Hipotez"
+    ],
+    "dogruCevap": "Kaynaklara erişim",
+    "aciklama": "Verilerin veya katılımcıların mevcut olmaması ya da onlara ulaşmanın mümkün olmaması 'kaynaklara erişim' sınırlılığıdır."
+  },
+  {
+    "id": "eay_4_45",
+    "konu": "Hipotez Türleri (H₁)",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Problem: 'Farklı müzik türleri (Pop, Klasik, Rock) öğrencilerin dikkat süresini etkiler mi?' Araştırmacının beklentisini yansıtan H₁ (Araştırma Hipotezi) nedir?",
+    "secenekler": [
+      "H₁: Müzik türleri arasında dikkat süresi açısından anlamlı bir fark vardır.",
+      "H₀: Müzik türleri arasında dikkat süresi açısından anlamlı bir fark yoktur.",
+      "H₁: Pop müzik en iyi müzik türüdür.",
+      "H₀: Araştırma etik kaygılar taşır."
+    ],
+    "dogruCevap": "H₁: Müzik türleri arasında dikkat süresi açısından anlamlı bir fark vardır.",
+    "aciklama": "H₁, araştırmacının bulmayı beklediği 'farkın varlığını' ifade eden hipotezdir."
+  },
+  {
+    "id": "eay_4_46",
+    "konu": "Konu Belirleme vs Sınırlılık",
+    "zorluk": "Orta",
+    "tip": "Kavramsal",
+    "soruMetni": "'Kişisel deneyim' ile 'Uzmanlık' arasındaki fark nedir?",
+    "secenekler": [
+      "'Kişisel deneyim' bir konu kaynağıdır, 'Uzmanlık' ise o konuyu araştırabilmek için gereken bir yeterlilik ve sınırlılıktır.",
+      "'Kişisel deneyim' bir hipotezdir, 'Uzmanlık' ise bir sınırlılıktır.",
+      "'Kişisel deneyim' bir sınırlılıktır, 'Uzmanlık' ise bir konu kaynağıdır.",
+      "İkisi de araştırmanın maliyetini belirler."
+    ],
+    "dogruCevap": "'Kişisel deneyim' bir konu kaynağıdır, 'Uzmanlık' ise o konuyu araştırabilmek için gereken bir yeterlilik ve sınırlılıktır.",
+    "aciklama": "Kişisel deneyim (örn: bir olayı gözlemlemek) konuyu bulmanızı sağlar. Uzmanlık (örn: o konuyu analiz edecek istatistik bilgisi) ise o konuyu araştırıp araştıramayacağınızı belirler."
+  },
+  {
+    "id": "eay_4_47",
+    "konu": "Hipotez Türleri (H₀)",
+    "zorluk": "Zor",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, H₁: 'A ilacı B ilacından daha etkilidir' (Yönlü Hipotez) şeklinde bir iddiada bulunuyor. Bu araştırmacının çürütmesi gereken H₀ hipotezi nedir?",
+    "secenekler": [
+      "H₀: A ilacı, B ilacından daha etkili değildir (yani, daha az etkili veya eşittir).",
+      "H₀: A ilacı, B ilacından daha etkilidir.",
+      "H₀: A ilacı ile B ilacı arasında fark yoktur.",
+      "H₀: B ilacı, A ilacından daha etkilidir."
+    ],
+    "dogruCevap": "H₀: A ilacı, B ilacından daha etkili değildir (yani, daha az etkili veya eşittir).",
+    "aciklama": "Yönlü bir H₁ (A > B) hipotezinin zıttı olan H₀, 'A, B'den büyük değildir' (A ≤ B) şeklinde kurulur. Bu, yönsüz hipotezdeki H₀'dan (A = B) farklıdır."
+  },
+  {
+    "id": "eay_4_48",
+    "konu": "Hipotez Türleri",
+    "zorluk": "Zor",
+    "tip": "PDF Dışı",
+    "soruMetni": "Hangi tür araştırmalarda, sürecin başında katı H₀ ve H₁ hipotezleri kurmak yerine, süreç içinde hipotezler veya teoriler geliştirilir?",
+    "secenekler": [
+      "Yorumlayıcı (Nitel) Araştırmalar",
+      "Pozitivist (Deneysel) Araştırmalar",
+      "Sadece maliyeti düşük araştırmalar",
+      "Sadece uzmanlık gerektirmeyen araştırmalar"
+    ],
+    "dogruCevap": "Yorumlayıcı (Nitel) Araştırmalar",
+    "aciklama": "Pozitivist (nicel) araştırmalar hipotez testi yaparken (H₀/H₁), Yorumlayıcı (nitel) araştırmalar genellikle bir olguyu keşfetmeyi amaçlar ve hipotezler veya teoriler araştırma sonucunda (tümevarımsal olarak) ortaya çıkabilir."
+  },
+  {
+    "id": "eay_4_49",
+    "konu": "Hipotez Tanımı",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Bir hipotez, değişkenler arasındaki ilişkiye dair bir önerme olmasının yanı sıra, araştırmacıya ne sağlar?",
+    "secenekler": [
+      "Araştırmayı odaklanmış bir şekilde yürütmek için rehberlik",
+      "Araştırmanın maliyetini karşılamak için bütçe",
+      "Araştırmanın etik olduğunu kanıtlayan bir belge",
+      "Kişisel deneyimlerin bir listesini"
+    ],
+    "dogruCevap": "Araştırmayı odaklanmış bir şekilde yürütmek için rehberlik",
+    "aciklama": "Hipotez, araştırmanın neyi test edeceğini netleştirerek araştırmacının dağılmasını engeller ve sürece rehberlik eder."
+  },
+  {
+    "id": "eay_4_50",
+    "konu": "Hipotez Türleri (H₀)",
+    "zorluk": "Orta",
+    "tip": "Teorik",
+    "soruMetni": "İstatistiksel analizlerde neden Sıfır Hipotezi (H₀) 'reddedilemedi' denir de, 'kabul edildi' denmez?",
+    "secenekler": [
+      "Çünkü bir fark bulamamış olmak, o farkın kesinlikle 'yok' olduğu anlamına gelmez, sadece 'bulunamadığı' anlamına gelir.",
+      "Çünkü 'kabul edildi' demek 'reddedilemedi' demekten daha uzundur.",
+      "Çünkü H₀ her zaman araştırmacının kanıtlamak istediği şeydir.",
+      "Çünkü H₀ hipotezleri her zaman etik kaygılar taşır."
+    ],
+    "dogruCevap": "Çünkü bir fark bulamamış olmak, o farkın kesinlikle 'yok' olduğu anlamına gelmez, sadece 'bulunamadığı' anlamına gelir.",
+    "aciklama": "Bilimde 'yokluğu kanıtlamak' (H₀'ı kesin kabul etmek) çok zordur. Belki de fark vardır ancak bizim deneyimiz (örn: örneklemimiz) onu tespit etmeye yetmemiştir. Bu yüzden 'H₀ reddedilemedi' (kanıt bulamadık) demek, 'H₀ doğrudur' demekten daha temkinli ve doğrudur."
+  },
+  {
+    "id": "eay_5_1",
+    "konu": "Araştırma Etiği (Aşırmacılık)",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Başka bir araştırmacının ürettiği bilgiyi, kaynak bildirmeksizin kendisininmiş gibi kullanmaya veya yayımlamaya ne ad verilir?",
+    "secenekler": [
+      "Aşırmacılık (İntihal)",
+      "Uydurmacılık",
+      "Sahtecilik",
+      "Disiplinsiz Araştırma"
+    ],
+    "dogruCevap": "Aşırmacılık (İntihal)",
+    "aciklama": "Aşırmacılık, veya intihal, başkasına ait fikir veya verileri kaynak göstermeden kullanmaktır ve 'bilimsel hırsızlık' olarak da bilinir."
+  },
+  {
+    "id": "eay_5_2",
+    "konu": "Evren ve Örneklem",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Araştırma sonuçlarının geçerli olacağı, hedeflenen en geniş teorik topluluğa ne ad verilir?",
+    "secenekler": [
+      "Genel Evren",
+      "Örneklem",
+      "Tabaka",
+      "Küme"
+    ],
+    "dogruCevap": "Genel Evren",
+    "aciklama": "Genel Evren (örn: Türkiye’deki tüm öğretmenler) araştırmanın hedeflediği en geniş teorik kitledir. Örneklem ise bu kitleden seçilen alt gruptur."
+  },
+  {
+    "id": "eay_5_3",
+    "konu": "Araştırma Etiği (Sahtecilik)",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, hipotezini desteklemeyen 20 katılımcının verisini 'uç değer' diyerek analizden çıkarmış ve bu sayede istediği sonuca ulaşmıştır. Bu eylem hangi etik ihlaldir?",
+    "secenekler": [
+      "Sahtecilik (Manipülasyon)",
+      "Uydurmacılık",
+      "Aşırmacılık",
+      "Yinelenen Yayın"
+    ],
+    "dogruCevap": "Sahtecilik (Manipülasyon)",
+    "aciklama": "Sahtecilik (Falsification), mevcut veriler üzerinde kasıtlı değişiklik yapmayı, veri setinden istenmeyen verileri çıkarmayı (manipülasyon) içerir."
+  },
+  {
+    "id": "eay_5_4",
+    "konu": "Olasılıklı Örnekleme (Basit Rassal)",
+    "zorluk": "Kolay",
+    "tip": "Senaryo",
+    "soruMetni": "Bir listedeki 2000 öğrenci arasından 200 kişiyi seçmek için kura (piyango) yönteminin kullanılması, hangi örnekleme yöntemidir?",
+    "secenekler": [
+      "Basit Rastgele Örnekleme",
+      "Sistematik Örnekleme",
+      "Tabakalı Örnekleme",
+      "Küme Örneklemesi"
+    ],
+    "dogruCevap": "Basit Rastgele Örnekleme",
+    "aciklama": "Basit rastgele örnekleme, evrendeki her birime (öğrenciye) eşit seçilme olasılığı tanıyan ve şans faktörüne dayalı (kura gibi) bir yöntemdir."
+  },
+  {
+    "id": "eay_5_5",
+    "konu": "Evren ve Örneklem",
+    "zorluk": "Orta",
+    "tip": "Kavramsal",
+    "soruMetni": "'Türkiye’deki tüm öğretmenler' (1) ile 'Elazığ’daki devlet okulu öğretmenleri' (2) arasındaki fark nedir?",
+    "secenekler": [
+      "(1) Genel Evrendir, (2) Araştırma Evrenidir",
+      "(1) Örneklemdir, (2) Genel Evrendir",
+      "(1) Araştırma Evrenidir, (2) Örneklemdir",
+      "(1) Genel Evrendir, (2) Örneklemdir"
+    ],
+    "dogruCevap": "(1) Genel Evrendir, (2) Araştırma Evrenidir",
+    "aciklama": "Genel Evren en geniş teorik kitledir. Araştırma Evreni ise bu kitlenin zaman, mekan ve maliyet açısından 'erişilebilir' olan kısmıdır."
+  },
+  {
+    "id": "eay_5_6",
+    "konu": "Olasılıklı Örnekleme (Sistematik)",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, 1000 kişilik bir öğrenci listesinden rastgele bir başlangıç noktası seçip (örn: 7. kişi), listedeki her 10. öğrenciyi (7., 17., 27...) çalışmasına dahil etmiştir. Hangi yöntemi kullanmıştır?",
+    "secenekler": [
+      "Sistematik Örnekleme",
+      "Basit Rastgele Örnekleme",
+      "Tabakalı Örnekleme",
+      "Küme Örneklemesi"
+    ],
+    "dogruCevap": "Sistematik Örnekleme",
+    "aciklama": "Sistematik örnekleme, bir evren listesinden belirli bir aralık (K aralığı) kullanılarak düzenli seçim yapma yöntemidir."
+  },
+  {
+    "id": "eay_5_7",
+    "konu": "Araştırma Etiği",
+    "zorluk": "Zor",
+    "tip": "Kavramsal",
+    "soruMetni": "'Uydurmacılık' (Fabrication) ile 'Sahtecilik' (Falsification) arasındaki temel fark nedir?",
+    "secenekler": [
+      "Uydurmacılık hiç olmayan veriyi üretmektir, Sahtecilik mevcut veriyi değiştirmektir.",
+      "Uydurmacılık başkasının fikrini çalmaktır, Sahtecilik veriyi uydurmaktır.",
+      "Uydurmacılık mevcut veriyi değiştirmektir, Sahtecilik hiç olmayan veriyi üretmektir.",
+      "Uydurmacılık ve Sahtecilik aynı anlama gelen etik ihlallerdir."
+    ],
+    "dogruCevap": "Uydurmacılık hiç olmayan veriyi üretmektir, Sahtecilik mevcut veriyi değiştirmektir.",
+    "aciklama": "Uydurmacılık (Fabrication), araştırma yapmadan yapmış gibi veri seti uydurmaktır. Sahtecilik (Falsification) ise toplanmış olan mevcut veriler üzerinde kasıtlı değişiklik (manipülasyon) yapmaktır."
+  },
+  {
+    "id": "eay_5_8",
+    "konu": "Örnekleme Nedenleri",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Aşağıdakilerden hangisi bir araştırmada evrenin tamamı yerine örneklem almayı gerekli kılan nedenlerden biridir?",
+    "secenekler": [
+      "Maliyet ve zaman tasarrufu sağlaması",
+      "Araştırmayı daha karmaşık hale getirmesi",
+      "Sonuçların genellenebilirliğini azaltması",
+      "Etik kurul onayı almayı zorlaştırması"
+    ],
+    "dogruCevap": "Maliyet ve zaman tasarrufu sağlaması",
+    "aciklama": "Evrenin tamamına ulaşmak (örn: Türkiye'deki tüm öğretmenler) çok yüksek maliyet, zaman gerektirebilir veya pratik olarak imkansız olabilir. Örnekleme bu sorunları çözer."
+  },
+  {
+    "id": "eay_5_9",
+    "konu": "Olasılıklı Örnekleme",
+    "zorluk": "Zor",
+    "tip": "Kavramsal",
+    "soruMetni": "'Tabakalı Örnekleme' ile 'Küme Örneklemesi' arasındaki temel fark nedir?",
+    "secenekler": [
+      "Tabakalıda her alt gruptan (tabakadan) örnek alınır; Kümede ise alt gruplardan (kümelerden) bazıları rastgele seçilir.",
+      "Tabakalıda gruplar heterojendir; Kümede gruplar homojendir.",
+      "Tabakalı maliyet tasarrufu sağlar; Küme sağlamaz.",
+      "Tabakalıda kura çekilir; Kümede sistematik seçim yapılır."
+    ],
+    "dogruCevap": "Tabakalıda her alt gruptan (tabakadan) örnek alınır; Kümede ise alt gruplardan (kümelerden) bazıları rastgele seçilir.",
+    "aciklama": "Tabakalı örneklemede (örn: fakülteler) her tabakanın (Eğitim, Fen, Tıp) temsili zorunludur. Küme örneklemesinde (örn: ilçeler) tüm ilçelerden değil, rastgele seçilen 5 ilçe gibi sadece bazı kümelerden veri alınır."
+  },
+  {
+    "id": "eay_5_10",
+    "konu": "Araştırma Etiği (Uydurmacılık)",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir yüksek lisans öğrencisi, anket yapmak için zamanı olmadığından, hiç veri toplamadan bilgisayar başında 200 kişilik sahte bir veri seti oluşturmuş ve tezini bu verilere göre yazmıştır. Bu eylem hangi etik ihlaldir?",
+    "secenekler": [
+      "Uydurmacılık",
+      "Sahtecilik",
+      "Aşırmacılık",
+      "Disiplinsiz Araştırma"
+    ],
+    "dogruCevap": "Uydurmacılık",
+    "aciklama": "Uydurmacılık (Fabrication), hiç araştırma yapmadan veya veri toplamadan, yapmış gibi sahte veri setleri oluşturma eylemidir."
+  },
+  {
+    "id": "eay_5_11",
+    "konu": "Araştırma Etiği (Etik Kurul)",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "İnsanların denek olarak kullanılacağı bilimsel çalışmalarda, araştırma protokolünü inceleyen ve katılımcı haklarını korumakla yükümlü olan birime ne ad verilir?",
+    "secenekler": [
+      "Etik Kurul",
+      "Evren Komisyonu",
+      "Veri Analiz Birimi",
+      "İntihal Komisyonu"
+    ],
+    "dogruCevap": "Etik Kurul",
+    "aciklama": "Etik kurul, özellikle insan ve hayvan katılımcıların olduğu araştırmaları etik açıdan inceleyen, onaylayan ve denetleyen birimdir."
+  },
+  {
+    "id": "eay_5_12",
+    "konu": "Araştırma Etiği (Yinelenen Yayın)",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Bir bilimsel araştırmanın sonuçlarını, birden çok dergide yayımlamak veya bir bütünü gereksiz yere parçalara (salam dilimleme) bölerek birden fazla yayın yapmak hangi etik ihlaldir?",
+    "secenekler": [
+      "Yinelenen Yayın",
+      "Aşırmacılık",
+      "Uydurmacılık",
+      "Disiplinsiz Araştırma"
+    ],
+    "dogruCevap": "Yinelenen Yayın",
+    "aciklama": "Yinelenen yayın, aynı verileri veya çalışmayı birden fazla kez yayımlayarak bilimsel literatürü yapay olarak şişirme eylemidir."
+  },
+  {
+    "id": "eay_5_13",
+    "konu": "Olasılıklı Örnekleme (Küme)",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Evrenin doğal veya yapay kümelere (ilçeler, okullar gibi) ayrıldığı ve bu kümelerden bazılarının rastgele seçilerek veri toplandığı yöntem hangisidir?",
+    "secenekler": [
+      "Küme Örneklemesi",
+      "Tabakalı Örnekleme",
+      "Sistematik Örnekleme",
+      "Basit Rastgele Örnekleme"
+    ],
+    "dogruCevap": "Küme Örneklemesi",
+    "aciklama": "Küme örneklemesi, özellikle evren çok geniş olduğunda maliyet ve zaman tasarrufu için kullanılır; tüm kümeler yerine rastgele seçilen kümelerden veri toplanır."
+  },
+  {
+    "id": "eay_5_14",
+    "konu": "Olasılıklı Örnekleme (Tabakalı)",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Evren homojen olmadığında (örn: fakültelere göre), evreni benzer özelliklere göre alt gruplara (tabakalara) ayırıp *her gruptan* örnek almayı sağlayan yöntem hangisidir?",
+    "secenekler": [
+      "Tabakalı Örnekleme",
+      "Küme Örneklemesi",
+      "Sistematik Örnekleme",
+      "Basit Rastgele Örnekleme"
+    ],
+    "dogruCevap": "Tabakalı Örnekleme",
+    "aciklama": "Tabakalı örneklemenin temel amacı, evrendeki alt grupların (örn: Eğitim Fak., Fen Fak.) örneklemde adil bir şekilde temsil edilmesini sağlamaktır."
+  },
+  {
+    "id": "eay_5_15",
+    "konu": "Araştırma Etiği (Disiplinsiz Araştırma)",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, araştırmasını 'özensiz' bir şekilde planlamış ve veri toplama aracındaki bir hata nedeniyle *kasıtlı olmayan* bazı yanlış sonuçlar elde etmiştir. Bu durum hangi etik soruna daha yakındır?",
+    "secenekler": [
+      "Disiplinsiz Araştırma",
+      "Sahtecilik",
+      "Uydurmacılık",
+      "Aşırmacılık"
+    ],
+    "dogruCevap": "Disiplinsiz Araştırma",
+    "aciklama": "Disiplinsiz araştırma, kasıtlı bir aldatma (sahtecilik gibi) içermeyen, ancak özensiz planlama ve dikkatsizlik sonucu ortaya çıkan hataları tanımlar."
+  },
+  {
+    "id": "eay_5_16",
+    "konu": "Araştırma Etiği (Veri Saklama)",
+    "zorluk": "Orta",
+    "tip": "Teorik",
+    "soruMetni": "Bilimsel araştırmalarda, orijinal veri setlerinin (örn: anketler, kayıtlar) belirli bir süre (en az 5 yıl) saklanmasının temel nedeni nedir?",
+    "secenekler": [
+      "Olası sahtecilik veya hata şüphelerine karşı sürecin kanıtlanabilir olmasını sağlamak.",
+      "Verileri başka araştırmacılara satabilmek.",
+      "Yinelenen yayın yapabilmek için yedek bulundurmak.",
+      "İntihal yapıldığında orijinalini gizleyebilmek."
+    ],
+    "dogruCevap": "Olası sahtecilik veya hata şüphelerine karşı sürecin kanıtlanabilir olmasını sağlamak.",
+    "aciklama": "Verilerin saklanması, araştırma sürecinin şeffaflığını ve denetlenebilirliğini sağlar; bu da olası etik ihlal iddialarına karşı bir kanıt niteliği taşır."
+  },
+  {
+    "id": "eay_5_17",
+    "konu": "Olasılıklı Örnekleme (Sistematik)",
+    "zorluk": "Orta",
+    "tip": "Kavramsal",
+    "soruMetni": "Sistematik örnekleme yönteminin (örn: her 10. kişiyi seçme) en önemli riski veya dezavantajı nedir?",
+    "secenekler": [
+      "Eğer evren listesi gizli bir örüntüye (periyodik düzene) sahipse, örneklem yanlı olabilir.",
+      "Evrendeki her birime ulaşmak zorunludur.",
+      "Maliyeti basit rastgele örneklemeden çok daha yüksektir.",
+      "Her zaman tabakalara ayırmayı gerektirir."
+    ],
+    "dogruCevap": "Eğer evren listesi gizli bir örüntüye (periyodik düzene) sahipse, örneklem yanlı olabilir.",
+    "aciklama": "Örneğin, bir listede her 10. ev 'köşe başı' ise ve siz 10 aralıkla seçerseniz, örnekleminiz sadece köşe başı evlerden oluşur (örüntü hatası)."
+  },
+  {
+    "id": "eay_5_18",
+    "konu": "Olasılıklı Örnekleme (Tabakalı)",
+    "zorluk": "Zor",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, 'öğretmen adaylarının görüşlerini' incelerken, örneklemin 'sınıf düzeylerine' (1., 2., 3., 4. sınıf) göre dengeli dağılmasını istemektedir. Bu amaçla her sınıf düzeyinden ayrı ayrı ve oranlı olarak öğrenci seçmiştir. Hangi yöntemi kullanmıştır?",
+    "secenekler": [
+      "Tabakalı Örnekleme",
+      "Küme Örneklemesi",
+      "Sistematik Örnekleme",
+      "Basit Rastgele Örnekleme"
+    ],
+    "dogruCevap": "Tabakalı Örnekleme",
+    "aciklama": "Araştırmacı, evreni 'sınıf düzeyi' adı verilen alt gruplara (tabakalara) ayırmış ve her grubun temsilini sağlamak için her tabakadan örnek almıştır."
+  },
+  {
+    "id": "eay_5_19",
+    "konu": "Olasılıklı Örnekleme (Küme)",
+    "zorluk": "Zor",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, 'Elazığ ilindeki lise öğrencilerinin' görüşlerini incelemek için önce 20 ilçeyi listelemiş, bunlardan kura ile 5 ilçe seçmiş ve *sadece bu 5 ilçedeki tüm* lise öğrencilerine anket uygulamıştır. Hangi yöntemi kullanmıştır?",
+    "secenekler": [
+      "Küme Örneklemesi",
+      "Tabakalı Örnekleme",
+      "Sistematik Örnekleme",
+      "Basit Rastgele Örnekleme"
+    ],
+    "dogruCevap": "Küme Örneklemesi",
+    "aciklama": "Araştırmacı, evreni (Elazığ) alt gruplara (ilçeler) ayırmış, ancak her ilçeden örnek almak yerine (Tabakalı değil), sadece rastgele seçtiği kümelerin (5 ilçe) tamamını çalışmaya dahil etmiştir."
+  },
+  {
+    "id": "eay_5_20",
+    "konu": "Evren ve Örneklem",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Evrenden belli yöntemlerle, evreni temsil edecek bir alt grup seçme *sürecine* ne ad verilir?",
+    "secenekler": [
+      "Örnekleme",
+      "Örneklem",
+      "Araştırma Evreni",
+      "Genel Evren"
+    ],
+    "dogruCevap": "Örnekleme",
+    "aciklama": "Örneklem, seçilen alt grubun adıdır. Örnekleme ise o grubu seçme eyleminin veya sürecinin adıdır."
+  },
+  {
+    "id": "eay_5_21",
+    "konu": "Evren ve Örneklem",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Araştırma evreninden, o evreni temsil etmesi amacıyla seçilen ve verilerin toplandığı alt gruba ne ad verilir?",
+    "secenekler": [
+      "Örneklem",
+      "Genel Evren",
+      "Etik Kurul",
+      "Küme"
+    ],
+    "dogruCevap": "Örneklem",
+    "aciklama": "Örneklem, özellikleri hakkında bilgi toplamak için evrenden seçilen ve veri toplanan sınırlı bir gruptur."
+  },
+  {
+    "id": "eay_5_22",
+    "konu": "Araştırma Etiği (Aşırmacılık)",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir öğrenci, internette bulduğu bir paragrafı kopyalayıp, kaynak göstermeden kendi ödevine eklemiştir. Bu durum hangi etik ihlaldir?",
+    "secenekler": [
+      "Aşırmacılık (İntihal)",
+      "Uydurmacılık",
+      "Sahtecilik",
+      "Disiplinsiz Araştırma"
+    ],
+    "dogruCevap": "Aşırmacılık (İntihal)",
+    "aciklama": "Aşırmacılık, veya intihal, başkasına ait fikir, metin veya verileri kaynak bildirmeksizin kendisininmiş gibi sunmaktır."
+  },
+  {
+    "id": "eay_5_23",
+    "konu": "Olasılıklı Örnekleme",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Evrendeki her bir birimin örnekleme seçilme şansının eşit ve bağımsız olduğu örnekleme yöntemlerinin genel adı nedir?",
+    "secenekler": [
+      "Olasılıklı (Seçkisiz) Örnekleme",
+      "Olasılıklı Olmayan Örnekleme",
+      "Etik Örnekleme",
+      "Gelişigüzel Örnekleme"
+    ],
+    "dogruCevap": "Olasılıklı (Seçkisiz) Örnekleme",
+    "aciklama": "Olasılıklı yöntemler (Basit Rassal, Tabakalı, Küme, Sistematik), her birimin seçilme olasılığının bilindiği ve şansa dayalı olduğu yöntemlerdir."
+  },
+  {
+    "id": "eay_5_24",
+    "konu": "Örnekleme Nedenleri",
+    "zorluk": "Orta",
+    "tip": "Kavramsal",
+    "soruMetni": "Bir araştırmacının 'Türkiye'deki tüm lise öğrencilerinin' (Genel Evren) tamamına ulaşmasının mümkün olmaması, örnekleme yapmayı gerekli kılan hangi nedene dayanır?",
+    "secenekler": [
+      "Pratik İmkansızlık Hali",
+      "Aşırmacılık Riski",
+      "Disiplinsiz Araştırma",
+      "Veri Uydurma Zorunluluğu"
+    ],
+    "dogruCevap": "Pratik İmkansızlık Hali",
+    "aciklama": "Evrenin tamamına ulaşmak, zaman ve maliyetin ötesinde, bazen fiziksel veya lojistik olarak imkansız olabilir (pratik imkansızlık)."
+  },
+  {
+    "id": "eay_5_25",
+    "konu": "Olasılıklı Örnekleme (Tabakalı)",
+    "zorluk": "Orta",
+    "tip": "Kavramsal",
+    "soruMetni": "Tabakalı örnekleme yönteminde, evrenin bölündüğü alt grupların (tabakaların) hangi özelliğe sahip olması beklenir?",
+    "secenekler": [
+      "Her tabaka kendi içinde homojen, tabakalar arası heterojen",
+      "Her tabaka kendi içinde heterojen, tabakalar arası homojen",
+      "Tüm tabakaların birbiriyle aynı (homojen) olması",
+      "Tüm tabakaların rastgele belirlenmesi"
+    ],
+    "dogruCevap": "Her tabaka kendi içinde homojen, tabakalar arası heterojen",
+    "aciklama": "Tabakalı örneklemede amaç, evrendeki farklı grupların (örn: 1. sınıflar, 2. sınıflar) temsilidir. Bu nedenle 1. sınıflar (bir tabaka) kendi içinde homojen, ancak 2. sınıflardan (diğer tabaka) heterojendir."
+  },
+  {
+    "id": "eay_5_26",
+    "konu": "Araştırma Etiği (Disiplinsiz Araştırma)",
+    "zorluk": "Zor",
+    "tip": "Kavramsal",
+    "soruMetni": "'Disiplinsiz Araştırma' ile 'Sahtecilik (Manipülasyon)' arasındaki temel fark nedir?",
+    "secenekler": [
+      "Disiplinsiz araştırmada kasıt yoktur (özensizlik), Sahtecilikte kasıtlı aldatma vardır.",
+      "Disiplinsiz araştırma veriyi uydurmaktır, Sahtecilik veriyi çalmaktır.",
+      "Disiplinsiz araştırma yayını kopyalamaktır, Sahtecilik veriyi eksik toplamaktır.",
+      "İkisi arasında bir fark yoktur, ikisi de kasıtlı yapılır."
+    ],
+    "dogruCevap": "Disiplinsiz araştırmada kasıt yoktur (özensizlik), Sahtecilikte kasıtlı aldatma vardır.",
+    "aciklama": "Disiplinsiz araştırmadaki hatalar genellikle dikkatsiz planlama veya özensizlikten kaynaklanır (kasıtsız). Sahtecilik ise, verileri kasıtlı olarak değiştirerek veya manipüle ederek bilimsel süreci aldatmaktır."
+  },
+  {
+    "id": "eay_5_27",
+    "konu": "Evren ve Örneklem",
+    "zorluk": "Kolay",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacının 'Ankara ilindeki lise öğretmenleri' üzerinde çalışmak istemesi, hangi evren tanımına uyar?",
+    "secenekler": [
+      "Araştırma Evreni",
+      "Genel Evren",
+      "Örneklem",
+      "Küme"
+    ],
+    "dogruCevap": "Araştırma Evreni",
+    "aciklama": "Araştırma Evreni, Genel Evrenin (tüm öğretmenler) zaman ve mekanla (Ankara ili) sınırlandırılmış, erişilebilir halidir."
+  },
+  {
+    "id": "eay_5_28",
+    "konu": "Olasılıklı Örnekleme (Küme)",
+    "zorluk": "Orta",
+    "tip": "Kavramsal",
+    "soruMetni": "Küme örneklemesi yönteminde, evrenin bölündüğü alt grupların (kümelerin) hangi özelliğe sahip olması beklenir?",
+    "secenekler": [
+      "Kümeler kendi içinde heterojen, kümeler arası homojen",
+      "Kümeler kendi içinde homojen, kümeler arası heterojen",
+      "Tüm kümelerin birbirinden tamamen farksız olması",
+      "Her kümeden tek bir kişi seçilmesi"
+    ],
+    "dogruCevap": "Kümeler kendi içinde heterojen, kümeler arası homojen",
+    "aciklama": "İdeal bir küme (örn: bir okul), evrenin (tüm okullar) küçük bir kopyası gibi olmalıdır (içerisinde farklı özelliklerde öğrenciler barındırmalı - heterojen). Kümelerin de (okulların) birbirine benzer olması (homojen) beklenir."
+  },
+  {
+    "id": "eay_5_29",
+    "konu": "Araştırma Etiği (Yinelenen Yayın)",
+    "zorluk": "Kolay",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacının, aynı makaleyi hem Türkçe bir dergiye hem de İngilizce bir dergiye (çevirisini yaparak) göndermesi hangi etik ihlaldir?",
+    "secenekler": [
+      "Yinelenen Yayın",
+      "Aşırmacılık",
+      "Uydurmacılık",
+      "Sahtecilik"
+    ],
+    "dogruCevap": "Yinelenen Yayın",
+    "aciklama": "Bir bilimsel çalışmanın birden çok dergide (farklı dillerde bile olsa) yayınlanması, yinelenen (duplike) yayın olarak kabul edilir ve etik bir ihlaldir."
+  },
+  {
+    "id": "eay_5_30",
+    "konu": "Olasılıklı Örnekleme",
+    "zorluk": "Zor",
+    "tip": "Kavramsal",
+    "soruMetni": "Olasılıklı örnekleme yöntemlerinde 'seçim birimi' (selection unit) açısından Tabakalı ve Küme arasındaki fark nedir?",
+    "secenekler": [
+      "Tabakalıda birimler bireylerdir; Kümede ise birimler gruplardır (kümelerdir).",
+      "Tabakalıda birimler gruplardır; Kümede ise birimler bireylerdir.",
+      "Tabakalıda birimler rastgele seçilmez; Kümede rastgele seçilir.",
+      "Tabakalıda birimler sistematiktir; Kümede rastgele seçilir."
+    ],
+    "dogruCevap": "Tabakalıda birimler bireylerdir; Kümede ise birimler gruplardır (kümelerdir).",
+    "aciklama": "Tabakalıda, her tabakadaki *bireyler* arasından rastgele seçim yapılır. Kümede ise, *kümelerin (grupların)* kendisi rastgele seçilir."
+  },
+
+  {
+    "id": "eay_5_31",
+    "konu": "Araştırma Etiği (Aşırmacılık)",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Kaynak göstermeden başkasının fikrini kullanmak olan 'Aşırmacılık (İntihal)' aynı zamanda ne olarak da adlandırılır?",
+    "secenekler": [
+      "Bilimsel hırsızlık",
+      "Bilimsel dikkatsizlik",
+      "Veri uydurma",
+      "Veri manipülasyonu"
+    ],
+    "dogruCevap": "Bilimsel hırsızlık",
+    "aciklama": "Aşırmacılık (intihal), başkasının fikrini, verisini veya metnini kaynak göstermeden almaktır ve 'bilimsel hırsızlık' olarak kabul edilen kasıtlı bir eylemdir."
+  },
+  {
+    "id": "eay_5_32",
+    "konu": "Örnekleme Nedenleri",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Aşağıdakilerden hangisi evrenin tamamı yerine örneklem kullanmanın avantajlarından biri *değildir*?",
+    "secenekler": [
+      "Sonuçların genellenebilirliğini artırması",
+      "Maliyet tasarrufu sağlaması",
+      "Zaman tasarrufu sağlaması",
+      "Pratik imkansızlıkları aşması"
+    ],
+    "dogruCevap": "Sonuçların genellenebilirliğini artırması",
+    "aciklama": "Örnekleme, maliyet ve zaman tasarrufu sağlar. Ancak ideal olan evrenin tamamıdır; örneklem kullanmak, evrene göre genellenebilirliği (temsil gücü yüksek olsa da) artırmaz, aksine bir miktar hata payı (örnekleme hatası) getirir."
+  },
+  {
+    "id": "eay_5_33",
+    "konu": "Olasılıklı Örnekleme (Sistematik)",
+    "zorluk": "Kolay",
+    "tip": "Senaryo",
+    "soruMetni": "Bir öğrenci listesindeki her 10. öğrencinin seçilmesi hangi örnekleme yöntemidir?",
+    "secenekler": [
+      "Sistematik Örnekleme",
+      "Basit Rastgele Örnekleme",
+      "Tabakalı Örnekleme",
+      "Küme Örneklemesi"
+    ],
+    "dogruCevap": "Sistematik Örnekleme",
+    "aciklama": "Bir başlangıç noktasından sonra, belirli bir aralıkla (örn: her 10. kişi) yapılan seçime Sistematik Örnekleme denir."
+  },
+  {
+    "id": "eay_5_34",
+    "konu": "Araştırma Etiği (Disiplinsiz Araştırma)",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Kasıtlı olmayan, ancak dikkatsiz ve özensiz planlama sonucu araştırmada ortaya çıkan hataları tanımlayan etik sorun hangisidir?",
+    "secenekler": [
+      "Disiplinsiz Araştırma",
+      "Sahtecilik",
+      "Uydurmacılık",
+      "Aşırmacılık"
+    ],
+    "dogruCevap": "Disiplinsiz Araştırma",
+    "aciklama": "Bu tür hatalar genellikle bilime büyük zarar vermez ve düzeltilebilir, kasıtlı bir aldatma amacı taşımaz (Sahtecilik gibi)."
+  },
+  {
+    "id": "eay_5_35",
+    "konu": "Araştırma Etiği (Sahtecilik)",
+    "zorluk": "Orta",
+    "tip": "Kavramsal",
+    "soruMetni": "Bir araştırmacının, topladığı orijinal veri setini (anketler, ses kayıtları vb.) en az 5 yıl saklaması neden tavsiye edilir?",
+    "secenekler": [
+      "Araştırmanın şeffaflığını ve denetlenebilirliğini sağlamak için.",
+      "Bu verileri 5 yıl sonra tekrar yayımlayabilmek için.",
+      "İntihal (Aşırmacılık) yapmak için zaman kazanmak için.",
+      "Verilerin maliyetini artırmak için."
+    ],
+    "dogruCevap": "Araştırmanın şeffaflığını ve denetlenebilirliğini sağlamak için.",
+    "aciklama": "Verilerin saklanması, olası sahtecilik veya hata iddialarına karşı sürecin kanıtlanabilir (denetlenebilir) olmasını sağlar."
+  },
+  {
+    "id": "eay_5_36",
+    "konu": "Olasılıklı Örnekleme (Basit Rassal)",
+    "zorluk": "Orta",
+    "tip": "Kavramsal",
+    "soruMetni": "Basit Rastgele Örnekleme yönteminin (örn: kura) uygulanmasındaki en büyük pratik zorluk nedir?",
+    "secenekler": [
+      "Evrendeki tüm bireylerin tam bir listesine ulaşma zorunluluğu.",
+      "Her zaman pahalı olması.",
+      "Alt grupları temsil edememesi.",
+      "Sistematik bir örüntü oluşturması."
+    ],
+    "dogruCevap": "Evrendeki tüm bireylerin tam bir listesine ulaşma zorunluluğu.",
+    "aciklama": "Basit rastgele örnekleme, evrendeki herkesin listede olmasını ve eşit şansa sahip olmasını gerektirir; bu liste olmadan kura çekilemez."
+  },
+  {
+    "id": "eay_5_37",
+    "konu": "Araştırma Etiği (Yinelenen Yayın)",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, yaptığı bir çalışmadan elde ettiği verilerle önce 'X' dergisine bir makale göndermiş, sonra aynı verileri biraz değiştirerek 'Y' dergisine ikinci bir makale göndermiştir. Bu 'salam dilimleme' eylemi hangi etik ihlaldir?",
+    "secenekler": [
+      "Yinelenen Yayın",
+      "Aşırmacılık",
+      "Uydurmacılık",
+      "Disiplinsiz Araştırma"
+    ],
+    "dogruCevap": "Yinelenen Yayın",
+    "aciklama": "Bir bütün olarak çalışmanın gereksiz bir şekilde parçalanarak (salam dilimleme) birden fazla yayın yapılması, Yinelenen Yayın etik ihlaline girer."
+  },
+  {
+    "id": "eay_5_38",
+    "konu": "Olasılıklı Örnekleme",
+    "zorluk": "Orta",
+    "tip": "Kavramsal",
+    "soruMetni": "Olasılıklı örnekleme yöntemlerinin (Basit Rassal, Tabakalı vb.) olasılıklı olmayan yöntemlere (örn: Kolayda Örnekleme) göre temel üstünlüğü nedir?",
+    "secenekler": [
+      "Örneklemin evreni temsil etme gücünün daha yüksek olması.",
+      "Her zaman daha ucuz ve hızlı olması.",
+      "Araştırmacının uzmanlığına daha fazla dayanması.",
+      "Daha az etik kurul onayı gerektirmesi."
+    ],
+    "dogruCevap": "Örneklemin evreni temsil etme gücünün daha yüksek olması.",
+    "aciklama": "Olasılıklı yöntemler şansa dayalı olduğu için araştırmacının yanlılığını azaltır ve örneklemin evreni daha iyi temsil etmesini sağlar, bu da genellenebilirliği artırır."
+  },
+  {
+    "id": "eay_5_39",
+    "konu": "Araştırma Etiği (Uydurmacılık vs Sahtecilik)",
+    "zorluk": "Zor",
+    "tip": "Senaryo",
+    "soruMetni": "Araştırmacı (A) hiç anket yapmadan 100 anket verisi uydurmuştur. Araştırmacı (B) 100 anket yapmış ancak hipoteze uymayan 5 anketi silmiştir. (A) ve (B) sırasıyla hangi etik ihlalleri yapmıştır?",
+    "secenekler": [
+      "A: Uydurmacılık, B: Sahtecilik",
+      "A: Sahtecilik, B: Uydurmacılık",
+      "A: Aşırmacılık, B: Sahtecilik",
+      "A: Uydurmacılık, B: Yinelenen Yayın"
+    ],
+    "dogruCevap": "A: Uydurmacılık, B: Sahtecilik",
+    "aciklama": "(A) hiç olmayan veriyi üretmiştir (Uydurmacılık). (B) mevcut veriyi manipüle etmiş veya silmiştir (Sahtecilik)."
+  },
+  {
+    "id": "eay_5_40",
+    "konu": "Olasılıklı Örnekleme (Tabakalı vs Küme)",
+    "zorluk": "Zor",
+    "tip": "Kavramsal",
+    "soruMetni": "Tabakalı örneklemede 'tabakaların kendi içinde homojen' olması gerekirken, Küme örneklemesinde 'kümelerin kendi içinde heterojen' olması idealdir. Neden?",
+    "secenekler": [
+      "Çünkü Tabakalı, gruplar arası farkı inceler; Küme ise evrenin minyatür bir kopyasını (tek bir küme) seçmeyi amaçlar.",
+      "Çünkü Tabakalıda gruplar homojen olmak zorundadır, Kümede böyle bir zorunluluk yoktur.",
+      "Çünkü Tabakalı pahalıdır, Küme ise ucuzdur.",
+      "Çünkü Tabakalıda bireyler, Kümede ise gruplar seçilir."
+    ],
+    "dogruCevap": "Çünkü Tabakalı, gruplar arası farkı inceler; Küme ise evrenin minyatür bir kopyasını (tek bir küme) seçmeyi amaçlar.",
+    "aciklama": "Tabakalıda 1. sınıflar (homojen) ile 2. sınıflar (homojen) arasındaki farkı görmek isteriz. Kümede ise, seçtiğimiz bir okulun (küme) tek başına tüm evreni (heterojen yapıyı) yansıtmasını isteriz."
+  },
+  {
+    "id": "eay_5_41",
+    "konu": "Evren ve Örneklem",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Evrenin zaman ve mekânla sınırlandırılmış, araştırmacının 'erişilebilir' olduğu topluluğa ne ad verilir?",
+    "secenekler": [
+      "Araştırma Evreni",
+      "Genel Evren",
+      "Örneklem",
+      "Tabaka"
+    ],
+    "dogruCevap": "Araştırma Evreni",
+    "aciklama": "Genel Evren teorik hedef kitledir (örn: tüm öğretmenler). Araştırma Evreni ise bu kitlenin ulaşılabilir olanıdır (örn: Elazığ'daki öğretmenler)."
+  },
+  {
+    "id": "eay_5_42",
+    "konu": "Araştırma Etiği (Etik Kurul)",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "İnsan katılımcıların yer aldığı çalışmalarda Etik Kurul'un bulunmasının temel amacı nedir?",
+    "secenekler": [
+      "Denek olarak kullanılacak insanların haklarını ve güvenliğini korumak.",
+      "Araştırmanın maliyetini hesaplamak.",
+      "Araştırmanın örnekleme yöntemini belirlemek.",
+      "Araştırmacının intihal yapmasını engellemek."
+    ],
+    "dogruCevap": "Denek olarak kullanılacak insanların haklarını ve güvenliğini korumak.",
+    "aciklama": "Etik Kurul, araştırma protokolünü inceleyerek katılımcıların (deneklerin) zarar görmemesini ve haklarının korunmasını sağlar."
+  },
+  {
+    "id": "eay_5_43",
+    "konu": "Olasılıklı Örnekleme (Basit Rassal)",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Evrendeki her bireyin seçilme olasılığının eşit olduğu ve seçimin tamamen şansa (örn: kura) dayandığı yöntem hangisidir?",
+    "secenekler": [
+      "Basit Rastgele Örnekleme",
+      "Sistematik Örnekleme",
+      "Tabakalı Örnekleme",
+      "Küme Örneklemesi"
+    ],
+    "dogruCevap": "Basit Rastgele Örnekleme",
+    "aciklama": "Bu yöntem, temsil gücü en yüksek olan temel olasılıklı örnekleme yöntemidir ancak evren listesi gerektirmesi dezavantajıdır."
+  },
+  {
+    "id": "eay_5_44",
+    "konu": "Araştırma Etiği (Veri Saklama)",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Olası sahtecilik şüphelerine karşı kanıtlanabilirlik sağlamak amacıyla, bir araştırmaya ilişkin orijinal verilerin önerilen saklama süresi en az ne kadardır?",
+    "secenekler": [
+      "5 yıl",
+      "6 ay",
+      "1 yıl",
+      "Süresiz"
+    ],
+    "dogruCevap": "5 yıl",
+    "aciklama": "Araştırmanın denetlenebilir ve kanıtlanabilir olması için orijinal veri setlerinin (ham veriler) en az 5 yıl saklanması önerilir."
+  },
+  {
+    "id": "eay_5_45",
+    "konu": "Araştırma Etiği (Aşırmacılık)",
+    "zorluk": "Orta",
+    "tip": "Kavramsal",
+    "soruMetni": "Aşırmacılık (intihal) eyleminin 'kasıtlı' olarak kabul edilmesinin (sistematik yapılmasının) sonucu nedir?",
+    "secenekler": [
+      "Bilimsel hırsızlık olarak suç teşkil eder.",
+      "Disiplinsiz araştırma olarak kabul edilir.",
+      "Veri sahteciliği olarak kabul edilir.",
+      "Sadece etik kuruldan uyarı alır."
+    ],
+    "dogruCevap": "Bilimsel hırsızlık olarak suç teşkil eder.",
+    "aciklama": "Aşırmanın sistematik ve kasıtlı bir şekilde yapılması, dikkatsizlikten (disiplinsiz araştırma) öte, 'bilimsel hırsızlık' olarak nitelendirilir ve ciddi bir suçtur."
+  },
+  {
+    "id": "eay_5_46",
+    "konu": "Olasılıklı Örnekleme (Küme)",
+    "zorluk": "Orta",
+    "tip": "Teorik",
+    "soruMetni": "Küme örneklemesi yönteminin (örn: 5 ilçeyi seçmek) Tabakalı örneklemeye (örn: tüm ilçelerden örnek almak) göre en büyük avantajı nedir?",
+    "secenekler": [
+      "Zaman ve maliyet tasarrufu sağlaması.",
+      "Temsil gücünün daha yüksek olması.",
+      "Evren listesine ihtiyaç duymaması.",
+      "Her zaman daha doğru sonuç vermesi."
+    ],
+    "dogruCevap": "Zaman ve maliyet tasarrufu sağlaması.",
+    "aciklama": "Tüm ilçelere gitmek yerine sadece 5 ilçeye gitmek (Küme), her ilçeden örnek almaktan (Tabakalı) çok daha az maliyetli ve hızlıdır."
+  },
+  {
+    "id": "eay_5_47",
+    "konu": "Olasılıklı Örnekleme (Sistematik)",
+    "zorluk": "Orta",
+    "tip": "PDF Dışı",
+    "soruMetni": "Sistematik örneklemede, 1000 kişilik bir evrenden 100 kişi seçilecekse (N/n), seçim aralığı (K) kaç olmalıdır?",
+    "secenekler": [
+      "10",
+      "100",
+      "1000",
+      "1"
+    ],
+    "dogruCevap": "10",
+    "aciklama": "Seçim aralığı (K), evren büyüklüğünün (N=1000) örneklem büyüklüğüne (n=100) bölünmesiyle bulunur (K = 1000 / 100 = 10). Yani her 10. kişi seçilmelidir."
+  },
+  {
+    "id": "eay_5_48",
+    "konu": "Evren ve Örneklem",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Araştırmacı, 'Türkiye'deki (1) üniversite öğrencilerinin (1) dijital okuryazarlık düzeylerini' incelemek istemiş, ancak 'Ege Bölgesi'ndeki (2) devlet üniversitelerindeki (2)' öğrencilerden 500 kişilik bir grup (3) seçmiştir. 1, 2 ve 3 sırasıyla nedir?",
+    "secenekler": [
+      "1: Genel Evren, 2: Araştırma Evreni, 3: Örneklem",
+      "1: Araştırma Evreni, 2: Genel Evren, 3: Örneklem",
+      "1: Genel Evren, 2: Örneklem, 3: Araştırma Evreni",
+      "1: Örneklem, 2: Araştırma Evreni, 3: Genel Evren"
+    ],
+    "dogruCevap": "1: Genel Evren, 2: Araştırma Evreni, 3: Örneklem",
+    "aciklama": "En geniş kitle (1) Genel Evren, bunun ulaşılabilir sınırı (2) Araştırma Evreni, bu sınırdan veri toplamak için seçilen grup (3) ise Örneklemdir."
+  },
+  {
+    "id": "eay_5_49",
+    "konu": "Araştırma Etiği",
+    "zorluk": "Zor",
+    "tip": "PDF Dışı",
+    "soruMetni": "Bir araştırmacının, araştırmanın başında planladığı analiz tekniklerini (örn: t-testi) verileri topladıktan sonra 'anlamlı çıkmıyor' diye değiştirmesi, hangi etik soruna daha yakındır?",
+    "secenekler": [
+      "Sahtecilik (Manipülasyon)",
+      "Disiplinsiz Araştırma (Özensiz planlama)",
+      "Uydurmacılık",
+      "Aşırmacılık"
+    ],
+    "dogruCevap": "Sahtecilik (Manipülasyon)",
+    "aciklama": "Analiz tekniklerini, verileri veya hipotezi sonuca uydurmak için kasıtlı olarak değiştirmek, verileri manipüle etmenin bir yolu olan Sahteciliğe girer (Bazen Disiplinsiz Araştırma ile başlasa da kasıtlı değişiklik Sahteciliktir)."
+  },
+  {
+    "id": "eay_5_50",
+    "konu": "Olasılıklı Örnekleme (Tabakalı)",
+    "zorluk": "Zor",
+    "tip": "Kavramsal",
+    "soruMetni": "Tabakalı örnekleme yönteminin Basit Rastgele örneklemeye göre en önemli avantajı (veya kullanılma nedeni) nedir?",
+    "secenekler": [
+      "Evrendeki küçük alt grupların (tabakaların) örneklemde temsil edilmesini garanti altına alması.",
+      "Evren listesine ihtiyaç duymaması.",
+      "Her zaman daha az maliyetli ve hızlı olması.",
+      "Araştırmacının yanlılığını artırması."
+    ],
+    "dogruCevap": "Evrendeki küçük alt grupların (tabakaların) örneklemde temsil edilmesini garanti altına alması.",
+    "aciklama": "Basit rastgele yöntemde, kura çekerken evrendeki %5'lik bir gruba (örn: Tıp Fakültesi) hiç denk gelmeme riski vardır. Tabakalı yöntem, bu küçük grubun bile örneklemde temsil edilmesini garanti eder."
+  },
+  {
+    "id": "eay_7_1",
+    "konu": "Uygun Örnekleme",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Zaman, para ve konum gibi koşullara bağlı olarak, araştırmacı için en 'kolay ulaşılabilir' veya 'elverişli' olan durumların seçildiği örnekleme yöntemi hangisidir?",
+    "secenekler": [
+      "Uygun (Kolay Ulaşılabilir) Örnekleme",
+      "Amaçlı Örnekleme",
+      "Kartopu Örnekleme",
+      "Kritik Durum Örneklemesi"
+    ],
+    "dogruCevap": "Uygun (Kolay Ulaşılabilir) Örnekleme",
+    "aciklama": "Uygun örnekleme, araştırmacının en az çabayla (zaman, para) ulaşabildiği katılımcıları (örn: AVM'deki insanlar, online anketler) seçtiği bir yöntemdir."
+  },
+  {
+    "id": "eay_7_2",
+    "konu": "Amaçlı Örnekleme (Genel)",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Özellikle nitel araştırmalarda, araştırmanın sorularına ışık tutacak 'zengin durumlara' odaklanarak yapılan örnekleme yönteminin genel adı nedir?",
+    "secenekler": [
+      "Amaçlı Örnekleme",
+      "Uygun Örnekleme",
+      "Olasılıklı Örnekleme",
+      "Basit Rastgele Örnekleme"
+    ],
+    "dogruCevap": "Amaçlı Örnekleme",
+    "aciklama": "Amaçlı örnekleme, evrene genelleme yapmaktan ziyade, çalışılan konuyu derinlemesine anlamak için bilgi açısından zengin durumları kasıtlı olarak seçer."
+  },
+  {
+    "id": "eay_7_3",
+    "konu": "Kartopu Örnekleme",
+    "zorluk": "Kolay",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, ulaştığı ilk katılımcıya 'Bu konu hakkında başka kiminle görüşmemi önerirsiniz?' diye sorarak örneklemini büyütüyorsa, hangi yöntemi kullanıyordur?",
+    "secenekler": [
+      "Kartopu Örnekleme",
+      "Tipik Durum Örneklemesi",
+      "Kota Örnekleme",
+      "Aykırı Durum Örneklemesi"
+    ],
+    "dogruCevap": "Kartopu Örnekleme",
+    "aciklama": "Kartopu örneklemede, örneklem bir katılımcının tavsiyesi üzerine diğerine ulaşılarak bir kartopu gibi büyür."
+  },
+  {
+    "id": "eay_7_4",
+    "konu": "Amaçlı Örnekleme (Aykırı Durum)",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir okuldaki 'akademik başarıyı' inceleyen bir araştırmacı, okul birincisi olan öğrenciyi (üst uç) ve okul sonuncusu olan öğrenciyi (alt uç) seçerek sadece bu iki kişiyle görüşmüştür. Hangi yöntem kullanılmıştır?",
+    "secenekler": [
+      "Aykırı Durum Örnekleme",
+      "Tipik Durum Örneklemesi",
+      "Benzeşik Örnekleme",
+      "Kritik Durum Örneklemesi"
+    ],
+    "dogruCevap": "Aykırı Durum Örnekleme",
+    "aciklama": "Aykırı durum örneklemesi, incelenen konuya ilişkin sıra dışı veya iki ayrı uçta (en iyi-en kötü) yer alan bireyleri seçerek bilgi toplamayı amaçlar."
+  },
+  {
+    "id": "eay_7_5",
+    "konu": "Olasılıklı vs Olasılıksız",
+    "zorluk": "Kolay",
+    "tip": "Kavramsal",
+    "soruMetni": "Olasılığa dayalı olmayan örnekleme yöntemlerinin, olasılığa dayalı yöntemlerden (örn: Basit Rastgele) temel farkı nedir?",
+    "secenekler": [
+      "Olasılıksız yöntemlerde evrendeki herkesin eşit seçilme şansı yoktur.",
+      "Olasılıksız yöntemler her zaman evrene daha iyi genelleme yapar.",
+      "Olasılıksız yöntemler sadece sayılarla (nicel) çalışır.",
+      "Olasılıksız yöntemlerde kura çekmek zorunludur."
+    ],
+    "dogruCevap": "Olasılıksız yöntemlerde evrendeki herkesin eşit seçilme şansı yoktur.",
+    "aciklama": "Olasılıklı yöntemler şansa (eşit seçilme olasılığı) dayanırken, olasılıksız yöntemler araştırmacının amacına, kolaylığına veya belirlediği kriterlere göre (öznel) seçim yapar."
+  },
+  {
+    "id": "eay_7_6",
+    "konu": "Amaçlı Örnekleme (Tipik Durum)",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, bir okuldaki 'tipik' bir öğrenci profilini anlamak için, not ortalaması okulun ortalamasına en yakın olan (ne çok başarılı ne çok başarısız) bir öğrenciyi seçmiştir. Hangi yöntem kullanılmıştır?",
+    "secenekler": [
+      "Tipik Durum Örneklemesi",
+      "Aykırı Durum Örneklemesi",
+      "Maksimum Çeşitlilik",
+      "Kritik Durum Örneklemesi"
+    ],
+    "dogruCevap": "Tipik Durum Örneklemesi",
+    "aciklama": "Tipik durum örneklemesi, konuyla ilgili 'ortalama' veya 'sıra dışı olmayan' bir durumu belirleyerek fikir edinmeyi amaçlar."
+  },
+  {
+    "id": "eay_7_7",
+    "konu": "Amaçlı Örnekleme (Maksimum Çeşitlilik vs Benzeşik)",
+    "zorluk": "Zor",
+    "tip": "Kavramsal",
+    "soruMetni": "Maksimum Çeşitlilik örneklemesinin tam tersi olan ve benzer özelliklere sahip bireylerden oluşan (örn: odak grup görüşmesi için) yöntem hangisidir?",
+    "secenekler": [
+      "Benzeşik (Homojen) Örnekleme",
+      "Aykırı Durum Örneklemesi",
+      "Tipik Durum Örneklemesi",
+      "Kritik Durum Örneklemesi"
+    ],
+    "dogruCevap": "Benzeşik (Homojen) Örnekleme",
+    "aciklama": "Maksimum çeşitlilik, farklılıkları yansıtmayı amaçlarken; Benzeşik örnekleme, grubun kendi içinde benzer özelliklere (örn: hepsi 8. sınıf erkek öğrenci) sahip olmasını amaçlar."
+  },
+  {
+    "id": "eay_7_8",
+    "konu": "Amaçlı Örnekleme (Kritik Durum)",
+    "zorluk": "Zor",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, yeni bir eğitim programını test etmek için 'en başarısız' olarak bilinen bir okulu seçmiştir. Araştırmacının mantığı şudur: 'Eğer bu program bu okulda bile işe yarıyorsa, her okulda işe yarar.' Bu mantık hangi örnekleme yöntemine aittir?",
+    "secenekler": [
+      "Kritik Durum Örneklemesi",
+      "Aykırı Durum Örneklemesi",
+      "Tipik Durum Örneklemesi",
+      "Kota Örneklemesi"
+    ],
+    "dogruCevap": "Kritik Durum Örneklemesi",
+    "aciklama": "Kritik durum örneklemesi, 'eğer burada oluyorsa...' veya 'eğer burada olmuyorsa...' şeklinde genelleme yapılabilen, en fazla bilgiyi sağlayacağı düşünülen kilit bir durumu seçer."
+  },
+  {
+    "id": "eay_7_9",
+    "konu": "Amaçlı Örnekleme (Ölçüt)",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, 'devamsızlığın nedenlerini' incelemek için, okul kayıtlarına bakarak sadece 'aylık devamsızlığı 10 günden fazla olan' öğrencileri çalışmasına dahil etmiştir. Hangi yöntemi kullanmıştır?",
+    "secenekler": [
+      "Ölçüt Örnekleme",
+      "Kartopu Örnekleme",
+      "Uygun Örnekleme",
+      "Tipik Durum Örneklemesi"
+    ],
+    "dogruCevap": "Ölçüt Örnekleme",
+    "aciklama": "Ölçüt örneklemede, örneklemi belirleyen net bir 'ölçüt' (kriter) vardır ve sadece bu ölçütü karşılayan bireyler (örn: devamsızlığı 10 günden fazla olanlar) çalışmaya dahil edilir."
+  },
+  {
+    "id": "eay_7_10",
+    "konu": "Kota Örnekleme",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, AVM'de anket yaparken kendine '25 kadın ve 25 erkek' katılımcıya ulaşma hedefi koymuş ve bu sayıya ulaştığında çalışmayı bitirmiştir. Bu yöntem hangisidir?",
+    "secenekler": [
+      "Kota Örnekleme",
+      "Uygun Örnekleme",
+      "Tipik Durum Örneklemesi",
+      "Sistematik Örnekleme"
+    ],
+    "dogruCevap": "Kota Örnekleme",
+    "aciklama": "Kota örneklemede, araştırmacı örneklemi oluşturacak kişi sayısı ve özellikleri (örn: 25 kadın, 25 erkek) doğrultusunda bir 'kota' belirler ve bu kotayı doldurur."
+  },
+
+  {
+    "id": "eay_7_11",
+    "konu": "Evren ve Örneklem",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Araştırma sonuçlarının geçerli olacağı, genellenebileceği en büyük gruba (topluluğa) ne ad verilir?",
+    "secenekler": [
+      "Evren",
+      "Örneklem",
+      "Kota",
+      "Ölçüt"
+    ],
+    "dogruCevap": "Evren",
+    "aciklama": "Evren, araştırma sonuçlarının genellenmek istendiği, çalışılan konudaki tüm bireyleri içeren büyük gruptur."
+  },
+  {
+    "id": "eay_7_12",
+    "konu": "Amaçlı Örnekleme (Maksimum Çeşitlilik)",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Araştırma sorusuna taraf olabilecek bireylerin 'çeşitliliğini' örnekleme yansıtarak, bu çeşitlilikteki ortak yönleri bulmayı amaçlayan yöntem hangisidir?",
+    "secenekler": [
+      "Maksimum Çeşitlilik Örneklemesi",
+      "Benzeşik Örnekleme",
+      "Aykırı Durum Örneklemesi",
+      "Tipik Durum Örneklemesi"
+    ],
+    "dogruCevap": "Maksimum Çeşitlilik Örneklemesi",
+    "aciklama": "Maksimum çeşitlilik, evrendeki farklı durumları (örn: farklı sosyo-ekonomik düzeyler) örnekleme dahil ederek konuyu geniş bir yelpazede incelemeyi amaçlar."
+  },
+  {
+    "id": "eay_7_13",
+    "konu": "Uygun Örnekleme",
+    "zorluk": "Kolay",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacının, bir AVM'nin girişinde durup karşısına ilk çıkan 50 kişiye anket uygulaması, hangi örnekleme yöntemine örnektir?",
+    "secenekler": [
+      "Uygun (Kolay Ulaşılabilir) Örnekleme",
+      "Kota Örnekleme",
+      "Aykırı Durum Örneklemesi",
+      "Sistematik Örnekleme"
+    ],
+    "dogruCevap": "Uygun (Kolay Ulaşılabilir) Örnekleme",
+    "aciklama": "Bu yöntem, araştırmacının en kolay, en hızlı ve en az maliyetli şekilde ulaşabildiği katılımcıları seçmesine dayanır."
+  },
+  {
+    "id": "eay_7_14",
+    "konu": "Amaçlı Örnekleme (Benzeşik)",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Maksimum çeşitliliğin tersi olan ve benzer özelliklere sahip (homojen) bireylerden oluşan gruplarla (örn: odak grup) çalışılan yöntem hangisidir?",
+    "secenekler": [
+      "Benzeşik Örnekleme",
+      "Maksimum Çeşitlilik Örneklemesi",
+      "Aykırı Durum Örneklemesi",
+      "Kritik Durum Örneklemesi"
+    ],
+    "dogruCevap": "Benzeşik Örnekleme",
+    "aciklama": "Benzeşik (veya homojen) örnekleme, belirli bir alt grubun (örn: sadece 12. sınıf matematik öğretmenleri) özelliklerini derinlemesine incelemek için kullanılır."
+  },
+  {
+    "id": "eay_7_15",
+    "konu": "Olasılıklı vs Olasılıksız",
+    "zorluk": "Orta",
+    "tip": "Kavramsal",
+    "soruMetni": "Hangi durumda Olasılıklı (Rastgele) Örnekleme yerine Amaçlı Örnekleme kullanmak daha mantıklıdır?",
+    "secenekler": [
+      "Amaç evrene genelleme yapmak değil, bir konuyu derinlemesine anlamak olduğunda.",
+      "Amaç evrene genelleme yapmak olduğunda.",
+      "Araştırmacının zamanı ve maliyeti çok fazla olduğunda.",
+      "Evrendeki herkesin listesi tam olarak mevcut olduğunda."
+    ],
+    "dogruCevap": "Amaç evrene genelleme yapmak değil, bir konuyu derinlemesine anlamak olduğunda.",
+    "aciklama": "Olasılıklı yöntemler genelleme (nicel) için, Amaçlı yöntemler ise derinlemesine anlama (nitel) için tercih edilir."
+  },
+  {
+    "id": "eay_7_16",
+    "konu": "Kota Örnekleme",
+    "zorluk": "Orta",
+    "tip": "Teorik",
+    "soruMetni": "Araştırmacının, örneklemi oluşturacak kişi sayısı ve özellikleri (örn: %50 Kadın, %50 Erkek) doğrultusunda bir 'kota' koyarak seçim yapması hangi yöntemdir?",
+    "secenekler": [
+      "Kota Örnekleme",
+      "Tabakalı Örnekleme",
+      "Uygun Örnekleme",
+      "Kartopu Örnekleme"
+    ],
+    "dogruCevap": "Kota Örnekleme",
+    "aciklama": "Kota örneklemede amaç, evrendeki belirli alt grupların oranını (kota) örnekleme yansıtmaktır, ancak bu seçim rastgele (Tabakalıdaki gibi) yapılmaz."
+  },
+  {
+    "id": "eay_7_17",
+    "konu": "Uygun Örnekleme",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Günümüzde elektronik ortamlar (sosyal medya, e-posta) aracılığıyla 'anketime katılır mısınız?' şeklinde paylaşılan anket çalışmaları, çoğunlukla hangi örnekleme yöntemine dayanır?",
+    "secenekler": [
+      "Uygun (Kolay Ulaşılabilir) Örnekleme",
+      "Basit Rastgele Örnekleme",
+      "Sistematik Örnekleme",
+      "Kritik Durum Örneklemesi"
+    ],
+    "dogruCevap": "Uygun (Kolay Ulaşılabilir) Örnekleme",
+    "aciklama": "Bu tür anketler, araştırmacının en kolay (elverişli) yoldan ulaştığı kişilerden veri toplamasına dayanır, evreni temsil etme amacı gütmez."
+  },
+  {
+    "id": "eay_7_18",
+    "konu": "Amaçlı Örnekleme (Maksimum Çeşitlilik)",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, 'öğretmenlerin dijital yeterliliklerini' incelerken, hem teknolojiye çok yatkın (Aykırı 1) hem hiç kullanmayan (Aykırı 2) hem de ortalama (Tipik) öğretmenleri çalışmasına dahil ediyorsa, hangi yöntemi kullanmaktadır?",
+    "secenekler": [
+      "Maksimum Çeşitlilik Örneklemesi",
+      "Benzeşik Örnekleme",
+      "Sadece Aykırı Durum Örneklemesi",
+      "Sadece Tipik Durum Örneklemesi"
+    ],
+    "dogruCevap": "Maksimum Çeşitlilik Örneklemesi",
+    "aciklama": "Araştırmacı, konuya taraf olabilecek tüm farklı durumları (çeşitliliği) örnekleme yansıtarak, bu durumların benzer ve farklı yönlerini bulmayı amaçlamaktadır."
+  },
+  {
+    "id": "eay_7_19",
+    "konu": "Olasılıksız Yöntemlerin Sınırlılığı",
+    "zorluk": "Zor",
+    "tip": "PDF Dışı",
+    "soruMetni": "Uygun örnekleme veya Kota örnekleme gibi olasılığa dayalı olmayan yöntemlerin en önemli sınırlılığı (dezavantajı) nedir?",
+    "secenekler": [
+      "Örneklemin evreni temsil etme gücünün düşük olması ve genelleme yapılamaması.",
+      "Olasılıklı yöntemlerden daha maliyetli ve yavaş olması.",
+      "Mutlaka etik kurul onayı gerektirmesi.",
+      "Sadece nitel verilerle çalışılabilmesi."
+    ],
+    "dogruCevap": "Örneklemin evreni temsil etme gücünün düşük olması ve genelleme yapılamaması.",
+    "aciklama": "Bu yöntemler şansa dayalı (rastgele) olmadıkları için, seçilen örneklemin (örn: AVM'deki 50 kişi) tüm evreni (örn: tüm Türkiye) temsil ettiği iddia edilemez. Bu nedenle genellenebilirlikleri düşüktür."
+  },
+  {
+    "id": "eay_7_20",
+    "konu": "Kota vs Tabakalı Örnekleme",
+    "zorluk": "Zor",
+    "tip": "Kavramsal",
+    "soruMetni": "Hem 'Kota Örnekleme' hem de 'Tabakalı Örnekleme' evreni alt gruplara ayırır. Bu ikisi arasındaki temel fark nedir?",
+    "secenekler": [
+      "Tabakalıda alt gruplardan seçim rastgeledir (olasılıklı); Kotada ise rastgele değildir (olasılıksız).",
+      "Kotada gruplar rastgeledir; Tabakalıda değildir.",
+      "Tabakalı daha ucuzdur; Kota daha pahalıdır.",
+      "Kota nitel araştırmada, Tabakalı nicel araştırmada kullanılamaz."
+    ],
+    "dogruCevap": "Tabakalıda alt gruplardan seçim rastgeledir (olasılıklı); Kotada ise rastgele değildir (olasılıksız).",
+    "aciklama": "Tabakalı örnekleme (olasılıklı), her tabakadan (örn: kadınlar) *rastgele* seçim yapar. Kota örnekleme (olasılıksız) ise '25 kadın' kotasını *rastgele olmadan*, (örn: araştırmacının kolayına gelen ilk 25 kadınla) doldurur."
+  },
+  {
+    "id": "eay_7_21",
+    "konu": "Evren ve Örneklem",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Evrenden, özellikleri hakkında bilgi toplamak için seçilen sınırlı bir parçaya ne ad verilir?",
+    "secenekler": [
+      "Örneklem",
+      "Evren",
+      "Kota",
+      "Ölçüt"
+    ],
+    "dogruCevap": "Örneklem",
+    "aciklama": "Örneklem, evrenin daha küçük ve çalışılabilir bir temsili olarak, veri toplamak amacıyla seçilen gruptur."
+  },
+  {
+    "id": "eay_7_22",
+    "konu": "Olasılıklı vs Olasılıksız",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Aşağıdakilerden hangisi Olasılığa Dayalı *Olmayan* bir örnekleme yöntemidir?",
+    "secenekler": [
+      "Uygun (Kolay Ulaşılabilir) Örnekleme",
+      "Basit Rastgele Örnekleme",
+      "Sistematik Örnekleme",
+      "Tabakalı Örnekleme"
+    ],
+    "dogruCevap": "Uygun (Kolay Ulaşılabilir) Örnekleme",
+    "aciklama": "Basit Rastgele, Sistematik ve Tabakalı yöntemler olasılığa (rastgeleliğe) dayalıdır. Uygun örnekleme ise araştırmacının kolayına geleni seçmesine (olasılıksız) dayalıdır."
+  },
+  {
+    "id": "eay_7_23",
+    "konu": "Kartopu Örnekleme",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Bir katılımcının 'Bu konu hakkında başka kiminle görüşmemi önerirsiniz?' sorusuyla diğer katılımcılara ulaşılan yöntem hangisidir?",
+    "secenekler": [
+      "Kartopu Örnekleme",
+      "Kota Örnekleme",
+      "Tipik Durum Örneklemesi",
+      "Aykırı Durum Örneklemesi"
+    ],
+    "dogruCevap": "Kartopu Örnekleme",
+    "aciklama": "Kartopu örnekleme, özellikle ulaşılması zor (örn: gizli) gruplarla çalışırken, bir katılımcının yönlendirmesiyle diğerine ulaşılarak örneklemin büyüdüğü bir yöntemdir."
+  },
+  {
+    "id": "eay_7_24",
+    "konu": "Amaçlı Örnekleme (Ölçüt)",
+    "zorluk": "Orta",
+    "tip": "Teorik",
+    "soruMetni": "Örneklemi belirleyen net bir 'ölçütü' (kriteri) karşılayan bireylerin çalışmaya dahil edildiği yöntem hangisidir?",
+    "secenekler": [
+      "Ölçüt Örnekleme",
+      "Kartopu Örnekleme",
+      "Uygun Örnekleme",
+      "Kritik Durum Örneklemesi"
+    ],
+    "dogruCevap": "Ölçüt Örnekleme",
+    "aciklama": "Bu yöntemde, araştırmaya katılmak için bir ön koşul (ölçüt) vardır; örneğin 'sadece 3. sınıf öğretmenleri' veya 'belirli bir hastalığa sahip olanlar'."
+  },
+  {
+    "id": "eay_7_25",
+    "konu": "Amaçlı Örnekleme (Aykırı Durum)",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Araştırmada incelenen konuya ilişkin 'sıra dışı' veya 'iki ayrı uçta' yer alan bireylerin seçildiği yöntem hangisidir?",
+    "secenekler": [
+      "Aykırı Durum Örnekleme",
+      "Tipik Durum Örneklemesi",
+      "Benzeşik Örnekleme",
+      "Kritik Durum Örneklemesi"
+    ],
+    "dogruCevap": "Aykırı Durum Örnekleme",
+    "aciklama": "Aykırı durumlar, en başarılı-en başarısız gibi uç noktaları inceleyerek konunun sınırları hakkında bilgi edinmeyi amaçlar."
+  },
+  {
+    "id": "eay_7_26",
+    "konu": "Amaçlı Örnekleme (Benzeşik)",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, 'sadece 8. sınıfta okuyan ve LGS'den tam puan almış' öğrencilerden oluşan 6 kişilik bir grupla odak grup görüşmesi yapacaktır. Hangi yöntemi kullanmıştır?",
+    "secenekler": [
+      "Benzeşik (Homojen) Örnekleme",
+      "Maksimum Çeşitlilik Örneklemesi",
+      "Aykırı Durum Örneklemesi",
+      "Kartopu Örnekleme"
+    ],
+    "dogruCevap": "Benzeşik (Homojen) Örnekleme",
+    "aciklama": "Odak grup görüşmelerinde, grubun kendi içinde benzer özelliklere (homojen/benzeşik) sahip olması istenir ki ortak deneyimler üzerine derinlemesine konuşulabilsin."
+  },
+  {
+    "id": "eay_7_27",
+    "konu": "Kota vs Uygun Örnekleme",
+    "zorluk": "Zor",
+    "tip": "Kavramsal",
+    "soruMetni": "'Uygun Örnekleme' (ilk 50 kişi) ile 'Kota Örnekleme' (25 kadın, 25 erkek) arasındaki temel fark nedir?",
+    "secenekler": [
+      "Kota örneklemede belirli alt grupların (cinsiyet gibi) temsili hedeflenir, Uygun örneklemede ise bu hedef yoktur.",
+      "Uygun örnekleme her zaman daha pahalıdır.",
+      "Kota örneklemede seçim rastgeledir, Uygun örneklemede değildir.",
+      "İkisi arasında hiçbir fark yoktur, ikisi de kolay ulaşılabilirliğe dayanır."
+    ],
+    "dogruCevap": "Kota örneklemede belirli alt grupların (cinsiyet gibi) temsili hedeflenir, Uygun örneklemede ise bu hedef yoktur.",
+    "aciklama": "Uygun örneklemede araştırmacı karşısına çıkan ilk 50 kişiyi alır (belki 40'ı kadın olur). Kotada ise (25K/25E) evrendeki oranı (kota) yakalamaya çalışır, ancak bu seçimi yine kolayına geldiği şekilde yapar (olasılıksız)."
+  },
+  {
+    "id": "eay_7_28",
+    "konu": "Amaçlı Örnekleme (Tipik Durum)",
+    "zorluk": "Orta",
+    "tip": "Teorik",
+    "soruMetni": "Araştırmacının, konusuyla ilgili 'ortalama bir bilgiye sahip' veya 'sıra dışı olmayan' kişileri araştırmasına dahil ederek ortalama bir fikir edinmeyi amaçladığı yöntem hangisidir?",
+    "secenekler": [
+      "Tipik Durum Örneklemesi",
+      "Aykırı Durum Örneklemesi",
+      "Kritik Durum Örneklemesi",
+      "Maksimum Çeşitlilik Örneklemesi"
+    ],
+    "dogruCevap": "Tipik Durum Örneklemesi",
+    "aciklama": "Bu yöntem, aykırı durumların (uçların) aksine, 'normal' veya 'ortalama' olarak kabul edilen durumların incelenmesine odaklanır."
+  },
+  {
+    "id": "eay_7_29",
+    "konu": "Olasılıklı vs Olasılıksız",
+    "zorluk": "Orta",
+    "tip": "Kavramsal",
+    "soruMetni": "Bir araştırmacının amacı 'tüm Türkiye'ye genelleme yapmak' ise, hangi örnekleme yönteminden yararlanması beklenir?",
+    "secenekler": [
+      "Olasılığa Dayalı Örnekleme (örn: Basit Rassal)",
+      "Olasılığa Dayalı Olmayan Örnekleme (örn: Amaçlı)",
+      "Uygun Örnekleme",
+      "Kartopu Örnekleme"
+    ],
+    "dogruCevap": "Olasılığa Dayalı Örnekleme (örn: Basit Rassal)",
+    "aciklama": "Evrene genelleme yapma amacı olduğunda, evrendeki herkesin eşit seçilme şansı olduğu Olasılığa Dayalı (rastgele) yöntemler kullanılmalıdır."
+  },
+  {
+    "id": "eay_7_30",
+    "konu": "Amaçlı Örnekleme (Kritik Durum)",
+    "zorluk": "Zor",
+    "tip": "Kavramsal",
+    "soruMetni": "'Kritik Durum' örneklemesi ile 'Aykırı Durum' örneklemesi arasındaki temel fark nedir?",
+    "secenekler": [
+      "Kritik durum genelleme yapabilmek için (bu okulda oluyorsa...) seçilir; Aykırı durum ise sadece uç noktaları (en iyi/en kötü) anlamak için seçilir.",
+      "Kritik durum 'ortalama' olandır; Aykırı durum 'uç' olandır.",
+      "Kritik durum rastgeledir; Aykırı durum değildir.",
+      "Kritik durum kartopu ile seçilir; Aykırı durum ölçüt ile seçilir."
+    ],
+    "dogruCevap": "Kritik durum genelleme yapabilmek için (bu okulda oluyorsa...) seçilir; Aykırı durum ise sadece uç noktaları (en iyi/en kötü) anlamak için seçilir.",
+    "aciklama": "Aykırı durum, sadece o 'sıra dışı' durumu anlamaya çalışır. Kritik durum ise, o 'sıra dışı' gibi görünen (ama kilit olan) durumdan yola çıkarak mantıksal bir genelleme yapmaya çalışır."
+  },
+
+  {
+    "id": "eay_7_31",
+    "konu": "Amaçlı Örnekleme (Tipik Durum)",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Araştırmacının, sıra dışı olmayan, 'ortalama' bir durumu inceleyerek fikir edindiği yöntem hangisidir?",
+    "secenekler": [
+      "Tipik Durum Örneklemesi",
+      "Aykırı Durum Örneklemesi",
+      "Kritik Durum Örneklemesi",
+      "Maksimum Çeşitlilik Örneklemesi"
+    ],
+    "dogruCevap": "Tipik Durum Örneklemesi",
+    "aciklama": "Tipik durum örneklemesi, bir olgunun 'normal' veya 'ortalama' halini, sıra dışı olmayan bir vaka üzerinden anlamayı amaçlar."
+  },
+  {
+    "id": "eay_7_32",
+    "konu": "Amaçlı Örnekleme (Maksimum Çeşitlilik)",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Evrendeki çeşitliliği (farklılıkları) örnekleme yansıtarak, bu farklılıkların ortak ve ayrışan yönlerini bulmayı amaçlayan yöntem hangisidir?",
+    "secenekler": [
+      "Maksimum Çeşitlilik Örneklemesi",
+      "Benzeşik Örnekleme",
+      "Tipik Durum Örneklemesi",
+      "Aykırı Durum Örneklemesi"
+    ],
+    "dogruCevap": "Maksimum Çeşitlilik Örneklemesi",
+    "aciklama": "Maksimum çeşitlilik, evrendeki farklılıkları (örn: sosyo-ekonomik, yaş, cinsiyet) yansıtarak konunun geniş bir perspektiften anlaşılmasını hedefler."
+  },
+  {
+    "id": "eay_7_33",
+    "konu": "Olasılıklı vs Olasılıksız",
+    "zorluk": "Kolay",
+    "tip": "Kavramsal",
+    "soruMetni": "Aşağıdakilerden hangisi Olasılığa Dayalı (Rastgele) bir örnekleme yöntemidir?",
+    "secenekler": [
+      "Basit Rastgele Örnekleme",
+      "Uygun Örnekleme",
+      "Amaçlı Örnekleme",
+      "Kartopu Örnekleme"
+    ],
+    "dogruCevap": "Basit Rastgele Örnekleme",
+    "aciklama": "Uygun, Amaçlı ve Kartopu yöntemleri araştırmacının seçimine (olasılıksız) dayanırken, Basit Rastgele Örnekleme şansa (olasılıklı) dayanır."
+  },
+  {
+    "id": "eay_7_34",
+    "konu": "Evren ve Örneklem",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Araştırma sonuçlarının genelleneceği büyük gruba 'Evren' denir. Bu evrenden seçilen ve özellikleri hakkında bilgi toplanan sınırlı parçaya ne denir?",
+    "secenekler": [
+      "Örneklem",
+      "Evren",
+      "Kota",
+      "Ölçüt"
+    ],
+    "dogruCevap": "Örneklem",
+    "aciklama": "Örneklem, evrenin daha küçük ve çalışılabilir bir temsili olarak, veri toplamak amacıyla seçilen gruptur."
+  },
+  {
+    "id": "eay_7_35",
+    "konu": "Kartopu Örnekleme",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, 'Türkiye'ye göç etmiş kaçak işçilerin' çalışma koşullarını incelemek istemektedir. Bu gruba (evrene) ulaşmak çok zor olduğu için, ulaştığı ilk işçiden diğer işçilere yönlendirmesini istemiştir. Hangi yöntem en uygundur?",
+    "secenekler": [
+      "Kartopu Örnekleme",
+      "Basit Rastgele Örnekleme",
+      "Sistematik Örnekleme",
+      "Tipik Durum Örneklemesi"
+    ],
+    "dogruCevap": "Kartopu Örnekleme",
+    "aciklama": "Kartopu örnekleme, evren listesinin olmadığı veya katılımcılara ulaşmanın zor (gizli, yasa dışı vb.) olduğu durumlarda, bir katılımcının referansıyla diğerine ulaşmak için kullanılır."
+  },
+  {
+    "id": "eay_7_36",
+    "konu": "Amaçlı Örnekleme (Ölçüt)",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, 'sigarayı bırakma' programını test etmek için, sadece 'günde en az 1 paket sigara içen' ve 'en az 5 yıldır içen' kişileri çalışmasına dahil etmiştir. Hangi yöntemi kullanmıştır?",
+    "secenekler": [
+      "Ölçüt Örnekleme",
+      "Aykırı Durum Örneklemesi",
+      "Uygun Örnekleme",
+      "Kota Örnekleme"
+    ],
+    "dogruCevap": "Ölçüt Örnekleme",
+    "aciklama": "Araştırmacı, çalışmaya katılım için net kriterler (ölçütler) belirlemiş ve sadece bu ölçütleri karşılayanları örnekleme almıştır."
+  },
+  {
+    "id": "eay_7_37",
+    "konu": "Amaçlı Örnekleme (Benzeşik)",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, 'ilk kez baba olan erkeklerin' yaşadığı kaygıları incelemek için 'sadece ilk 6 ay içinde baba olmuş ve 30-35 yaş aralığında olan' 8 erkekle odak grup görüşmesi yapmıştır. Hangi yöntemi kullanmıştır?",
+    "secenekler": [
+      "Benzeşik (Homojen) Örnekleme",
+      "Maksimum Çeşitlilik Örneklemesi",
+      "Aykırı Durum Örneklemesi",
+      "Uygun Örnekleme"
+    ],
+    "dogruCevap": "Benzeşik (Homojen) Örnekleme",
+    "aciklama": "Araştırmacı, belirli bir alt grubun (benzeşik/homojen) deneyimlerini derinlemesine anlamak için örneklemini (yaş ve deneyim açısından) benzer kişilerden oluşturmuştur."
+  },
+  {
+    "id": "eay_7_38",
+    "konu": "Olasılıksız Yöntemlerin Sınırlılığı",
+    "zorluk": "Orta",
+    "tip": "Kavramsal",
+    "soruMetni": "Olasılığa dayalı olmayan (örn: Uygun, Kota) yöntemlerle elde edilen sonuçların, evrene genellenmesi neden zordur?",
+    "secenekler": [
+      "Çünkü seçim rastgele (şansa dayalı) yapılmadığı için örneklemin yanlı olma (bias) olasılığı yüksektir.",
+      "Çünkü bu yöntemler her zaman olasılıklı yöntemlerden daha pahalıdır.",
+      "Çünkü bu yöntemler sadece nitel araştırmalarda kullanılır ve sayısal veri üretemez.",
+      "Çünkü bu yöntemler evren listesinin tamamını gerektirir."
+    ],
+    "dogruCevap": "Çünkü seçim rastgele (şansa dayalı) yapılmadığı için örneklemin yanlı olma (bias) olasılığı yüksektir.",
+    "aciklama": "Rastgelelik (olasılıklılık) olmadığında, araştırmacının seçimleri (örn: sadece AVM'dekiler) evrenin tamamını temsil etmeyebilir (yanlılık), bu da genellemeyi engeller."
+  },
+  {
+    "id": "eay_7_39",
+    "konu": "Amaçlı Örnekleme (Aykırı vs Tipik)",
+    "zorluk": "Zor",
+    "tip": "Kavramsal",
+    "soruMetni": "Bir araştırmacı 'Aykırı Durum' (örn: okul birincisi) yerine 'Tipik Durum' (örn: ortalama öğrenci) örneklemesini seçiyorsa, araştırmacının temel amacı nedir?",
+    "secenekler": [
+      "Sıra dışı başarıları değil, 'normal' veya 'ortalama' öğrencinin durumunu anlamak.",
+      "Okulun en başarısız öğrencisini bulmak.",
+      "Okuldaki tüm öğrencilerin listesini çıkarmak.",
+      "Örneklemi kartopu gibi büyütmek."
+    ],
+    "dogruCevap": "Sıra dışı başarıları değil, 'normal' veya 'ortalama' öğrencinin durumunu anlamak.",
+    "aciklama": "Aykırı durum uçları incelerken, Tipik durum 'genelin' veya 'ortalama' olanın nasıl işlediğini, nasıl göründüğünü anlamayı amaçlar."
+  },
+  {
+    "id": "eay_7_40",
+    "konu": "Amaçlı Örnekleme (Kritik Durum)",
+    "zorluk": "Zor",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, 'Eğer bu okuldaki öğretmenler (çok deneyimli ve yüksek motivasyonlu) bu yeni sistemi uygulayamıyorsa, hiçbir okuldaki öğretmen uygulayamaz' varsayımıyla bu okulu seçmiştir. Hangi yöntemi kullanmıştır?",
+    "secenekler": [
+      "Kritik Durum Örneklemesi",
+      "Tipik Durum Örneklemesi",
+      "Benzeşik Örnekleme",
+      "Kartopu Örnekleme"
+    ],
+    "dogruCevap": "Kritik Durum Örneklemesi",
+    "aciklama": "Bu örneklem, 'eğer burada bile olmuyorsa...' şeklinde mantıksal bir genelleme yapmaya izin veren, kilit veya 'kritik' bir durumu temsil etmektedir."
+  },
+  {
+    "id": "eay_7_41",
+    "konu": "Amaçlı Örnekleme (Genel)",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Nitel araştırmalarda, evrene genelleme yapmak yerine, yanıtı aranan sorulara ışık tutacak 'zengin durumlara' odaklanan örnekleme yaklaşımı hangisidir?",
+    "secenekler": [
+      "Amaçlı Örnekleme",
+      "Uygun Örnekleme",
+      "Olasılıklı Örnekleme",
+      "Sistematik Örnekleme"
+    ],
+    "dogruCevap": "Amaçlı Örnekleme",
+    "aciklama": "Amaçlı örnekleme, rastgelelik yerine araştırmacının amacına ve aradığı 'bilgi zenginliğine' göre katılımcıları seçtiği olasılıksız bir yöntemdir."
+  },
+  {
+    "id": "eay_7_42",
+    "konu": "Evren ve Örneklem",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Evrenin sınırlı bir parçası olan ve özellikleri hakkında bilgi toplamak için çalışılan gruba ne denir?",
+    "secenekler": [
+      "Örneklem",
+      "Evren",
+      "Paradigma",
+      "Değişken"
+    ],
+    "dogruCevap": "Örneklem",
+    "aciklama": "Evren bütünü temsil ederken (örn: tüm öğrenciler), örneklem o bütünden seçilen ve veri toplanan sınırlı bir parçadır (örn: 100 öğrenci)."
+  },
+  {
+    "id": "eay_7_43",
+    "konu": "Kartopu Örnekleme",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Örneklemin, bir katılımcının tavsiyesiyle diğer katılımcıya ulaşılarak 'kartopu' gibi büyüdüğü yöntem hangisidir?",
+    "secenekler": [
+      "Kartopu Örnekleme",
+      "Kota Örnekleme",
+      "Uygun Örnekleme",
+      "Kritik Durum Örneklemesi"
+    ],
+    "dogruCevap": "Kartopu Örnekleme",
+    "aciklama": "Bu yöntem, özellikle evrene (örn: madde bağımlıları, göçmenler) ulaşmanın zor olduğu durumlarda, katılımcıların birbirini tavsiye etmesiyle kullanılır."
+  },
+  {
+    "id": "eay_7_44",
+    "konu": "Uygun Örnekleme",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Zaman, para ve konum açısından araştırmacıya en 'elverişli' olan katılımcıların seçildiği yöntem hangisidir?",
+    "secenekler": [
+      "Uygun (Kolay Ulaşılabilir) Örnekleme",
+      "Kritik Durum Örneklemesi",
+      "Aykırı Durum Örneklemesi",
+      "Sistematik Örnekleme"
+    ],
+    "dogruCevap": "Uygun (Kolay Ulaşılabilir) Örnekleme",
+    "aciklama": "Bu yöntem en az zaman ve maliyet gerektiren yöntemdir ancak genellenebilirliği en düşük olan yöntemlerin başında gelir (örn: yoldan geçen ilk 50 kişi)."
+  },
+  {
+    "id": "eay_7_45",
+    "konu": "Kota Örnekleme",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, bir üniversitedeki öğrencilerin görüşlerini almak için '10 Tıp, 10 Mühendislik, 10 Eğitim Fakültesi' öğrencisi belirleyip, bu sayıları doldurana kadar (rastgele olmadan) anket yapmıştır. Hangi yöntemi kullanmıştır?",
+    "secenekler": [
+      "Kota Örnekleme",
+      "Tabakalı Örnekleme",
+      "Kartopu Örnekleme",
+      "Kritik Durum Örneklemesi"
+    ],
+    "dogruCevap": "Kota Örnekleme",
+    "aciklama": "Araştırmacı, evrendeki alt gruplar için (fakülteler) bir 'kota' belirlemiş, ancak bu kotayı doldururken rastgele seçim (Tabakalıdaki gibi) yapmamış, kolayına gelenleri seçmiştir."
+  },
+  {
+    "id": "eay_7_46",
+    "konu": "Amaçlı Örnekleme (Aykırı Durum)",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir öğretmen, 'sınıf yönetimi' stratejilerini incelemek için okuldaki 'en sorunlu' olarak bilinen sınıf ile 'en başarılı' olarak bilinen sınıfı incelemiştir. Hangi yöntemi kullanmıştır?",
+    "secenekler": [
+      "Aykırı Durum Örnekleme",
+      "Tipik Durum Örneklemesi",
+      "Benzeşik Örnekleme",
+      "Uygun Örnekleme"
+    ],
+    "dogruCevap": "Aykırı Durum Örnekleme",
+    "aciklama": "Araştırmacı, konuyu (sınıf yönetimi) anlamak için iki uç (aykırı) noktayı (en sorunlu ve en başarılı) incelemeyi tercih etmiştir."
+  },
+  {
+    "id": "eay_7_47",
+    "konu": "Amaçlı Örnekleme (Maksimum Çeşitlilik)",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, 'öğretmenlerin yeni müfredata bakışını' incelerken, örneklemine 'farklı branşlardan (Matematik, Tarih, Resim)', 'farklı kıdemlerden (yeni, deneyimli)' ve 'farklı okul türlerinden (köy, şehir)' öğretmenleri dahil etmiştir. Amacı nedir?",
+    "secenekler": [
+      "Maksimum Çeşitlilik",
+      "Benzeşik Örnekleme",
+      "Tipik Durum Örneklemesi",
+      "Aykırı Durum Örneklemesi"
+    ],
+    "dogruCevap": "Maksimum Çeşitlilik",
+    "aciklama": "Araştırmacı, farklılıklara (çeşitliliğe) rağmen 'ortak' bir bakış açısı olup olmadığını görmek için, konuya taraf olabilecek tüm farklı grupları örnekleme yansıtmıştır."
+  },
+  {
+    "id": "eay_7_48",
+    "konu": "Amaçlı Örnekleme (Ölçüt)",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, 'yüksek lisans tezini bitirememe nedenlerini' araştırmak için 'tez aşamasında olup en az 2 yıldır mezun olamamış' öğrencileri çalışmasına dahil etmiştir. Hangi yöntemi kullanmıştır?",
+    "secenekler": [
+      "Ölçüt Örnekleme",
+      "Kartopu Örnekleme",
+      "Kota Örnekleme",
+      "Tipik Durum Örneklemesi"
+    ],
+    "dogruCevap": "Ölçüt Örnekleme",
+    "aciklama": "Araştırmaya katılım için net bir 'ölçüt' (en az 2 yıldır mezun olamama) konulmuş ve sadece bu ölçütü karşılayanlar dahil edilmiştir."
+  },
+  {
+    "id": "eay_7_49",
+    "konu": "Olasılıklı vs Olasılıksız",
+    "zorluk": "Zor",
+    "tip": "Kavramsal",
+    "soruMetni": "Nitel bir araştırmacı neden Olasılıklı (Rastgele) Örnekleme yerine Amaçlı Örneklemeyi (örn: Tipik Durum) tercih eder?",
+    "secenekler": [
+      "Çünkü amacı 'genelleme yapmak' değil, o 'tipik' durumu derinlemesine anlamaktır.",
+      "Çünkü rastgele örnekleme her zaman daha pahalı ve zordur.",
+      "Çünkü amaçlı örnekleme ile evrene daha iyi genelleme yapılır.",
+      "Çünkü rastgele örnekleme etik kurullardan geçemez."
+    ],
+    "dogruCevap": "Çünkü amacı 'genelleme yapmak' değil, o 'tipik' durumu derinlemesine anlamaktır.",
+    "aciklama": "Nitel araştırmanın (ve amaçlı örneklemenin) amacı genelleme yapmak değil, 'zengin' bilgiyi bularak o olguyu derinlemesine anlamak ve açıklamaktır. Rastgele seçilen bir kişi bu zengin bilgiyi sunmayabilir."
+  },
+  {
+    "id": "eay_7_50",
+    "konu": "Benzeşik vs Maksimum Çeşitlilik",
+    "zorluk": "Zor",
+    "tip": "Kavramsal",
+    "soruMetni": "Maksimum Çeşitlilik örneklemesinin amacı 'farklılıklara rağmen ortak noktaları bulmak' iken, Benzeşik (Homojen) örneklemenin amacı nedir?",
+    "secenekler": [
+      "Belirli bir alt grubun deneyimlerini derinlemesine incelemek.",
+      "Evrene genelleme yapmak.",
+      "Uç noktalardaki (aykırı) durumları bulmak.",
+      "Örneklemi kartopu gibi büyütmek."
+    ],
+    "dogruCevap": "Belirli bir alt grubun deneyimlerini derinlemesine incelemek.",
+    "aciklama": "Benzeşik (homojen) örneklem (örn: sadece 1. sınıf anneleri), grubun farklılığını ortadan kaldırarak o spesifik grubun deneyimlerine (örn: 'ilk kez anne olma') odaklanmayı ve derinleşmeyi sağlar."
+  }
+
+
+]
