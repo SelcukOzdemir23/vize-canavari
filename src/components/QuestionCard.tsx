@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Question } from '../store/quizStore';
 
@@ -19,16 +19,30 @@ const difficultyStyles: Record<string, string> = {
 const QuestionCard: React.FC<QuestionCardProps> = ({ question, onAnswer }) => {
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState<number | null>(null);
   const [isAnswered, setIsAnswered] = useState(false);
-
+  const [showExplanation, setShowExplanation] = useState(false);
   const difficultyKey = question.zorluk?.toLowerCase?.() ?? '';
+  const formatLabel = (value: string) => value ? value.charAt(0).toUpperCase() + value.slice(1) : '';
+
+  // Reset states when question changes
+  useEffect(() => {
+    setSelectedAnswerIndex(null);
+    setIsAnswered(false);
+    setShowExplanation(false);
+  }, [question.id]);
   const formatLabel = (value: string) => value ? value.charAt(0).toUpperCase() + value.slice(1) : '';
 
   const handleSelectAnswer = (index: number) => {
     if (isAnswered) return;
 
+    // 1. Instant: Show selected answer color
     setSelectedAnswerIndex(index);
     setIsAnswered(true);
-    onAnswer(question.id, index);
+    
+    // 2. Delayed: Show explanation after color transition completes
+    setTimeout(() => setShowExplanation(true), 120);
+    
+    // 3. Delayed: Notify parent to show next button
+    setTimeout(() => onAnswer(question.id, index), 150);
   };
 
   const getOptionClasses = (index: number) => {
@@ -167,12 +181,12 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, onAnswer }) => {
           })}
         </div>
 
-        {isAnswered && (
+        {showExplanation && (
           <motion.div
-            className="mt-4 rounded-2xl bg-bg-tertiary p-4"
+            className="mt-4 rounded-2xl bg-bg-tertiary p-4 overflow-hidden"
             initial={{ opacity: 0, maxHeight: 0 }}
             animate={{ opacity: 1, maxHeight: '500px' }}
-            transition={{ duration: 0.15, ease: 'easeOut' }}
+            transition={{ duration: 0.2, ease: 'easeOut' }}
           >
             <div className="flex items-center gap-2 text-sm font-bold text-text-primary">
               <span>💡</span>
