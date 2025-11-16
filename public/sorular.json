@@ -3605,6 +3605,156 @@
     ],
     "dogruCevap": "Kritik Durum Örneklemesi",
     "aciklama": "Bu örneklem, 'eğer burada bile olmuyorsa...' şeklinde mantıksal bir genelleme yapmaya izin veren, kilit veya 'kritik' bir durumu temsil etmektedir."
+  },
+  {
+    "id": "eay_7_41",
+    "konu": "Amaçlı Örnekleme (Genel)",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Nitel araştırmalarda, evrene genelleme yapmak yerine, yanıtı aranan sorulara ışık tutacak 'zengin durumlara' odaklanan örnekleme yaklaşımı hangisidir?",
+    "secenekler": [
+      "Amaçlı Örnekleme",
+      "Uygun Örnekleme",
+      "Olasılıklı Örnekleme",
+      "Sistematik Örnekleme"
+    ],
+    "dogruCevap": "Amaçlı Örnekleme",
+    "aciklama": "Amaçlı örnekleme, rastgelelik yerine araştırmacının amacına ve aradığı 'bilgi zenginliğine' göre katılımcıları seçtiği olasılıksız bir yöntemdir."
+  },
+  {
+    "id": "eay_7_42",
+    "konu": "Evren ve Örneklem",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Evrenin sınırlı bir parçası olan ve özellikleri hakkında bilgi toplamak için çalışılan gruba ne denir?",
+    "secenekler": [
+      "Örneklem",
+      "Evren",
+      "Paradigma",
+      "Değişken"
+    ],
+    "dogruCevap": "Örneklem",
+    "aciklama": "Evren bütünü temsil ederken (örn: tüm öğrenciler), örneklem o bütünden seçilen ve veri toplanan sınırlı bir parçadır (örn: 100 öğrenci)."
+  },
+  {
+    "id": "eay_7_43",
+    "konu": "Kartopu Örnekleme",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Örneklemin, bir katılımcının tavsiyesiyle diğer katılımcıya ulaşılarak 'kartopu' gibi büyüdüğü yöntem hangisidir?",
+    "secenekler": [
+      "Kartopu Örnekleme",
+      "Kota Örnekleme",
+      "Uygun Örnekleme",
+      "Kritik Durum Örneklemesi"
+    ],
+    "dogruCevap": "Kartopu Örnekleme",
+    "aciklama": "Bu yöntem, özellikle evrene (örn: madde bağımlıları, göçmenler) ulaşmanın zor olduğu durumlarda, katılımcıların birbirini tavsiye etmesiyle kullanılır."
+  },
+  {
+    "id": "eay_7_44",
+    "konu": "Uygun Örnekleme",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Zaman, para ve konum açısından araştırmacıya en 'elverişli' olan katılımcıların seçildiği yöntem hangisidir?",
+    "secenekler": [
+      "Uygun (Kolay Ulaşılabilir) Örnekleme",
+      "Kritik Durum Örneklemesi",
+      "Aykırı Durum Örneklemesi",
+      "Sistematik Örnekleme"
+    ],
+    "dogruCevap": "Uygun (Kolay Ulaşılabilir) Örnekleme",
+    "aciklama": "Bu yöntem en az zaman ve maliyet gerektiren yöntemdir ancak genellenebilirliği en düşük olan yöntemlerin başında gelir (örn: yoldan geçen ilk 50 kişi)."
+  },
+  {
+    "id": "eay_7_45",
+    "konu": "Kota Örnekleme",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, bir üniversitedeki öğrencilerin görüşlerini almak için '10 Tıp, 10 Mühendislik, 10 Eğitim Fakültesi' öğrencisi belirleyip, bu sayıları doldurana kadar (rastgele olmadan) anket yapmıştır. Hangi yöntemi kullanmıştır?",
+    "secenekler": [
+      "Kota Örnekleme",
+      "Tabakalı Örnekleme",
+      "Kartopu Örnekleme",
+      "Kritik Durum Örneklemesi"
+    ],
+    "dogruCevap": "Kota Örnekleme",
+    "aciklama": "Araştırmacı, evrendeki alt gruplar için (fakülteler) bir 'kota' belirlemiş, ancak bu kotayı doldururken rastgele seçim (Tabakalıdaki gibi) yapmamış, kolayına gelenleri seçmiştir."
+  },
+  {
+    "id": "eay_7_46",
+    "konu": "Amaçlı Örnekleme (Aykırı Durum)",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir öğretmen, 'sınıf yönetimi' stratejilerini incelemek için okuldaki 'en sorunlu' olarak bilinen sınıf ile 'en başarılı' olarak bilinen sınıfı incelemiştir. Hangi yöntemi kullanmıştır?",
+    "secenekler": [
+      "Aykırı Durum Örnekleme",
+      "Tipik Durum Örneklemesi",
+      "Benzeşik Örnekleme",
+      "Uygun Örnekleme"
+    ],
+    "dogruCevap": "Aykırı Durum Örnekleme",
+    "aciklama": "Araştırmacı, konuyu (sınıf yönetimi) anlamak için iki uç (aykırı) noktayı (en sorunlu ve en başarılı) incelemeyi tercih etmiştir."
+  },
+  {
+    "id": "eay_7_47",
+    "konu": "Amaçlı Örnekleme (Maksimum Çeşitlilik)",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, 'öğretmenlerin yeni müfredata bakışını' incelerken, örneklemine 'farklı branşlardan (Matematik, Tarih, Resim)', 'farklı kıdemlerden (yeni, deneyimli)' ve 'farklı okul türlerinden (köy, şehir)' öğretmenleri dahil etmiştir. Amacı nedir?",
+    "secenekler": [
+      "Maksimum Çeşitlilik",
+      "Benzeşik Örnekleme",
+      "Tipik Durum Örneklemesi",
+      "Aykırı Durum Örneklemesi"
+    ],
+    "dogruCevap": "Maksimum Çeşitlilik",
+    "aciklama": "Araştırmacı, farklılıklara (çeşitliliğe) rağmen 'ortak' bir bakış açısı olup olmadığını görmek için, konuya taraf olabilecek tüm farklı grupları örnekleme yansıtmıştır."
+  },
+  {
+    "id": "eay_7_48",
+    "konu": "Amaçlı Örnekleme (Ölçüt)",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Bir araştırmacı, 'yüksek lisans tezini bitirememe nedenlerini' araştırmak için 'tez aşamasında olup en az 2 yıldır mezun olamamış' öğrencileri çalışmasına dahil etmiştir. Hangi yöntemi kullanmıştır?",
+    "secenekler": [
+      "Ölçüt Örnekleme",
+      "Kartopu Örnekleme",
+      "Kota Örnekleme",
+      "Tipik Durum Örneklemesi"
+    ],
+    "dogruCevap": "Ölçüt Örnekleme",
+    "aciklama": "Araştırmaya katılım için net bir 'ölçüt' (en az 2 yıldır mezun olamama) konulmuş ve sadece bu ölçütü karşılayanlar dahil edilmiştir."
+  },
+  {
+    "id": "eay_7_49",
+    "konu": "Olasılıklı vs Olasılıksız",
+    "zorluk": "Zor",
+    "tip": "Kavramsal",
+    "soruMetni": "Nitel bir araştırmacı neden Olasılıklı (Rastgele) Örnekleme yerine Amaçlı Örneklemeyi (örn: Tipik Durum) tercih eder?",
+    "secenekler": [
+      "Çünkü amacı 'genelleme yapmak' değil, o 'tipik' durumu derinlemesine anlamaktır.",
+      "Çünkü rastgele örnekleme her zaman daha pahalı ve zordur.",
+      "Çünkü amaçlı örnekleme ile evrene daha iyi genelleme yapılır.",
+      "Çünkü rastgele örnekleme etik kurullardan geçemez."
+    ],
+    "dogruCevap": "Çünkü amacı 'genelleme yapmak' değil, o 'tipik' durumu derinlemesine anlamaktır.",
+    "aciklama": "Nitel araştırmanın (ve amaçlı örneklemenin) amacı genelleme yapmak değil, 'zengin' bilgiyi bularak o olguyu derinlemesine anlamak ve açıklamaktır. Rastgele seçilen bir kişi bu zengin bilgiyi sunmayabilir."
+  },
+  {
+    "id": "eay_7_50",
+    "konu": "Benzeşik vs Maksimum Çeşitlilik",
+    "zorluk": "Zor",
+    "tip": "Kavramsal",
+    "soruMetni": "Maksimum Çeşitlilik örneklemesinin amacı 'farklılıklara rağmen ortak noktaları bulmak' iken, Benzeşik (Homojen) örneklemenin amacı nedir?",
+    "secenekler": [
+      "Belirli bir alt grubun deneyimlerini derinlemesine incelemek.",
+      "Evrene genelleme yapmak.",
+      "Uç noktalardaki (aykırı) durumları bulmak.",
+      "Örneklemi kartopu gibi büyütmek."
+    ],
+    "dogruCevap": "Belirli bir alt grubun deneyimlerini derinlemesine incelemek.",
+    "aciklama": "Benzeşik (homojen) örneklem (örn: sadece 1. sınıf anneleri), grubun farklılığını ortadan kaldırarak o spesifik grubun deneyimlerine (örn: 'ilk kez anne olma') odaklanmayı ve derinleşmeyi sağlar."
   }
 
 

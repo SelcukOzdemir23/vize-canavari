@@ -119,20 +119,53 @@ const QuizPage = () => {
   
   if (!currentQuiz) {
     return (
-      <div
-        className="relative flex flex-1 flex-col items-center justify-center overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-surface-900/90 to-surface-800/80 p-8 backdrop-blur-lg"
-        style={{ boxShadow: 'var(--shadow-xl)' }}
-      >
-        <div className="flex flex-col items-center gap-4 text-center">
-          <motion.span 
-            className="text-4xl"
-            animate={{ rotate: 360 }}
-            transition={{ duration: 1, repeat: Infinity, ease: 'linear' }}
-          >
-            ⏳
-          </motion.span>
-          <p className="text-base text-white/70">Yükleniyor...</p>
-        </div>
+      <div className="relative flex flex-1 flex-col items-center justify-center overflow-hidden bg-transparent p-8">
+        <motion.div
+          className="flex flex-col items-center gap-6"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.3 }}
+        >
+          <div className="relative">
+            <motion.div
+              className="absolute inset-0 rounded-full bg-gradient-to-r from-primary-500 to-accent-400 blur-2xl opacity-50"
+              animate={{ scale: [1, 1.2, 1] }}
+              transition={{ duration: 2, repeat: Infinity }}
+            />
+            <motion.div
+              className="relative flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-primary-500 to-accent-400"
+              animate={{ rotate: 360 }}
+              transition={{ duration: 2, repeat: Infinity, ease: 'linear' }}
+            >
+              <motion.span
+                className="text-4xl"
+                animate={{ scale: [1, 1.1, 1] }}
+                transition={{ duration: 1, repeat: Infinity }}
+              >
+                📚
+              </motion.span>
+            </motion.div>
+          </div>
+          <div className="flex flex-col items-center gap-2">
+            <motion.p
+              className="text-lg font-bold text-text-primary"
+              animate={{ opacity: [0.5, 1, 0.5] }}
+              transition={{ duration: 1.5, repeat: Infinity }}
+            >
+              Sorular yükleniyor...
+            </motion.p>
+            <div className="flex gap-1.5">
+              {[0, 1, 2].map((i) => (
+                <motion.div
+                  key={i}
+                  className="h-2 w-2 rounded-full bg-primary-500"
+                  animate={{ scale: [1, 1.5, 1], opacity: [0.3, 1, 0.3] }}
+                  transition={{ duration: 1, repeat: Infinity, delay: i * 0.2 }}
+                />
+              ))}
+            </div>
+          </div>
+        </motion.div>
       </div>
     );
   }
