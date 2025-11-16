@@ -2853,6 +2853,156 @@
     ],
     "dogruCevap": "Çünkü Tabakalı, gruplar arası farkı inceler; Küme ise evrenin minyatür bir kopyasını (tek bir küme) seçmeyi amaçlar.",
     "aciklama": "Tabakalıda 1. sınıflar (homojen) ile 2. sınıflar (homojen) arasındaki farkı görmek isteriz. Kümede ise, seçtiğimiz bir okulun (küme) tek başına tüm evreni (heterojen yapıyı) yansıtmasını isteriz."
+  },
+  {
+    "id": "eay_5_41",
+    "konu": "Evren ve Örneklem",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Evrenin zaman ve mekânla sınırlandırılmış, araştırmacının 'erişilebilir' olduğu topluluğa ne ad verilir?",
+    "secenekler": [
+      "Araştırma Evreni",
+      "Genel Evren",
+      "Örneklem",
+      "Tabaka"
+    ],
+    "dogruCevap": "Araştırma Evreni",
+    "aciklama": "Genel Evren teorik hedef kitledir (örn: tüm öğretmenler). Araştırma Evreni ise bu kitlenin ulaşılabilir olanıdır (örn: Elazığ'daki öğretmenler)."
+  },
+  {
+    "id": "eay_5_42",
+    "konu": "Araştırma Etiği (Etik Kurul)",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "İnsan katılımcıların yer aldığı çalışmalarda Etik Kurul'un bulunmasının temel amacı nedir?",
+    "secenekler": [
+      "Denek olarak kullanılacak insanların haklarını ve güvenliğini korumak.",
+      "Araştırmanın maliyetini hesaplamak.",
+      "Araştırmanın örnekleme yöntemini belirlemek.",
+      "Araştırmacının intihal yapmasını engellemek."
+    ],
+    "dogruCevap": "Denek olarak kullanılacak insanların haklarını ve güvenliğini korumak.",
+    "aciklama": "Etik Kurul, araştırma protokolünü inceleyerek katılımcıların (deneklerin) zarar görmemesini ve haklarının korunmasını sağlar."
+  },
+  {
+    "id": "eay_5_43",
+    "konu": "Olasılıklı Örnekleme (Basit Rassal)",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Evrendeki her bireyin seçilme olasılığının eşit olduğu ve seçimin tamamen şansa (örn: kura) dayandığı yöntem hangisidir?",
+    "secenekler": [
+      "Basit Rastgele Örnekleme",
+      "Sistematik Örnekleme",
+      "Tabakalı Örnekleme",
+      "Küme Örneklemesi"
+    ],
+    "dogruCevap": "Basit Rastgele Örnekleme",
+    "aciklama": "Bu yöntem, temsil gücü en yüksek olan temel olasılıklı örnekleme yöntemidir ancak evren listesi gerektirmesi dezavantajıdır."
+  },
+  {
+    "id": "eay_5_44",
+    "konu": "Araştırma Etiği (Veri Saklama)",
+    "zorluk": "Kolay",
+    "tip": "Teorik",
+    "soruMetni": "Olası sahtecilik şüphelerine karşı kanıtlanabilirlik sağlamak amacıyla, bir araştırmaya ilişkin orijinal verilerin önerilen saklama süresi en az ne kadardır?",
+    "secenekler": [
+      "5 yıl",
+      "6 ay",
+      "1 yıl",
+      "Süresiz"
+    ],
+    "dogruCevap": "5 yıl",
+    "aciklama": "Araştırmanın denetlenebilir ve kanıtlanabilir olması için orijinal veri setlerinin (ham veriler) en az 5 yıl saklanması önerilir."
+  },
+  {
+    "id": "eay_5_45",
+    "konu": "Araştırma Etiği (Aşırmacılık)",
+    "zorluk": "Orta",
+    "tip": "Kavramsal",
+    "soruMetni": "Aşırmacılık (intihal) eyleminin 'kasıtlı' olarak kabul edilmesinin (sistematik yapılmasının) sonucu nedir?",
+    "secenekler": [
+      "Bilimsel hırsızlık olarak suç teşkil eder.",
+      "Disiplinsiz araştırma olarak kabul edilir.",
+      "Veri sahteciliği olarak kabul edilir.",
+      "Sadece etik kuruldan uyarı alır."
+    ],
+    "dogruCevap": "Bilimsel hırsızlık olarak suç teşkil eder.",
+    "aciklama": "Aşırmanın sistematik ve kasıtlı bir şekilde yapılması, dikkatsizlikten (disiplinsiz araştırma) öte, 'bilimsel hırsızlık' olarak nitelendirilir ve ciddi bir suçtur."
+  },
+  {
+    "id": "eay_5_46",
+    "konu": "Olasılıklı Örnekleme (Küme)",
+    "zorluk": "Orta",
+    "tip": "Teorik",
+    "soruMetni": "Küme örneklemesi yönteminin (örn: 5 ilçeyi seçmek) Tabakalı örneklemeye (örn: tüm ilçelerden örnek almak) göre en büyük avantajı nedir?",
+    "secenekler": [
+      "Zaman ve maliyet tasarrufu sağlaması.",
+      "Temsil gücünün daha yüksek olması.",
+      "Evren listesine ihtiyaç duymaması.",
+      "Her zaman daha doğru sonuç vermesi."
+    ],
+    "dogruCevap": "Zaman ve maliyet tasarrufu sağlaması.",
+    "aciklama": "Tüm ilçelere gitmek yerine sadece 5 ilçeye gitmek (Küme), her ilçeden örnek almaktan (Tabakalı) çok daha az maliyetli ve hızlıdır."
+  },
+  {
+    "id": "eay_5_47",
+    "konu": "Olasılıklı Örnekleme (Sistematik)",
+    "zorluk": "Orta",
+    "tip": "PDF Dışı",
+    "soruMetni": "Sistematik örneklemede, 1000 kişilik bir evrenden 100 kişi seçilecekse (N/n), seçim aralığı (K) kaç olmalıdır?",
+    "secenekler": [
+      "10",
+      "100",
+      "1000",
+      "1"
+    ],
+    "dogruCevap": "10",
+    "aciklama": "Seçim aralığı (K), evren büyüklüğünün (N=1000) örneklem büyüklüğüne (n=100) bölünmesiyle bulunur (K = 1000 / 100 = 10). Yani her 10. kişi seçilmelidir."
+  },
+  {
+    "id": "eay_5_48",
+    "konu": "Evren ve Örneklem",
+    "zorluk": "Orta",
+    "tip": "Senaryo",
+    "soruMetni": "Araştırmacı, 'Türkiye'deki (1) üniversite öğrencilerinin (1) dijital okuryazarlık düzeylerini' incelemek istemiş, ancak 'Ege Bölgesi'ndeki (2) devlet üniversitelerindeki (2)' öğrencilerden 500 kişilik bir grup (3) seçmiştir. 1, 2 ve 3 sırasıyla nedir?",
+    "secenekler": [
+      "1: Genel Evren, 2: Araştırma Evreni, 3: Örneklem",
+      "1: Araştırma Evreni, 2: Genel Evren, 3: Örneklem",
+      "1: Genel Evren, 2: Örneklem, 3: Araştırma Evreni",
+      "1: Örneklem, 2: Araştırma Evreni, 3: Genel Evren"
+    ],
+    "dogruCevap": "1: Genel Evren, 2: Araştırma Evreni, 3: Örneklem",
+    "aciklama": "En geniş kitle (1) Genel Evren, bunun ulaşılabilir sınırı (2) Araştırma Evreni, bu sınırdan veri toplamak için seçilen grup (3) ise Örneklemdir."
+  },
+  {
+    "id": "eay_5_49",
+    "konu": "Araştırma Etiği",
+    "zorluk": "Zor",
+    "tip": "PDF Dışı",
+    "soruMetni": "Bir araştırmacının, araştırmanın başında planladığı analiz tekniklerini (örn: t-testi) verileri topladıktan sonra 'anlamlı çıkmıyor' diye değiştirmesi, hangi etik soruna daha yakındır?",
+    "secenekler": [
+      "Sahtecilik (Manipülasyon)",
+      "Disiplinsiz Araştırma (Özensiz planlama)",
+      "Uydurmacılık",
+      "Aşırmacılık"
+    ],
+    "dogruCevap": "Sahtecilik (Manipülasyon)",
+    "aciklama": "Analiz tekniklerini, verileri veya hipotezi sonuca uydurmak için kasıtlı olarak değiştirmek, verileri manipüle etmenin bir yolu olan Sahteciliğe girer (Bazen Disiplinsiz Araştırma ile başlasa da kasıtlı değişiklik Sahteciliktir)."
+  },
+  {
+    "id": "eay_5_50",
+    "konu": "Olasılıklı Örnekleme (Tabakalı)",
+    "zorluk": "Zor",
+    "tip": "Kavramsal",
+    "soruMetni": "Tabakalı örnekleme yönteminin Basit Rastgele örneklemeye göre en önemli avantajı (veya kullanılma nedeni) nedir?",
+    "secenekler": [
+      "Evrendeki küçük alt grupların (tabakaların) örneklemde temsil edilmesini garanti altına alması.",
+      "Evren listesine ihtiyaç duymaması.",
+      "Her zaman daha az maliyetli ve hızlı olması.",
+      "Araştırmacının yanlılığını artırması."
+    ],
+    "dogruCevap": "Evrendeki küçük alt grupların (tabakaların) örneklemde temsil edilmesini garanti altına alması.",
+    "aciklama": "Basit rastgele yöntemde, kura çekerken evrendeki %5'lik bir gruba (örn: Tıp Fakültesi) hiç denk gelmeme riski vardır. Tabakalı yöntem, bu küçük grubun bile örneklemde temsil edilmesini garanti eder."
   }
 
 
