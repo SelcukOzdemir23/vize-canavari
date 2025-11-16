@@ -39,8 +39,8 @@ const ModeButton: React.FC<ModeButtonProps> = ({
   ].join(' ');
 
   const enabledHover = [
-    'bg-white border-primary-500/30 hover:border-primary-500 hover:scale-[1.02] hover:-translate-y-1',
-    'active:scale-100 active:translate-y-0'
+    'bg-linear-to-br from-white to-gray-50 border-primary-500/30 hover:border-primary-500 hover:scale-[1.02] hover:-translate-y-1',
+    'active:scale-100 active:translate-y-0 hover:shadow-xl'
   ].join(' ');
 
   const disabledStyles = 'cursor-not-allowed opacity-40 bg-bg-tertiary border-transparent';
@@ -61,7 +61,7 @@ const ModeButton: React.FC<ModeButtonProps> = ({
         )}
       </div>
       {typeof badge === 'number' && badge > 0 && (
-        <span className="flex h-7 w-7 items-center justify-center rounded-full bg-gradient-to-br from-primary-400 to-accent-400 text-xs font-black text-white">
+        <span className="flex h-7 w-7 items-center justify-center rounded-full bg-linear-to-br from-primary-400 to-accent-400 text-xs font-black text-white">
           {badge}
         </span>
       )}

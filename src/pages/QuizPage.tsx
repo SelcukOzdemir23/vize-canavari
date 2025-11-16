@@ -35,30 +35,54 @@ const QuizPage = () => {
         
         switch (mode) {
           case 'standard':
-            questions = [...allQuestions]
-              .sort(() => Math.random() - 0.5)
-              .slice(0, 5);
+            {
+              // Rastgele test: 4 Kolay, 4 Orta, 2 Zor (topla 10 soru)
+              const kolaySorular = allQuestions.filter(q => q.zorluk === 'Kolay');
+              const ortaSorular = allQuestions.filter(q => q.zorluk === 'Orta');
+              const zorSorular = allQuestions.filter(q => q.zorluk === 'Zor');
+              
+              const seciliKolay = kolaySorular
+                .sort(() => Math.random() - 0.5)
+                .slice(0, 4);
+              const seciliOrta = ortaSorular
+                .sort(() => Math.random() - 0.5)
+                .slice(0, 4);
+              const seciliZor = zorSorular
+                .sort(() => Math.random() - 0.5)
+                .slice(0, 2);
+              
+              // Tüm soruları karıştır
+              questions = [...seciliKolay, ...seciliOrta, ...seciliZor]
+                .sort(() => Math.random() - 0.5);
+            }
             break;
             
           case 'mistake-bank':
             {
+              // Yanlış bankasındaki tüm soruları getir ve karıştır
               const mistakeBankIds = userSession.mistakeBank.map(id => id.toString());
-              questions = allQuestions.filter(
-                (q) => mistakeBankIds.includes(q.id)
-              );
+              questions = allQuestions
+                .filter((q) => mistakeBankIds.includes(q.id))
+                .sort(() => Math.random() - 0.5);
             }
             break;
             
           case 'week':
             if (week) {
-              questions = allQuestions.filter(
-                (q) => q.id.startsWith(`eay_${week}_`)
-              ).sort(() => Math.random() - 0.5);
+              // Haftaya göre tüm soruları getir ve karıştır
+              questions = allQuestions
+                .filter((q) => q.id.startsWith(`eay_${week}_`))
+                .sort(() => Math.random() - 0.5);
+              
+              console.log(`Hafta ${week}: ${questions.length} soru bulundu`);
             }
             break;
             
           default:
-            questions = allQuestions.slice(0, 10);
+            // Default durumda rastgele 10 soru
+            questions = allQuestions
+              .sort(() => Math.random() - 0.5)
+              .slice(0, 10);
         }
         
         initializeQuiz(questions, mode || 'standard');
@@ -67,10 +91,9 @@ const QuizPage = () => {
       }
     };
     
-    if (!currentQuiz) {
-      loadQuestions();
-    }
-  }, [mode, currentQuiz, initializeQuiz, userSession]);
+    // Mode veya week değiştiğinde her zaman yeni quiz yükle
+    loadQuestions();
+  }, [mode, week, initializeQuiz, userSession.mistakeBank]);
   
   // Reset next button visibility when question changes
   useEffect(() => {

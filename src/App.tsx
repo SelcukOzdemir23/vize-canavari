@@ -8,7 +8,7 @@ import ResultsPage from './pages/ResultsPage';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/vize-canavari">
       <div className="relative h-screen overflow-hidden bg-canvas-950 text-white">
         <div className="relative mx-auto flex h-full w-full max-w-7xl flex-col p-4 sm:p-6">
           <span
